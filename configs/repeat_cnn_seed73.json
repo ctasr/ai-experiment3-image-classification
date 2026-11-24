@@ -1,0 +1,18 @@
+{
+  "architecture": "cnn",
+  "width": 32,
+  "attention": false,
+  "dropout": 0.2,
+  "augmentation": true,
+  "cutout": 0,
+  "label_smoothing": 0.0,
+  "optimizer": "sgd",
+  "learning_rate": 0.1,
+  "weight_decay": 0.002,
+  "batch_size": 256,
+  "epochs": 160,
+  "warmup_epochs": 5,
+  "seed": 73,
+  "amp": true,
+  "patience": 0
+}

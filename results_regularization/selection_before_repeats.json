@@ -1,0 +1,56 @@
+{
+  "winner": {
+    "state": "completed",
+    "run_id": "head_dropout_seed42",
+    "config": {
+      "architecture": "resnet20",
+      "width": 48,
+      "attention": false,
+      "dropout": 0.2,
+      "augmentation": true,
+      "cutout": 0,
+      "label_smoothing": 0.0,
+      "optimizer": "sgd",
+      "learning_rate": 0.1,
+      "weight_decay": 0.0005,
+      "batch_size": 256,
+      "epochs": 240,
+      "warmup_epochs": 5,
+      "seed": 42,
+      "amp": true,
+      "patience": 0,
+      "model": "cifar",
+      "image_size": 32,
+      "mix": "cutmix",
+      "mix_alpha": 0.5,
+      "distill_alpha": 0.25,
+      "distill_temperature": 1.0,
+      "alignment": "mixed_view",
+      "residual_head_dropout": 0.2
+    },
+    "best_validation_accuracy": 0.9698,
+    "best_validation_ce": 0.18328488771915435,
+    "best_epoch": 238,
+    "epochs_completed": 240,
+    "parameters": 2436346,
+    "trainable_parameters": 2436346,
+    "training_seconds": 4275.465000000009,
+    "artifact": "runs\\regularization\\head_dropout_seed42"
+  },
+  "changes": {
+    "accuracy_gain": -0.0021999999999999797,
+    "ce_change": 0.02286961653232575,
+    "raw_gap_change": 0.0021999999999999797
+  },
+  "gate": {
+    "advance": false,
+    "route_accuracy": false,
+    "route_ce_and_gap": false,
+    "mean_changes": {
+      "accuracy_gain": -0.0021999999999999797,
+      "ce_change": 0.02286961653232575,
+      "raw_gap_change": 0.0021999999999999797
+    }
+  },
+  "validation_only": true
+}

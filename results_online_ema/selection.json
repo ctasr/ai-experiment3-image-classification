@@ -1,0 +1,7 @@
+{
+  "seed": 42,
+  "accuracy_delta": 0.00019999999999997797,
+  "ce_delta": 0.006838268899917621,
+  "supported": false,
+  "rule": "Accuracy gain >= 0.001 and no increase in hard-label CE."
+}

@@ -1,0 +1,18 @@
+{
+  "architecture": "resnet20",
+  "width": 16,
+  "attention": false,
+  "dropout": 0.2,
+  "augmentation": true,
+  "cutout": 0,
+  "label_smoothing": 0.0,
+  "optimizer": "sgd",
+  "learning_rate": 0.3,
+  "weight_decay": 0.0005,
+  "batch_size": 256,
+  "epochs": 160,
+  "warmup_epochs": 5,
+  "seed": 73,
+  "amp": true,
+  "patience": 0
+}

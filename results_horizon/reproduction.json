@@ -1,0 +1,9 @@
+{
+  "reference": "horizon240_seed42",
+  "replica": "audit_full_horizon240_seed42",
+  "epochs": 240,
+  "best_last_weights_and_all_history_equal": true,
+  "history_comparison_excludes": [
+    "seconds"
+  ]
+}

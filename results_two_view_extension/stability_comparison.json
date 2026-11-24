@@ -1,0 +1,217 @@
+{
+  "state": "computed",
+  "samples": 5000,
+  "direction": "KD minus matched no-KD seed42; same images per case/policy",
+  "cases": {
+    "clean": {
+      "raw": {
+        "kd_minus_no_kd_accuracy_pp": 0.3,
+        "accuracy_ci95_pp": [
+          -0.13999999999999999,
+          0.74
+        ],
+        "kd_minus_no_kd_ce": -0.016107023851657094,
+        "ce_ci95": [
+          -0.025085554924662325,
+          -0.007652436069311514
+        ],
+        "accuracy_gain_change_from_clean_pp": 0.0,
+        "accuracy_gain_change_ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "ce_gap_change_from_clean": 0.0,
+        "control_to_kd_correctness": {
+          "correct_to_correct": 4790,
+          "correct_to_wrong": 53,
+          "wrong_to_correct": 68,
+          "wrong_to_wrong": 89,
+          "wrong_changed_label": 14
+        }
+      },
+      "q": {
+        "kd_minus_no_kd_accuracy_pp": 0.13999999999999999,
+        "accuracy_ci95_pp": [
+          -0.20050000000000004,
+          0.5000000000000001
+        ],
+        "kd_minus_no_kd_ce": -0.012923566333055896,
+        "ce_ci95": [
+          -0.019486520836694346,
+          -0.006905665868931779
+        ],
+        "accuracy_gain_change_from_clean_pp": 0.0,
+        "accuracy_gain_change_ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "ce_gap_change_from_clean": 0.0,
+        "control_to_kd_correctness": {
+          "correct_to_correct": 4819,
+          "correct_to_wrong": 39,
+          "wrong_to_correct": 46,
+          "wrong_to_wrong": 96,
+          "wrong_changed_label": 9
+        }
+      }
+    },
+    "brightness_plus8": {
+      "raw": {
+        "kd_minus_no_kd_accuracy_pp": 0.36,
+        "accuracy_ci95_pp": [
+          -0.08049999999999999,
+          0.8199999999999998
+        ],
+        "kd_minus_no_kd_ce": -0.017373645084133568,
+        "ce_ci95": [
+          -0.026781392990265204,
+          -0.008669550202397016
+        ],
+        "accuracy_gain_change_from_clean_pp": 0.06,
+        "accuracy_gain_change_ci95_pp": [
+          -0.16,
+          0.27999999999999997
+        ],
+        "ce_gap_change_from_clean": -0.0012666212324764705,
+        "control_to_kd_correctness": {
+          "correct_to_correct": 4782,
+          "correct_to_wrong": 54,
+          "wrong_to_correct": 72,
+          "wrong_to_wrong": 92,
+          "wrong_changed_label": 13
+        }
+      },
+      "q": {
+        "kd_minus_no_kd_accuracy_pp": 0.16,
+        "accuracy_ci95_pp": [
+          -0.21999999999999997,
+          0.54
+        ],
+        "kd_minus_no_kd_ce": -0.014290363746430518,
+        "ce_ci95": [
+          -0.021358188977650818,
+          -0.007994524416775145
+        ],
+        "accuracy_gain_change_from_clean_pp": 0.02,
+        "accuracy_gain_change_ci95_pp": [
+          -0.2,
+          0.26
+        ],
+        "ce_gap_change_from_clean": -0.0013667974133746174,
+        "control_to_kd_correctness": {
+          "correct_to_correct": 4810,
+          "correct_to_wrong": 44,
+          "wrong_to_correct": 52,
+          "wrong_to_wrong": 94,
+          "wrong_changed_label": 13
+        }
+      }
+    },
+    "brightness_minus8": {
+      "raw": {
+        "kd_minus_no_kd_accuracy_pp": 0.38,
+        "accuracy_ci95_pp": [
+          -0.019999999999999987,
+          0.78
+        ],
+        "kd_minus_no_kd_ce": -0.016874859421733886,
+        "ce_ci95": [
+          -0.025971073813284812,
+          -0.008730179486983732
+        ],
+        "accuracy_gain_change_from_clean_pp": 0.08,
+        "accuracy_gain_change_ci95_pp": [
+          -0.16,
+          0.30000000000000004
+        ],
+        "ce_gap_change_from_clean": -0.0007678355700767861,
+        "control_to_kd_correctness": {
+          "correct_to_correct": 4796,
+          "correct_to_wrong": 44,
+          "wrong_to_correct": 63,
+          "wrong_to_wrong": 97,
+          "wrong_changed_label": 16
+        }
+      },
+      "q": {
+        "kd_minus_no_kd_accuracy_pp": -0.02,
+        "accuracy_ci95_pp": [
+          -0.37999999999999995,
+          0.3404999999999996
+        ],
+        "kd_minus_no_kd_ce": -0.013300283678262335,
+        "ce_ci95": [
+          -0.02003753625143982,
+          -0.007270372413405723
+        ],
+        "accuracy_gain_change_from_clean_pp": -0.16,
+        "accuracy_gain_change_ci95_pp": [
+          -0.37999999999999995,
+          0.039999999999999994
+        ],
+        "ce_gap_change_from_clean": -0.00037671734520643786,
+        "control_to_kd_correctness": {
+          "correct_to_correct": 4811,
+          "correct_to_wrong": 48,
+          "wrong_to_correct": 47,
+          "wrong_to_wrong": 94,
+          "wrong_changed_label": 11
+        }
+      }
+    },
+    "translate_right1": {
+      "raw": {
+        "kd_minus_no_kd_accuracy_pp": 0.12,
+        "accuracy_ci95_pp": [
+          -0.3,
+          0.5599999999999999
+        ],
+        "kd_minus_no_kd_ce": -0.01602319277879817,
+        "ce_ci95": [
+          -0.02550638012889209,
+          -0.008010231193782717
+        ],
+        "accuracy_gain_change_from_clean_pp": -0.18,
+        "accuracy_gain_change_ci95_pp": [
+          -0.6200000000000001,
+          0.2
+        ],
+        "ce_gap_change_from_clean": 8.383107285892937e-05,
+        "control_to_kd_correctness": {
+          "correct_to_correct": 4790,
+          "correct_to_wrong": 54,
+          "wrong_to_correct": 60,
+          "wrong_to_wrong": 96,
+          "wrong_changed_label": 13
+        }
+      },
+      "q": {
+        "kd_minus_no_kd_accuracy_pp": 0.1,
+        "accuracy_ci95_pp": [
+          -0.24050000000000005,
+          0.45999999999999996
+        ],
+        "kd_minus_no_kd_ce": -0.015358270091127346,
+        "ce_ci95": [
+          -0.02234435890351848,
+          -0.009419779642199077
+        ],
+        "accuracy_gain_change_from_clean_pp": -0.04,
+        "accuracy_gain_change_ci95_pp": [
+          -0.35999999999999993,
+          0.27999999999999997
+        ],
+        "ce_gap_change_from_clean": -0.00243470375807145,
+        "control_to_kd_correctness": {
+          "correct_to_correct": 4820,
+          "correct_to_wrong": 38,
+          "wrong_to_correct": 43,
+          "wrong_to_wrong": 99,
+          "wrong_changed_label": 11
+        }
+      }
+    }
+  },
+  "bootstrap": "1000 seed42 stratified-by-label paired image bootstrap; fixed two weights; no multiple-case correction",
+  "causal_limit": "This is a matched training-recipe KD control, not an isolated ImageNet-knowledge intervention, and not training-seed uncertainty."
+}

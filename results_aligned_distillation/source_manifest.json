@@ -1,0 +1,32 @@
+{
+  "source_sha256": {
+    "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+    "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+    "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+    "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+    "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+    "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+    "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+    "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+    "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+    "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56"
+  },
+  "teacher_identity": {
+    "source_sha256": {
+      "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+      "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+      "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+      "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+      "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+      "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514"
+    },
+    "weights": {
+      "cutmix": "ae6ab05b3ae0f232e0cddfb85a9bb9b65126f404269065c3197f2fbbc0159a2a",
+      "transfer": "82aa3d307ecb83dfb92182325eb346829478213df25aa18d4de928721a1f6be9"
+    },
+    "policy": "equal_ensemble_flip",
+    "calibrated": false,
+    "teacher_seed": 42
+  },
+  "prior_offline_teacher_cache_sha256": "5e7a37711c8904ed3586cb852d896fd4e9f5fe7c6b5ccba9b9a3d0f075ac86cb"
+}

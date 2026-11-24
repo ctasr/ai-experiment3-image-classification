@@ -1,0 +1,21 @@
+{
+  "accuracy_difference": -0.0026666666666666666,
+  "conditional_ci95": [
+    -0.0047675,
+    -0.0006658333333333338
+  ],
+  "bootstrap": 1000,
+  "seed": 42,
+  "interpretation": "给定三组固定模型后测试样本组成的条件波动，不含重新训练、教师训练、划分或反复调参不确定性，不参与选配置",
+  "training_seed_uncertainty": {
+    "student": {
+      "accuracy_mean": 0.9617333333333333,
+      "accuracy_std": 0.001814754345175483
+    },
+    "baseline": {
+      "accuracy_mean": 0.9643999999999999,
+      "accuracy_std": 0.00043588989435408305
+    }
+  },
+  "difference_direction": "control_minus_kd"
+}

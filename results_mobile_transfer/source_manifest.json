@@ -1,0 +1,26 @@
+{
+  "source_sha256": {
+    "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+    "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+    "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+    "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+    "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+    "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+    "mobile_transfer_study/common.py": "714245914f304b11632563785bac9064cf8f9f070580fdf18741ecb526126923",
+    "mobile_transfer_study/models.py": "e4425ee681824053010544afdeb61bf31802905e8ee5b88dfe22c10ce3251401",
+    "mobile_transfer_study/train.py": "5afb95dfb7c40993c1630048f05d48fa2f635c9ffa4aa525a2f55f1a8d491150"
+  },
+  "plan_sha256": "9e2084ad3573ca37ab429e70e2ca6f9a56efc9d3998f166fb4ca0d8c9600eb96",
+  "execution_scope_sha256": "a7ddc25bfd6541900c1cc3f14230c6a71608bf5814adf1c2e760b39ff929c0cd",
+  "input_snapshot_sha256": "1b8790bf9f24568b75339ec2d8d5030cfe8dd82f032e773ef18433814fabab92",
+  "weights": {
+    "url": "https://download.pytorch.org/models/mobilenet_v3_small-047dcff4.pth",
+    "path": "data\\pretrained\\mobile_transfer\\mobilenet_v3_small-047dcff4.pth",
+    "sha256": "047dcff4addef86ea5bc2eff13c9614dc11f47ab1160d0a71a25e7db994f4e1f",
+    "published_sha256_prefix": "047dcff4",
+    "prefix_verified": true,
+    "enum": "MobileNet_V3_Small_Weights.IMAGENET1K_V1",
+    "original_classes": 1000,
+    "role": "Only pretrained cases load these parameters; random cases do not"
+  }
+}

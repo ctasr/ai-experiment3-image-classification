@@ -1,0 +1,50 @@
+{
+  "seeds": [
+    {
+      "seed": 42,
+      "mean": 0.04645141586661339,
+      "ci": [
+        0.031723184719128765,
+        0.0613046248164901
+      ],
+      "flat_count": 0,
+      "heatmap_TV_vs42_mean": 0.0,
+      "heatmap_valid_pairs": 200
+    },
+    {
+      "seed": 17,
+      "mean": 0.044584617018699646,
+      "ci": [
+        0.03166416286428284,
+        0.05764764587952231
+      ],
+      "flat_count": 0,
+      "heatmap_TV_vs42_mean": 0.06988305182316587,
+      "heatmap_valid_pairs": 200
+    },
+    {
+      "seed": 73,
+      "mean": 0.03894525393843651,
+      "ci": [
+        0.02776049838232575,
+        0.0520628608513798
+      ],
+      "flat_count": 1,
+      "heatmap_TV_vs42_mean": 0.07468367282442585,
+      "heatmap_valid_pairs": 199
+    }
+  ],
+  "aggregate_mean": 0.04332709684967995,
+  "aggregate_conditional_image_ci95": [
+    0.03297646568865093,
+    0.05391198185302346
+  ],
+  "descriptive_seed_mean_sample_SD": 0.003907894250005484,
+  "same_image_resampling_across_seeds": true,
+  "bootstrap_not600independent": true,
+  "new_training": 0,
+  "new_official_test": 0,
+  "new_temperature": 0,
+  "common_target": "seed42 qclean class on all3models; classification accuracy separately uses eachmodelsownprediction",
+  "limits": "Three fixed selected runs, commonteacher42. Not certifiedrobustness, causal/segmentation proof, independent newdata or unrestricted training uncertainty."
+}

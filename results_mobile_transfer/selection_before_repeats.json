@@ -1,0 +1,33 @@
+{
+  "supported": false,
+  "seeds": [
+    42
+  ],
+  "pairs": [
+    {
+      "seed": 42,
+      "pretrained_minus_random_accuracy": 0.06999999999999995,
+      "pretrained_minus_random_ce": -0.18350561752319336,
+      "pretrained_minus_resnet18_accuracy": -0.03620000000000001
+    }
+  ],
+  "mean_changes": {
+    "pretrained_minus_random_accuracy": 0.06999999999999995,
+    "pretrained_minus_random_ce": -0.18350561752319336,
+    "pretrained_minus_resnet18_accuracy": -0.03620000000000001
+  },
+  "rule": {
+    "seed42": {
+      "pretrained_minus_random_validation_accuracy_min": 0.01,
+      "pretrained_minus_random_ce_max": -0.01,
+      "pretrained_minus_matched_resnet18_validation_accuracy_min": -0.02
+    },
+    "confirmation": {
+      "mean_pretrained_minus_random_accuracy_min": 0.01,
+      "at_least_two_seeds_pretrained_gain_nonnegative": true,
+      "mean_pretrained_minus_random_ce_max": -0.01,
+      "mean_pretrained_minus_matched_resnet18_accuracy_min": -0.02
+    }
+  },
+  "practical_screening_not_statistical_confirmation": true
+}

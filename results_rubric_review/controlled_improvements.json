@@ -1,0 +1,58 @@
+{
+  "rows": [
+    {
+      "run_id": "wide_confirm1",
+      "validation_accuracy": 0.9494,
+      "validation_ce": 0.19618203525543212,
+      "changed_fields": []
+    },
+    {
+      "run_id": "wide_attention",
+      "validation_accuracy": 0.948,
+      "validation_ce": 0.18661656885147096,
+      "changed_fields": [
+        "attention"
+      ]
+    },
+    {
+      "run_id": "wide_cutout",
+      "validation_accuracy": 0.9544,
+      "validation_ce": 0.1665075431585312,
+      "changed_fields": [
+        "cutout"
+      ]
+    },
+    {
+      "run_id": "wide_smoothing",
+      "validation_accuracy": 0.9468,
+      "validation_ce": 0.24747270541191102,
+      "changed_fields": [
+        "label_smoothing"
+      ]
+    },
+    {
+      "run_id": "wide_combined",
+      "validation_accuracy": 0.9558,
+      "validation_ce": 0.225882080078125,
+      "changed_fields": [
+        "attention",
+        "cutout",
+        "label_smoothing"
+      ]
+    },
+    {
+      "run_id": "cutmix_alpha0.5",
+      "validation_accuracy": 0.9598,
+      "validation_ce": 0.2009424318790436,
+      "changed_fields": [
+        "mix",
+        "mix_alpha"
+      ]
+    }
+  ],
+  "same_budget": 160,
+  "seed": 42,
+  "split": "same5k validation",
+  "negative_results_retained": true,
+  "not_course_scores": true
+}

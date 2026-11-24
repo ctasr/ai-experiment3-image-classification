@@ -1,0 +1,8 @@
+{
+  "accuracy_delta": 0.0008000000000000229,
+  "NLL_delta": 0.017956499261848863,
+  "raw_train_val_gap_delta": -0.0010444444444445145,
+  "routeA": false,
+  "routeB": false,
+  "supported": false
+}

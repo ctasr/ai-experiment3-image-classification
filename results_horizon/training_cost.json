@@ -1,0 +1,172 @@
+{
+  "horizon240": [
+    {
+      "run_id": "horizon240_seed42",
+      "seed": 42,
+      "epochs": 240,
+      "training_image_exposures": 10800000.0,
+      "validation_image_evaluations": 1200000.0,
+      "unique_train_samples": 45000,
+      "unique_validation_samples": 5000,
+      "validation_checkpoint_opportunities": 240,
+      "total_recorded_seconds": 4609.5,
+      "median_epoch_seconds": 19.25,
+      "min_epoch_seconds": 17.530999999959022,
+      "max_epoch_seconds": 39.46899999992456,
+      "epochs_above_60_seconds": [],
+      "peak_memory": {
+        "peak_allocated_bytes": 760174080,
+        "peak_reserved_bytes": 834666496,
+        "width": 48,
+        "parameters": 2436346,
+        "note": "本进程训练峰值，含固定教师，不等于学生推理占用；轮次计时保留原值，长暂停不当纯GPU时间"
+      },
+      "teacher_forwards_per_image": 4,
+      "note": "记录全部墙钟时间/暂停，不剔除长轮次；非纯GPU秒/部署延迟。曝光/验证次数不是独立新样本，额外50%步数和更多选点机会必须披露。"
+    },
+    {
+      "run_id": "repeat_horizon240_seed17",
+      "seed": 17,
+      "epochs": 240,
+      "training_image_exposures": 10800000.0,
+      "validation_image_evaluations": 1200000.0,
+      "unique_train_samples": 45000,
+      "unique_validation_samples": 5000,
+      "validation_checkpoint_opportunities": 240,
+      "total_recorded_seconds": 4571.379999999423,
+      "median_epoch_seconds": 19.023500000010245,
+      "min_epoch_seconds": 17.09299999999348,
+      "max_epoch_seconds": 59.32799999997951,
+      "epochs_above_60_seconds": [],
+      "peak_memory": {
+        "peak_allocated_bytes": 760174080,
+        "peak_reserved_bytes": 834666496,
+        "width": 48,
+        "parameters": 2436346,
+        "note": "本进程训练峰值，含固定教师，不等于学生推理占用；轮次计时保留原值，长暂停不当纯GPU时间"
+      },
+      "teacher_forwards_per_image": 4,
+      "note": "记录全部墙钟时间/暂停，不剔除长轮次；非纯GPU秒/部署延迟。曝光/验证次数不是独立新样本，额外50%步数和更多选点机会必须披露。"
+    },
+    {
+      "run_id": "repeat_horizon240_seed73",
+      "seed": 73,
+      "epochs": 240,
+      "training_image_exposures": 10800000.0,
+      "validation_image_evaluations": 1200000.0,
+      "unique_train_samples": 45000,
+      "unique_validation_samples": 5000,
+      "validation_checkpoint_opportunities": 240,
+      "total_recorded_seconds": 9221.29400000081,
+      "median_epoch_seconds": 19.17200000002049,
+      "min_epoch_seconds": 17.344000000040978,
+      "max_epoch_seconds": 4613.4529999999795,
+      "epochs_above_60_seconds": [
+        {
+          "epoch": 135.0,
+          "seconds": 4613.4529999999795
+        }
+      ],
+      "peak_memory": {
+        "peak_allocated_bytes": 760174080,
+        "peak_reserved_bytes": 834666496,
+        "width": 48,
+        "parameters": 2436346,
+        "note": "本进程训练峰值，含固定教师，不等于学生推理占用；轮次计时保留原值，长暂停不当纯GPU时间"
+      },
+      "teacher_forwards_per_image": 4,
+      "note": "记录全部墙钟时间/暂停，不剔除长轮次；非纯GPU秒/部署延迟。曝光/验证次数不是独立新样本，额外50%步数和更多选点机会必须披露。"
+    }
+  ],
+  "baseline160": [
+    {
+      "run_id": "width48_seed42",
+      "seed": 42,
+      "epochs": 160,
+      "training_image_exposures": 7200000.0,
+      "validation_image_evaluations": 800000.0,
+      "unique_train_samples": 45000,
+      "unique_validation_samples": 5000,
+      "validation_checkpoint_opportunities": 160,
+      "total_recorded_seconds": 3137.4619999997085,
+      "median_epoch_seconds": 18.1875,
+      "min_epoch_seconds": 17.531000000075437,
+      "max_epoch_seconds": 86.85900000005495,
+      "epochs_above_60_seconds": [
+        {
+          "epoch": 103.0,
+          "seconds": 68.68800000008196
+        },
+        {
+          "epoch": 104.0,
+          "seconds": 72.98399999993853
+        },
+        {
+          "epoch": 105.0,
+          "seconds": 86.85900000005495
+        }
+      ],
+      "peak_memory": {
+        "peak_allocated_bytes": 760174080,
+        "peak_reserved_bytes": 834666496,
+        "width": 48,
+        "parameters": 2436346,
+        "note": "本进程训练峰值，含固定教师，不等于学生推理占用；轮次计时保留原值，长暂停不当纯GPU时间"
+      },
+      "teacher_forwards_per_image": 4,
+      "note": "记录全部墙钟时间/暂停，不剔除长轮次；非纯GPU秒/部署延迟。曝光/验证次数不是独立新样本，额外50%步数和更多选点机会必须披露。"
+    },
+    {
+      "run_id": "repeat_balance_seed17",
+      "seed": 17,
+      "epochs": 160,
+      "training_image_exposures": 7200000.0,
+      "validation_image_evaluations": 800000.0,
+      "unique_train_samples": 45000,
+      "unique_validation_samples": 5000,
+      "validation_checkpoint_opportunities": 160,
+      "total_recorded_seconds": 2982.336999999592,
+      "median_epoch_seconds": 18.851499999989755,
+      "min_epoch_seconds": 17.45299999997951,
+      "max_epoch_seconds": 20.06299999996554,
+      "epochs_above_60_seconds": [],
+      "peak_memory": {
+        "peak_allocated_bytes": 760174080,
+        "peak_reserved_bytes": 834666496,
+        "width": 48,
+        "parameters": 2436346,
+        "note": "本进程训练峰值，含固定教师，不等于学生推理占用；轮次计时保留原值，长暂停不当纯GPU时间"
+      },
+      "teacher_forwards_per_image": 4,
+      "note": "记录全部墙钟时间/暂停，不剔除长轮次；非纯GPU秒/部署延迟。曝光/验证次数不是独立新样本，额外50%步数和更多选点机会必须披露。"
+    },
+    {
+      "run_id": "repeat_balance_seed73",
+      "seed": 73,
+      "epochs": 160,
+      "training_image_exposures": 7200000.0,
+      "validation_image_evaluations": 800000.0,
+      "unique_train_samples": 45000,
+      "unique_validation_samples": 5000,
+      "validation_checkpoint_opportunities": 160,
+      "total_recorded_seconds": 2859.164999999455,
+      "median_epoch_seconds": 17.81200000003446,
+      "min_epoch_seconds": 17.17200000002049,
+      "max_epoch_seconds": 19.68700000003446,
+      "epochs_above_60_seconds": [],
+      "peak_memory": {
+        "peak_allocated_bytes": 760174080,
+        "peak_reserved_bytes": 834666496,
+        "width": 48,
+        "parameters": 2436346,
+        "note": "本进程训练峰值，含固定教师，不等于学生推理占用；轮次计时保留原值，长暂停不当纯GPU时间"
+      },
+      "teacher_forwards_per_image": 4,
+      "note": "记录全部墙钟时间/暂停，不剔除长轮次；非纯GPU秒/部署延迟。曝光/验证次数不是独立新样本，额外50%步数和更多选点机会必须披露。"
+    }
+  ],
+  "parameters_each_student": 2436346,
+  "deployment_forwards_each_student": 1,
+  "training_exposure_ratio": 1.5,
+  "schedule_and_checkpoint_opportunities_changed": true
+}

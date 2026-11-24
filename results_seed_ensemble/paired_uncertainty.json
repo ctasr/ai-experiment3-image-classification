@@ -1,0 +1,20 @@
+{
+  "ensemble_count": 1,
+  "comparisons": {
+    "student_seed42": {
+      "accuracy_difference": 0.0009,
+      "conditional_ci95": [
+        -0.0010025,
+        0.0028000000000000004
+      ]
+    },
+    "old_hybrid_seed42": {
+      "accuracy_difference": 0.001,
+      "conditional_ci95": [
+        -0.0021999999999999997,
+        0.004
+      ]
+    }
+  },
+  "interpretation": "该区间以一个固定的三成员组合为条件，刻画测试图像抽样波动；不包含成员选择、教师、重训或重复验证选型的不确定性。"
+}

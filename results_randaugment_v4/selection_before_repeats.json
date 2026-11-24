@@ -1,0 +1,58 @@
+{
+  "candidate": {
+    "state": "completed",
+    "run_id": "ra_N2_M9_seed42",
+    "config": {
+      "architecture": "resnet20",
+      "width": 48,
+      "attention": false,
+      "dropout": 0.2,
+      "augmentation": true,
+      "cutout": 0,
+      "label_smoothing": 0.0,
+      "optimizer": "sgd",
+      "learning_rate": 0.1,
+      "weight_decay": 0.0005,
+      "batch_size": 256,
+      "epochs": 240,
+      "warmup_epochs": 5,
+      "seed": 42,
+      "amp": true,
+      "patience": 0,
+      "model": "cifar",
+      "image_size": 32,
+      "mix": "cutmix",
+      "mix_alpha": 0.5,
+      "distill_alpha": 0.25,
+      "distill_temperature": 1.0,
+      "alignment": "mixed_view",
+      "randaugment": true,
+      "ra_num_ops": 2,
+      "ra_magnitude": 9,
+      "ra_bins": 31,
+      "ra_interpolation": "bilinear",
+      "ra_fill": [
+        125,
+        123,
+        114
+      ],
+      "ra_seed_tag": 58193
+    },
+    "best_validation_accuracy": 0.973,
+    "best_validation_ce": 0.17962624506950378,
+    "best_epoch": 237,
+    "epochs_completed": 240,
+    "parameters": 2436346,
+    "trainable_parameters": 2436346,
+    "training_seconds": 22512.798000000068,
+    "artifact": "runs\\randaugment_v4\\ra_N2_M9_seed42"
+  },
+  "seed42_validation_accuracy_gain": 0.0010000000000000009,
+  "seed42_hardCE_change": 0.019210973882675175,
+  "advance_to_repeats": false,
+  "rule": {
+    "validation_accuracy_gain_min": 0.001,
+    "validation_ce_change_max": 0.005
+  },
+  "role": "validationonly"
+}

@@ -1,0 +1,623 @@
+{
+  "rows": [
+    {
+      "run": "runs/cnn_confirm1_seed42",
+      "label": "基础CNN42",
+      "checkpoint": "best.pt",
+      "epoch": 154,
+      "training_sources": {
+        "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+        "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+        "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+        "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3"
+      },
+      "raw_train_eval": {
+        "samples": 45000,
+        "accuracy": 0.9792444444444445,
+        "hard_ce": 0.07685925369262696,
+        "per_class_accuracy": [
+          0.9857777777777778,
+          0.9906666666666667,
+          0.972,
+          0.9493333333333334,
+          0.9797777777777777,
+          0.96,
+          0.986,
+          0.9835555555555555,
+          0.9946666666666667,
+          0.9906666666666667
+        ]
+      },
+      "validation_eval": {
+        "samples": 5000,
+        "accuracy": 0.918,
+        "hard_ce": 0.2488390838623047,
+        "per_class_accuracy": [
+          0.938,
+          0.938,
+          0.91,
+          0.832,
+          0.902,
+          0.868,
+          0.952,
+          0.924,
+          0.958,
+          0.958
+        ]
+      },
+      "accuracy_gap_train_minus_val_pp": 6.1244444444444435,
+      "hard_ce_gap_val_minus_train": 0.17197983016967772,
+      "recorded_validation_accuracy_exact": true,
+      "weights_BN_gradients_unchanged": true
+    },
+    {
+      "run": "runs/cnn_confirm1_seed42",
+      "label": "基础CNN42",
+      "checkpoint": "last.pt",
+      "epoch": 160,
+      "training_sources": {
+        "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+        "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+        "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+        "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3"
+      },
+      "raw_train_eval": {
+        "samples": 45000,
+        "accuracy": 0.9810222222222222,
+        "hard_ce": 0.07251039945814344,
+        "per_class_accuracy": [
+          0.9891111111111112,
+          0.9911111111111112,
+          0.9713333333333334,
+          0.9575555555555556,
+          0.9835555555555555,
+          0.9635555555555556,
+          0.9864444444444445,
+          0.9853333333333333,
+          0.9931111111111111,
+          0.9891111111111112
+        ]
+      },
+      "validation_eval": {
+        "samples": 5000,
+        "accuracy": 0.9164,
+        "hard_ce": 0.24948351364135743,
+        "per_class_accuracy": [
+          0.94,
+          0.94,
+          0.902,
+          0.838,
+          0.91,
+          0.856,
+          0.948,
+          0.924,
+          0.948,
+          0.958
+        ]
+      },
+      "accuracy_gap_train_minus_val_pp": 6.462222222222225,
+      "hard_ce_gap_val_minus_train": 0.176973114183214,
+      "recorded_validation_accuracy_exact": true,
+      "weights_BN_gradients_unchanged": true
+    },
+    {
+      "run": "runs/res_confirm1_seed42",
+      "label": "基础残差42",
+      "checkpoint": "best.pt",
+      "epoch": 150,
+      "training_sources": {
+        "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+        "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+        "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+        "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3"
+      },
+      "raw_train_eval": {
+        "samples": 45000,
+        "accuracy": 0.9970666666666667,
+        "hard_ce": 0.014081703792677985,
+        "per_class_accuracy": [
+          0.9977777777777778,
+          0.9995555555555555,
+          0.9962222222222222,
+          0.9928888888888889,
+          0.9984444444444445,
+          0.9955555555555555,
+          0.9971111111111111,
+          0.996,
+          0.9986666666666667,
+          0.9984444444444445
+        ]
+      },
+      "validation_eval": {
+        "samples": 5000,
+        "accuracy": 0.9288,
+        "hard_ce": 0.25224800033569333,
+        "per_class_accuracy": [
+          0.928,
+          0.97,
+          0.9,
+          0.862,
+          0.932,
+          0.89,
+          0.932,
+          0.94,
+          0.97,
+          0.964
+        ]
+      },
+      "accuracy_gap_train_minus_val_pp": 6.82666666666667,
+      "hard_ce_gap_val_minus_train": 0.23816629654301535,
+      "recorded_validation_accuracy_exact": true,
+      "weights_BN_gradients_unchanged": true
+    },
+    {
+      "run": "runs/res_confirm1_seed42",
+      "label": "基础残差42",
+      "checkpoint": "last.pt",
+      "epoch": 160,
+      "training_sources": {
+        "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+        "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+        "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+        "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3"
+      },
+      "raw_train_eval": {
+        "samples": 45000,
+        "accuracy": 0.9982444444444445,
+        "hard_ce": 0.010465867000155978,
+        "per_class_accuracy": [
+          0.9984444444444445,
+          0.9993333333333333,
+          0.9982222222222222,
+          0.9971111111111111,
+          0.9982222222222222,
+          0.9973333333333333,
+          0.9975555555555555,
+          0.9984444444444445,
+          0.9988888888888889,
+          0.9988888888888889
+        ]
+      },
+      "validation_eval": {
+        "samples": 5000,
+        "accuracy": 0.9278,
+        "hard_ce": 0.24846965599060059,
+        "per_class_accuracy": [
+          0.936,
+          0.954,
+          0.908,
+          0.864,
+          0.928,
+          0.888,
+          0.936,
+          0.94,
+          0.962,
+          0.962
+        ]
+      },
+      "accuracy_gap_train_minus_val_pp": 7.044444444444453,
+      "hard_ce_gap_val_minus_train": 0.2380037889904446,
+      "recorded_validation_accuracy_exact": true,
+      "weights_BN_gradients_unchanged": true
+    },
+    {
+      "run": "runs/horizon/horizon240_seed42",
+      "label": "最终KD42",
+      "checkpoint": "best.pt",
+      "epoch": 234,
+      "training_sources": {
+        "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+        "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+        "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+        "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+        "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+        "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+        "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+        "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+        "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+        "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+        "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+        "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea"
+      },
+      "raw_train_eval": {
+        "samples": 45000,
+        "accuracy": 0.9999555555555556,
+        "hard_ce": 0.07398695273929172,
+        "per_class_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9997777777777778,
+          0.9997777777777778,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "validation_eval": {
+        "samples": 5000,
+        "accuracy": 0.972,
+        "hard_ce": 0.16041446838378906,
+        "per_class_accuracy": [
+          0.98,
+          0.98,
+          0.966,
+          0.932,
+          0.976,
+          0.946,
+          0.986,
+          0.98,
+          0.992,
+          0.982
+        ]
+      },
+      "accuracy_gap_train_minus_val_pp": 2.7955555555555622,
+      "hard_ce_gap_val_minus_train": 0.08642751564449734,
+      "recorded_validation_accuracy_exact": true,
+      "weights_BN_gradients_unchanged": true
+    },
+    {
+      "run": "runs/horizon/horizon240_seed42",
+      "label": "最终KD42",
+      "checkpoint": "last.pt",
+      "epoch": 240,
+      "training_sources": {
+        "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+        "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+        "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+        "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+        "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+        "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+        "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+        "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+        "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+        "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+        "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+        "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea"
+      },
+      "raw_train_eval": {
+        "samples": 45000,
+        "accuracy": 0.9999777777777777,
+        "hard_ce": 0.08085316323174371,
+        "per_class_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9997777777777778,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "validation_eval": {
+        "samples": 5000,
+        "accuracy": 0.9714,
+        "hard_ce": 0.16724951324462892,
+        "per_class_accuracy": [
+          0.978,
+          0.98,
+          0.968,
+          0.934,
+          0.976,
+          0.948,
+          0.986,
+          0.98,
+          0.982,
+          0.982
+        ]
+      },
+      "accuracy_gap_train_minus_val_pp": 2.85777777777777,
+      "hard_ce_gap_val_minus_train": 0.0863963500128852,
+      "recorded_validation_accuracy_exact": true,
+      "weights_BN_gradients_unchanged": true
+    },
+    {
+      "run": "runs/horizon/repeat_horizon240_seed17",
+      "label": "最终KD17",
+      "checkpoint": "best.pt",
+      "epoch": 231,
+      "training_sources": {
+        "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+        "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+        "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+        "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+        "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+        "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+        "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+        "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+        "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+        "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+        "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+        "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea"
+      },
+      "raw_train_eval": {
+        "samples": 45000,
+        "accuracy": 0.9999777777777777,
+        "hard_ce": 0.09073305490281847,
+        "per_class_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9997777777777778,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "validation_eval": {
+        "samples": 5000,
+        "accuracy": 0.9708,
+        "hard_ce": 0.1779865676879883,
+        "per_class_accuracy": [
+          0.978,
+          0.978,
+          0.958,
+          0.948,
+          0.97,
+          0.928,
+          0.988,
+          0.982,
+          0.99,
+          0.988
+        ]
+      },
+      "accuracy_gap_train_minus_val_pp": 2.9177777777777747,
+      "hard_ce_gap_val_minus_train": 0.08725351278516982,
+      "recorded_validation_accuracy_exact": true,
+      "weights_BN_gradients_unchanged": true
+    },
+    {
+      "run": "runs/horizon/repeat_horizon240_seed17",
+      "label": "最终KD17",
+      "checkpoint": "last.pt",
+      "epoch": 240,
+      "training_sources": {
+        "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+        "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+        "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+        "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+        "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+        "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+        "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+        "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+        "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+        "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+        "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+        "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea"
+      },
+      "raw_train_eval": {
+        "samples": 45000,
+        "accuracy": 0.9999777777777777,
+        "hard_ce": 0.0822203918033176,
+        "per_class_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9997777777777778,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "validation_eval": {
+        "samples": 5000,
+        "accuracy": 0.9684,
+        "hard_ce": 0.16935829277038575,
+        "per_class_accuracy": [
+          0.976,
+          0.974,
+          0.954,
+          0.94,
+          0.968,
+          0.926,
+          0.984,
+          0.984,
+          0.99,
+          0.988
+        ]
+      },
+      "accuracy_gap_train_minus_val_pp": 3.1577777777777705,
+      "hard_ce_gap_val_minus_train": 0.08713790096706815,
+      "recorded_validation_accuracy_exact": true,
+      "weights_BN_gradients_unchanged": true
+    },
+    {
+      "run": "runs/horizon/repeat_horizon240_seed73",
+      "label": "最终KD73",
+      "checkpoint": "best.pt",
+      "epoch": 230,
+      "training_sources": {
+        "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+        "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+        "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+        "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+        "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+        "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+        "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+        "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+        "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+        "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+        "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+        "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea"
+      },
+      "raw_train_eval": {
+        "samples": 45000,
+        "accuracy": 0.9999777777777777,
+        "hard_ce": 0.08271305109659831,
+        "per_class_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9997777777777778,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "validation_eval": {
+        "samples": 5000,
+        "accuracy": 0.9728,
+        "hard_ce": 0.16795395431518556,
+        "per_class_accuracy": [
+          0.982,
+          0.99,
+          0.96,
+          0.944,
+          0.97,
+          0.94,
+          0.986,
+          0.98,
+          0.988,
+          0.988
+        ]
+      },
+      "accuracy_gap_train_minus_val_pp": 2.7177777777777745,
+      "hard_ce_gap_val_minus_train": 0.08524090321858725,
+      "recorded_validation_accuracy_exact": true,
+      "weights_BN_gradients_unchanged": true
+    },
+    {
+      "run": "runs/horizon/repeat_horizon240_seed73",
+      "label": "最终KD73",
+      "checkpoint": "last.pt",
+      "epoch": 240,
+      "training_sources": {
+        "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+        "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+        "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+        "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+        "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+        "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+        "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+        "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+        "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+        "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+        "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+        "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea"
+      },
+      "raw_train_eval": {
+        "samples": 45000,
+        "accuracy": 0.9999777777777777,
+        "hard_ce": 0.09280665859646267,
+        "per_class_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9997777777777778,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "validation_eval": {
+        "samples": 5000,
+        "accuracy": 0.9722,
+        "hard_ce": 0.17797325744628906,
+        "per_class_accuracy": [
+          0.982,
+          0.99,
+          0.97,
+          0.938,
+          0.968,
+          0.942,
+          0.986,
+          0.978,
+          0.982,
+          0.986
+        ]
+      },
+      "accuracy_gap_train_minus_val_pp": 2.777777777777779,
+      "hard_ce_gap_val_minus_train": 0.08516659884982639,
+      "recorded_validation_accuracy_exact": true,
+      "weights_BN_gradients_unchanged": true
+    }
+  ],
+  "tail40_summaries": [
+    {
+      "run": "runs/cnn_confirm1_seed42",
+      "window_epochs": [
+        121.0,
+        160.0
+      ],
+      "validation_ce_first10_mean": 0.4271218996572495,
+      "validation_ce_last10_mean": 0.25175897264003755,
+      "validation_accuracy_first10_mean": 0.8596,
+      "validation_accuracy_last10_mean": 0.9151199999999999,
+      "actual_training_objective_first10_mean": 0.2665215340701739,
+      "actual_training_objective_last10_mean": 0.11603819047000674
+    },
+    {
+      "run": "runs/res_confirm1_seed42",
+      "window_epochs": [
+        121.0,
+        160.0
+      ],
+      "validation_ce_first10_mean": 0.3582341339445114,
+      "validation_ce_last10_mean": 0.24809925750970838,
+      "validation_accuracy_first10_mean": 0.8875,
+      "validation_accuracy_last10_mean": 0.92712,
+      "actual_training_objective_first10_mean": 0.1565837963324123,
+      "actual_training_objective_last10_mean": 0.02209193598666125
+    },
+    {
+      "run": "runs/horizon/horizon240_seed42",
+      "window_epochs": [
+        201.0,
+        240.0
+      ],
+      "validation_ce_first10_mean": 0.18914088747262955,
+      "validation_ce_last10_mean": 0.1641971008729935,
+      "validation_accuracy_first10_mean": 0.9644999999999999,
+      "validation_accuracy_last10_mean": 0.9713200000000001,
+      "actual_training_objective_first10_mean": 0.5417762111939325,
+      "actual_training_objective_last10_mean": 0.5208652946877479
+    },
+    {
+      "run": "runs/horizon/repeat_horizon240_seed17",
+      "window_epochs": [
+        201.0,
+        240.0
+      ],
+      "validation_ce_first10_mean": 0.18894931639432905,
+      "validation_ce_last10_mean": 0.17015764652967452,
+      "validation_accuracy_first10_mean": 0.9647600000000001,
+      "validation_accuracy_last10_mean": 0.9693000000000002,
+      "actual_training_objective_first10_mean": 0.5373247072768211,
+      "actual_training_objective_last10_mean": 0.5168320758628845
+    },
+    {
+      "run": "runs/horizon/repeat_horizon240_seed73",
+      "window_epochs": [
+        201.0,
+        240.0
+      ],
+      "validation_ce_first10_mean": 0.18752180913209915,
+      "validation_ce_last10_mean": 0.16767742918252942,
+      "validation_accuracy_first10_mean": 0.96674,
+      "validation_accuracy_last10_mean": 0.9717400000000002,
+      "actual_training_objective_first10_mean": 0.5423245087505711,
+      "actual_training_objective_last10_mean": 0.5211289811066123
+    }
+  ],
+  "scope": "Only the best and last checkpoints have raw-training evaluation snapshots. Fitting analysis uses same-scale train/validation gaps, complete validation curves and the final 40-epoch trends.",
+  "automatic_overfit_underfit_labels": false,
+  "no_claim_of_zero_generalization_gap": true,
+  "warning": "Augmented/mixed-label training accuracy and optimization loss are different quantities from raw eval accuracy/hardCE. Clean train snapshots are diagnostics after training, not unbiased generalization estimates or new tuning data."
+}

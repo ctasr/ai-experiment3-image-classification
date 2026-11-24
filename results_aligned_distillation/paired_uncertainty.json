@@ -1,0 +1,21 @@
+{
+  "accuracy_difference": 0.002,
+  "conditional_ci95": [
+    -0.00016666666666666666,
+    0.004101666666666666
+  ],
+  "bootstrap_repetitions": 1000,
+  "seed": 42,
+  "method": "同一测试图配对，先平均三组固定模型正确性差，再按10类各1000张做分层bootstrap",
+  "interpretation": "区间仅刻画给定三组固定模型后的测试样本组成波动，不含重训、划分、反复验证选型或调参不确定性。",
+  "training_seed_uncertainty": {
+    "student": {
+      "accuracy_mean": 0.9547,
+      "accuracy_std": 0.0017349351572897257
+    },
+    "baseline": {
+      "accuracy_mean": 0.9527,
+      "accuracy_std": 0.0019000000000000215
+    }
+  }
+}

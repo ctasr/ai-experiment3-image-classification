@@ -1,0 +1,5 @@
+﻿run_id,alignment,seed,validation_accuracy,validation_ce,epochs
+aligned_crop_mix_seed42,crop_mix,42,0.96,0.21638857438564302,160
+aligned_mixed_view_seed42,mixed_view,42,0.9644,0.209695263504982,160
+repeat_mixed_view_seed17,mixed_view,17,0.9634,0.19414899904727936,160
+repeat_mixed_view_seed73,mixed_view,73,0.9608,0.2181584961414337,160

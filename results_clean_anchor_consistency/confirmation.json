@@ -1,0 +1,49 @@
+{
+  "supported": false,
+  "decisions": [
+    {
+      "seed": 42,
+      "accuracy_deltas": {
+        "clean": 0.0010000000000000009,
+        "noise_sd8": 0.22660000000000002,
+        "blur_k3_sd06": 0.00660000000000005,
+        "jpeg_q80": 0.01200000000000001
+      },
+      "clean_q_NLL_delta": -0.0034896734431522913,
+      "supported": true,
+      "rule": "noisyaccuracy+5pp; cleanaccuracy>=-0.10pp; cleanqNLL<=+.01; blur/JPEG each>=-0.50pp, practical screen not statistical noninferiority"
+    },
+    {
+      "seed": 17,
+      "accuracy_deltas": {
+        "clean": -0.0021999999999999797,
+        "noise_sd8": 0.23139999999999994,
+        "blur_k3_sd06": 0.005800000000000027,
+        "jpeg_q80": 0.020000000000000018
+      },
+      "clean_q_NLL_delta": -0.03040458538208088,
+      "supported": false,
+      "rule": "noisyaccuracy+5pp; cleanaccuracy>=-0.10pp; cleanqNLL<=+.01; blur/JPEG each>=-0.50pp, practical screen not statistical noninferiority"
+    },
+    {
+      "seed": 73,
+      "accuracy_deltas": {
+        "clean": -0.0034000000000000696,
+        "noise_sd8": 0.23099999999999998,
+        "blur_k3_sd06": -0.010600000000000054,
+        "jpeg_q80": 0.0038000000000000256
+      },
+      "clean_q_NLL_delta": -0.020673461204732874,
+      "supported": false,
+      "rule": "noisyaccuracy+5pp; cleanaccuracy>=-0.10pp; cleanqNLL<=+.01; blur/JPEG each>=-0.50pp, practical screen not statistical noninferiority"
+    }
+  ],
+  "mean_accuracy_deltas": {
+    "clean": -0.0015333333333333494,
+    "noise_sd8": 0.22966666666666666,
+    "blur_k3_sd06": 0.000600000000000008,
+    "jpeg_q80": 0.011933333333333351
+  },
+  "mean_clean_q_NLL_delta": -0.018189240009988682,
+  "practical_gate_not_significance": true
+}

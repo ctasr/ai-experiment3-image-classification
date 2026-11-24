@@ -1,0 +1,93 @@
+{
+  "state": "completed",
+  "at_utc": "2026-11-09T13:45:09.864750+00:00",
+  "rows": [
+    {
+      "seed": 42,
+      "run_id": "horizon240_seed42",
+      "patience": 20,
+      "stop_epoch": 240,
+      "selected_epoch": 234,
+      "validation_accuracy": 0.972,
+      "accuracy_difference_from_full": 0.0,
+      "counterfactual_epochs_saved": 0,
+      "counterfactual_original_log_seconds_after_stop": 0,
+      "actual_early_stop_training": false
+    },
+    {
+      "seed": 42,
+      "run_id": "horizon240_seed42",
+      "patience": 40,
+      "stop_epoch": 240,
+      "selected_epoch": 234,
+      "validation_accuracy": 0.972,
+      "accuracy_difference_from_full": 0.0,
+      "counterfactual_epochs_saved": 0,
+      "counterfactual_original_log_seconds_after_stop": 0,
+      "actual_early_stop_training": false
+    },
+    {
+      "seed": 17,
+      "run_id": "repeat_horizon240_seed17",
+      "patience": 20,
+      "stop_epoch": 95,
+      "selected_epoch": 75,
+      "validation_accuracy": 0.9238,
+      "accuracy_difference_from_full": -0.04700000000000004,
+      "counterfactual_epochs_saved": 145,
+      "counterfactual_original_log_seconds_after_stop": 2755.56699999969,
+      "actual_early_stop_training": false
+    },
+    {
+      "seed": 17,
+      "run_id": "repeat_horizon240_seed17",
+      "patience": 40,
+      "stop_epoch": 115,
+      "selected_epoch": 75,
+      "validation_accuracy": 0.9238,
+      "accuracy_difference_from_full": -0.04700000000000004,
+      "counterfactual_epochs_saved": 125,
+      "counterfactual_original_log_seconds_after_stop": 2370.2229999998817,
+      "actual_early_stop_training": false
+    },
+    {
+      "seed": 73,
+      "run_id": "repeat_horizon240_seed73",
+      "patience": 20,
+      "stop_epoch": 116,
+      "selected_epoch": 96,
+      "validation_accuracy": 0.9284,
+      "accuracy_difference_from_full": -0.044399999999999995,
+      "counterfactual_epochs_saved": 124,
+      "counterfactual_original_log_seconds_after_stop": 6955.876999999979,
+      "actual_early_stop_training": false
+    },
+    {
+      "seed": 73,
+      "run_id": "repeat_horizon240_seed73",
+      "patience": 40,
+      "stop_epoch": 240,
+      "selected_epoch": 230,
+      "validation_accuracy": 0.9728,
+      "accuracy_difference_from_full": 0.0,
+      "counterfactual_epochs_saved": 0,
+      "counterfactual_original_log_seconds_after_stop": 0,
+      "actual_early_stop_training": false
+    }
+  ],
+  "old_inputs_unchanged": true,
+  "input_sha256": {
+    "runs\\horizon\\horizon240_seed42\\history.csv": "0e8d0ecfb1639c9e74f50a35b19308d67098a93b32d9b374228b9f9131c2db91",
+    "runs\\horizon\\repeat_horizon240_seed17\\history.csv": "b472bab0fd87f304f5efe3b0dfb4e329fb186731f3c0786bc6e7d93e9ecffb99",
+    "runs\\horizon\\repeat_horizon240_seed73\\history.csv": "c6c684daf708c5777e4dd1a68dd87294cea2b37c3706710e8abcb65077ffc005",
+    "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+    "extensions\\train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+    "results\\early_stopping_replay.json": "a096166ce6521169b5fc58f119b67a901f7e9209bf9224f6fe3eeb782970dacc"
+  },
+  "extension_engine_implements_live_early_stop": false,
+  "scope": "The base train.py implements live early stopping; the final KD engine extensions/train.py does not use its patience field. All formal configurations here have patience=0, so this analysis is an offline replay of existing validation curves, not actual early-stop training.",
+  "independent_confirmation": false,
+  "actual_early_stop_formal_runs": 0,
+  "new_training": 0,
+  "new_test_inference": 0
+}

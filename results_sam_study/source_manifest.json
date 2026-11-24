@@ -1,0 +1,18 @@
+{
+  "source_sha256": {
+    "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+    "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+    "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+    "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+    "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+    "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+    "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+    "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+    "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+    "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+    "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+    "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea",
+    "sam_study/train.py": "5d3b3c10fb244ceaa706a24f8adb32e408e6e2805734c3c4f17c90233fac1156"
+  },
+  "plan_sha256": "7bd92c075d873aba9f880a2ae2e09fef2da21f8f34ed60121ce9a3394f7dbb0e"
+}

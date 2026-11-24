@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "accuracy_deltas": {
+    "clean": 0.0010000000000000009,
+    "noise_sd8": 0.22660000000000002,
+    "blur_k3_sd06": 0.00660000000000005,
+    "jpeg_q80": 0.01200000000000001
+  },
+  "clean_q_NLL_delta": -0.0034896734431522913,
+  "supported": true,
+  "rule": "noisyaccuracy+5pp; cleanaccuracy>=-0.10pp; cleanqNLL<=+.01; blur/JPEG each>=-0.50pp, practical screen not statistical noninferiority"
+}

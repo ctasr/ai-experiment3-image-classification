@@ -1,0 +1,95 @@
+{
+  "cells": {
+    "CE160": {
+      "test_mean_percent": 95.88,
+      "test_sample_std_pp": 0.13000000000000092,
+      "validation_mean_percent": 96.74,
+      "median_of_seed_epoch_medians_wall_seconds": 9.187999999965541
+    },
+    "KD160": {
+      "test_mean_percent": 96.16666666666667,
+      "test_sample_std_pp": 0.055075705472860816,
+      "validation_mean_percent": 96.90666666666668,
+      "median_of_seed_epoch_medians_wall_seconds": 18.1875
+    },
+    "CE240": {
+      "test_mean_percent": 96.17333333333333,
+      "test_sample_std_pp": 0.18147543451754558,
+      "validation_mean_percent": 96.89333333333333,
+      "median_of_seed_epoch_medians_wall_seconds": 8.936999999976251
+    },
+    "KD240": {
+      "test_mean_percent": 96.43999999999998,
+      "test_sample_std_pp": 0.04358898943540784,
+      "validation_mean_percent": 97.18666666666667,
+      "median_of_seed_epoch_medians_wall_seconds": 19.17200000002049
+    }
+  },
+  "effects": [
+    {
+      "effect": "KD160",
+      "mean_pp": 0.2866666666666667,
+      "seed42_pp": 0.41000000000000003,
+      "seed17_pp": 0.08,
+      "seed73_pp": 0.37,
+      "seed_sample_std_pp": 0.18009256878986799,
+      "conditional_image_ci_low_pp": 0.07649999999999955,
+      "conditional_image_ci_high_pp": 0.496666666666667
+    },
+    {
+      "effect": "KD240",
+      "mean_pp": 0.26666666666666666,
+      "seed42_pp": 0.38,
+      "seed17_pp": 0.11,
+      "seed73_pp": 0.31,
+      "seed_sample_std_pp": 0.14011899704655803,
+      "conditional_image_ci_low_pp": 0.06324999999999989,
+      "conditional_image_ci_high_pp": 0.4633333333333335
+    },
+    {
+      "effect": "budget_CE",
+      "mean_pp": 0.2933333333333334,
+      "seed42_pp": 0.22999999999999998,
+      "seed17_pp": 0.35000000000000003,
+      "seed73_pp": 0.3,
+      "seed_sample_std_pp": 0.060277137733417106,
+      "conditional_image_ci_low_pp": 0.10324999999999981,
+      "conditional_image_ci_high_pp": 0.49999999999999994
+    },
+    {
+      "effect": "budget_KD",
+      "mean_pp": 0.2733333333333334,
+      "seed42_pp": 0.2,
+      "seed17_pp": 0.38,
+      "seed73_pp": 0.24,
+      "seed_sample_std_pp": 0.09451631252505216,
+      "conditional_image_ci_low_pp": 0.08974999999999994,
+      "conditional_image_ci_high_pp": 0.4633333333333332
+    },
+    {
+      "effect": "interaction",
+      "mean_pp": -0.02,
+      "seed42_pp": -0.03,
+      "seed17_pp": 0.03,
+      "seed73_pp": -0.06,
+      "seed_sample_std_pp": 0.0458257569495584,
+      "conditional_image_ci_low_pp": -0.30675000000000036,
+      "conditional_image_ci_high_pp": 0.273333333333333
+    }
+  ],
+  "plan_limits": [
+    "Epoch factor changes optimizer steps, cosine horizon and validation checkpoint opportunities jointly.",
+    "KD factor changes hard CE coefficient and adds fixed teacher KL including indirect ImageNet knowledge; not pure ImageNet intervention.",
+    "All three pre-existing seeds retained; no candidate search, routing, weighting or new tuning.",
+    "Median epoch wall time is not pure GPU time; original seconds and long pauses remain."
+  ],
+  "interval_scope": {
+    "bootstrap": 1000,
+    "seed": 42,
+    "scheme": "same class-stratified paired test-image indices across all 12 frozen models",
+    "scope": "conditional on these fixed models and prior selections; not training, model-selection or teacher uncertainty; no multiplicity adjustment"
+  },
+  "new_training": 0,
+  "new_inference": 0,
+  "new_temperature_fits": 0
+}

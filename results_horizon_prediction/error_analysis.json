@@ -1,0 +1,437 @@
+{
+  "rows": [
+    {
+      "seed": 42,
+      "corrected": 73,
+      "regressed": 31,
+      "still_wrong": 285,
+      "corrected_first6": [
+        78,
+        118,
+        125,
+        232,
+        458,
+        916
+      ],
+      "regressed_first6": [
+        61,
+        213,
+        1088,
+        1236,
+        1391,
+        1399
+      ],
+      "high_confidence_errors": [
+        {
+          "index": 4740,
+          "true": 5,
+          "prediction": 3,
+          "confidence": 0.936819851398468
+        },
+        {
+          "index": 2405,
+          "true": 3,
+          "prediction": 6,
+          "confidence": 0.9358987808227539
+        },
+        {
+          "index": 1718,
+          "true": 0,
+          "prediction": 8,
+          "confidence": 0.9320108294487
+        },
+        {
+          "index": 2854,
+          "true": 9,
+          "prediction": 1,
+          "confidence": 0.9310443997383118
+        },
+        {
+          "index": 4286,
+          "true": 2,
+          "prediction": 0,
+          "confidence": 0.9288707077503204
+        },
+        {
+          "index": 275,
+          "true": 5,
+          "prediction": 3,
+          "confidence": 0.9260386228561401
+        },
+        {
+          "index": 2804,
+          "true": 3,
+          "prediction": 5,
+          "confidence": 0.9243361353874207
+        },
+        {
+          "index": 7099,
+          "true": 3,
+          "prediction": 5,
+          "confidence": 0.9215188920497894
+        },
+        {
+          "index": 4276,
+          "true": 9,
+          "prediction": 1,
+          "confidence": 0.9206753969192505
+        },
+        {
+          "index": 4794,
+          "true": 4,
+          "prediction": 2,
+          "confidence": 0.9177045524120331
+        },
+        {
+          "index": 1506,
+          "true": 5,
+          "prediction": 7,
+          "confidence": 0.9159619808197021
+        },
+        {
+          "index": 7311,
+          "true": 1,
+          "prediction": 9,
+          "confidence": 0.9149210751056671
+        },
+        {
+          "index": 5548,
+          "true": 8,
+          "prediction": 0,
+          "confidence": 0.9148075878620148
+        },
+        {
+          "index": 8236,
+          "true": 5,
+          "prediction": 3,
+          "confidence": 0.9146024286746979
+        },
+        {
+          "index": 4614,
+          "true": 3,
+          "prediction": 5,
+          "confidence": 0.9134492576122284
+        },
+        {
+          "index": 9227,
+          "true": 1,
+          "prediction": 9,
+          "confidence": 0.913302093744278
+        },
+        {
+          "index": 3514,
+          "true": 2,
+          "prediction": 3,
+          "confidence": 0.9125216603279114
+        },
+        {
+          "index": 9819,
+          "true": 3,
+          "prediction": 5,
+          "confidence": 0.9104222655296326
+        },
+        {
+          "index": 7408,
+          "true": 4,
+          "prediction": 3,
+          "confidence": 0.9081297218799591
+        },
+        {
+          "index": 1685,
+          "true": 8,
+          "prediction": 2,
+          "confidence": 0.904217392206192
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "corrected": 68,
+      "regressed": 50,
+      "still_wrong": 283,
+      "corrected_first6": [
+        37,
+        127,
+        385,
+        412,
+        531,
+        577
+      ],
+      "regressed_first6": [
+        165,
+        201,
+        224,
+        776,
+        1090,
+        1230
+      ],
+      "high_confidence_errors": [
+        {
+          "index": 7408,
+          "true": 4,
+          "prediction": 3,
+          "confidence": 0.9281240701675415
+        },
+        {
+          "index": 2405,
+          "true": 3,
+          "prediction": 6,
+          "confidence": 0.9262494146823883
+        },
+        {
+          "index": 2804,
+          "true": 3,
+          "prediction": 5,
+          "confidence": 0.9210194051265717
+        },
+        {
+          "index": 1969,
+          "true": 1,
+          "prediction": 9,
+          "confidence": 0.9177488386631012
+        },
+        {
+          "index": 4275,
+          "true": 5,
+          "prediction": 3,
+          "confidence": 0.9159883558750153
+        },
+        {
+          "index": 4931,
+          "true": 9,
+          "prediction": 1,
+          "confidence": 0.9132291972637177
+        },
+        {
+          "index": 4740,
+          "true": 5,
+          "prediction": 3,
+          "confidence": 0.9124077260494232
+        },
+        {
+          "index": 378,
+          "true": 0,
+          "prediction": 8,
+          "confidence": 0.9123088717460632
+        },
+        {
+          "index": 9227,
+          "true": 1,
+          "prediction": 9,
+          "confidence": 0.9121484458446503
+        },
+        {
+          "index": 6646,
+          "true": 5,
+          "prediction": 3,
+          "confidence": 0.9113927483558655
+        },
+        {
+          "index": 5426,
+          "true": 5,
+          "prediction": 3,
+          "confidence": 0.9108529984951019
+        },
+        {
+          "index": 8014,
+          "true": 2,
+          "prediction": 3,
+          "confidence": 0.9067469537258148
+        },
+        {
+          "index": 1685,
+          "true": 8,
+          "prediction": 2,
+          "confidence": 0.9032576978206635
+        },
+        {
+          "index": 4965,
+          "true": 3,
+          "prediction": 4,
+          "confidence": 0.9021112024784088
+        },
+        {
+          "index": 811,
+          "true": 3,
+          "prediction": 5,
+          "confidence": 0.8975233137607574
+        },
+        {
+          "index": 5881,
+          "true": 3,
+          "prediction": 5,
+          "confidence": 0.8955700099468231
+        },
+        {
+          "index": 5548,
+          "true": 8,
+          "prediction": 0,
+          "confidence": 0.8938765525817871
+        },
+        {
+          "index": 7099,
+          "true": 3,
+          "prediction": 5,
+          "confidence": 0.8912172615528107
+        },
+        {
+          "index": 7311,
+          "true": 1,
+          "prediction": 9,
+          "confidence": 0.8902649581432343
+        },
+        {
+          "index": 2165,
+          "true": 2,
+          "prediction": 0,
+          "confidence": 0.884423166513443
+        }
+      ]
+    },
+    {
+      "seed": 73,
+      "corrected": 70,
+      "regressed": 49,
+      "still_wrong": 289,
+      "corrected_first6": [
+        15,
+        224,
+        850,
+        1074,
+        1118,
+        1321
+      ],
+      "regressed_first6": [
+        47,
+        456,
+        483,
+        598,
+        640,
+        692
+      ],
+      "high_confidence_errors": [
+        {
+          "index": 2405,
+          "true": 3,
+          "prediction": 6,
+          "confidence": 0.9402607679367065
+        },
+        {
+          "index": 7892,
+          "true": 1,
+          "prediction": 9,
+          "confidence": 0.9201101064682007
+        },
+        {
+          "index": 9227,
+          "true": 1,
+          "prediction": 9,
+          "confidence": 0.9198388755321503
+        },
+        {
+          "index": 5548,
+          "true": 8,
+          "prediction": 0,
+          "confidence": 0.9194516837596893
+        },
+        {
+          "index": 5511,
+          "true": 3,
+          "prediction": 6,
+          "confidence": 0.9157209098339081
+        },
+        {
+          "index": 7657,
+          "true": 2,
+          "prediction": 5,
+          "confidence": 0.9147148430347443
+        },
+        {
+          "index": 61,
+          "true": 3,
+          "prediction": 5,
+          "confidence": 0.9122817516326904
+        },
+        {
+          "index": 1732,
+          "true": 9,
+          "prediction": 1,
+          "confidence": 0.91019606590271
+        },
+        {
+          "index": 7107,
+          "true": 2,
+          "prediction": 6,
+          "confidence": 0.9100756645202637
+        },
+        {
+          "index": 9819,
+          "true": 3,
+          "prediction": 5,
+          "confidence": 0.9097850620746613
+        },
+        {
+          "index": 1969,
+          "true": 1,
+          "prediction": 9,
+          "confidence": 0.9094246327877045
+        },
+        {
+          "index": 7408,
+          "true": 4,
+          "prediction": 3,
+          "confidence": 0.909076601266861
+        },
+        {
+          "index": 4740,
+          "true": 5,
+          "prediction": 3,
+          "confidence": 0.9087414443492889
+        },
+        {
+          "index": 7311,
+          "true": 1,
+          "prediction": 9,
+          "confidence": 0.9085261523723602
+        },
+        {
+          "index": 2495,
+          "true": 9,
+          "prediction": 8,
+          "confidence": 0.9070346355438232
+        },
+        {
+          "index": 7099,
+          "true": 3,
+          "prediction": 5,
+          "confidence": 0.906830370426178
+        },
+        {
+          "index": 1506,
+          "true": 5,
+          "prediction": 7,
+          "confidence": 0.9060362875461578
+        },
+        {
+          "index": 5416,
+          "true": 9,
+          "prediction": 1,
+          "confidence": 0.8966255486011505
+        },
+        {
+          "index": 6068,
+          "true": 5,
+          "prediction": 3,
+          "confidence": 0.8964261114597321
+        },
+        {
+          "index": 7005,
+          "true": 1,
+          "prediction": 9,
+          "confidence": 0.8953210711479187
+        }
+      ]
+    }
+  ],
+  "selection": "锁定后按原测试索引固定选前6纠正/新增错误，不据测试改策略"
+}

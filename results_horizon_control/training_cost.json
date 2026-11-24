@@ -1,0 +1,138 @@
+{
+  "controls": [
+    {
+      "run_id": "horizon240_no_kd_seed42",
+      "seed": 42,
+      "recorded_total_seconds": 2170.318000000203,
+      "median_epoch_seconds": 9.031000000075437,
+      "min_epoch_seconds": 8.812999999965541,
+      "max_epoch_seconds": 9.797000000020489,
+      "epochs_above_60_seconds": [],
+      "peak_memory": {
+        "peak_allocated_bytes": 709017088,
+        "peak_reserved_bytes": 767557632,
+        "width": 48,
+        "parameters": 2436346,
+        "note": "本进程纯监督训练峰值，无教师目标或教师模型；runtime_capacity原通用注释描述潜在协议，不代表实际教师存在。所有墙钟/暂停保留。",
+        "actual_teacher_loaded": false,
+        "actual_external_ImageNet_knowledge_used": false
+      },
+      "interpretation": "保留全部原始墙钟计时；阈值仅标记长轮次，不剔除，暂停与系统负载不能视为纯GPU计算。峰值为对应训练进程，KD含教师，控制不含教师。"
+    },
+    {
+      "run_id": "horizon240_no_kd_seed17",
+      "seed": 17,
+      "recorded_total_seconds": 2159.6739999995334,
+      "median_epoch_seconds": 8.936999999976251,
+      "min_epoch_seconds": 8.718999999924563,
+      "max_epoch_seconds": 11.766000000061467,
+      "epochs_above_60_seconds": [],
+      "peak_memory": {
+        "peak_allocated_bytes": 709017088,
+        "peak_reserved_bytes": 767557632,
+        "width": 48,
+        "parameters": 2436346,
+        "note": "本进程纯监督训练峰值，无教师目标或教师模型；runtime_capacity原通用注释描述潜在协议，不代表实际教师存在。所有墙钟/暂停保留。",
+        "actual_teacher_loaded": false,
+        "actual_external_ImageNet_knowledge_used": false
+      },
+      "interpretation": "保留全部原始墙钟计时；阈值仅标记长轮次，不剔除，暂停与系统负载不能视为纯GPU计算。峰值为对应训练进程，KD含教师，控制不含教师。"
+    },
+    {
+      "run_id": "horizon240_no_kd_seed73",
+      "seed": 73,
+      "recorded_total_seconds": 10506.529999999912,
+      "median_epoch_seconds": 8.936999999976251,
+      "min_epoch_seconds": 8.71799999999348,
+      "max_epoch_seconds": 6020.656000000075,
+      "epochs_above_60_seconds": [
+        {
+          "epoch": 166.0,
+          "seconds": 1872.9679999999935
+        },
+        {
+          "epoch": 238.0,
+          "seconds": 6020.656000000075
+        },
+        {
+          "epoch": 240.0,
+          "seconds": 377.23499999998603
+        }
+      ],
+      "peak_memory": {
+        "peak_allocated_bytes": 709017088,
+        "peak_reserved_bytes": 767557632,
+        "width": 48,
+        "parameters": 2436346,
+        "note": "本进程纯监督训练峰值，无教师目标或教师模型；runtime_capacity原通用注释描述潜在协议，不代表实际教师存在。所有墙钟/暂停保留。",
+        "actual_teacher_loaded": false,
+        "actual_external_ImageNet_knowledge_used": false
+      },
+      "interpretation": "保留全部原始墙钟计时；阈值仅标记长轮次，不剔除，暂停与系统负载不能视为纯GPU计算。峰值为对应训练进程，KD含教师，控制不含教师。"
+    }
+  ],
+  "kd_baseline": [
+    {
+      "run_id": "horizon240_seed42",
+      "seed": 42,
+      "recorded_total_seconds": 4609.5,
+      "median_epoch_seconds": 19.25,
+      "min_epoch_seconds": 17.530999999959022,
+      "max_epoch_seconds": 39.46899999992456,
+      "epochs_above_60_seconds": [],
+      "peak_memory": {
+        "peak_allocated_bytes": 760174080,
+        "peak_reserved_bytes": 834666496,
+        "width": 48,
+        "parameters": 2436346,
+        "note": "本进程训练峰值，含固定教师，不等于学生推理占用；轮次计时保留原值，长暂停不当纯GPU时间"
+      },
+      "interpretation": "保留全部原始墙钟计时；阈值仅标记长轮次，不剔除，暂停与系统负载不能视为纯GPU计算。峰值为对应训练进程，KD含教师，控制不含教师。"
+    },
+    {
+      "run_id": "repeat_horizon240_seed17",
+      "seed": 17,
+      "recorded_total_seconds": 4571.379999999423,
+      "median_epoch_seconds": 19.023500000010245,
+      "min_epoch_seconds": 17.09299999999348,
+      "max_epoch_seconds": 59.32799999997951,
+      "epochs_above_60_seconds": [],
+      "peak_memory": {
+        "peak_allocated_bytes": 760174080,
+        "peak_reserved_bytes": 834666496,
+        "width": 48,
+        "parameters": 2436346,
+        "note": "本进程训练峰值，含固定教师，不等于学生推理占用；轮次计时保留原值，长暂停不当纯GPU时间"
+      },
+      "interpretation": "保留全部原始墙钟计时；阈值仅标记长轮次，不剔除，暂停与系统负载不能视为纯GPU计算。峰值为对应训练进程，KD含教师，控制不含教师。"
+    },
+    {
+      "run_id": "repeat_horizon240_seed73",
+      "seed": 73,
+      "recorded_total_seconds": 9221.29400000081,
+      "median_epoch_seconds": 19.17200000002049,
+      "min_epoch_seconds": 17.344000000040978,
+      "max_epoch_seconds": 4613.4529999999795,
+      "epochs_above_60_seconds": [
+        {
+          "epoch": 135.0,
+          "seconds": 4613.4529999999795
+        }
+      ],
+      "peak_memory": {
+        "peak_allocated_bytes": 760174080,
+        "peak_reserved_bytes": 834666496,
+        "width": 48,
+        "parameters": 2436346,
+        "note": "本进程训练峰值，含固定教师，不等于学生推理占用；轮次计时保留原值，长暂停不当纯GPU时间"
+      },
+      "interpretation": "保留全部原始墙钟计时；阈值仅标记长轮次，不剔除，暂停与系统负载不能视为纯GPU计算。峰值为对应训练进程，KD含教师，控制不含教师。"
+    }
+  ],
+  "student_parameters_each": 2436346,
+  "network_forward_passes_each": 1,
+  "same_dense_architecture_not_measured_identical_latency": true,
+  "matched_student_epochs": 240,
+  "equal_total_training_flops": false,
+  "control_teacher_forward_passes": 0
+}
