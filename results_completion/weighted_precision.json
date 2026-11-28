@@ -1,0 +1,54 @@
+{
+  "kind": "derived_field_selection_from_actual_six_cache_precision_audit",
+  "source_precision_audit_sha256": "13ddbbfb3ccf13ec2e3981f899805139868662b36301d9cd9dd591f7e06a711f",
+  "inference_source_sha256": "ba2af718432494ba342716f8edbf4e6cb252311d18add8f3a26dbc2a4d85010d",
+  "statistics_source_sha256": "8bfc847bf7a00ee86b9e7072bdde1b837cc35292879b0b84d317838bbe49fd28",
+  "analysis_source_sha256": "bf87dda7a999d20ccb8f501396876e187b8f8c08359223d2f9ec54548f85d229",
+  "domain": "Previously frozen official10k, three original/weighted LAST240 pairs; not new confidence_mass validation or test",
+  "data": {
+    "native_BF16_hardCE_delta": {
+      "source_pointer": "/joint/CE_runtime_delta/mean",
+      "value": -0.006767236328125009,
+      "six_decimal_literal": "−0.006767",
+      "precision_role": "native AMP/BF16 batch-mean CE accumulated with actual batch sizes",
+      "existing_conditional_CI": null,
+      "must_not_reuse_FP64_NLL_CI": true
+    },
+    "FP64_descriptive_NLL_delta": {
+      "source_pointer": "/joint/NLL_FP64_descriptive_delta/mean",
+      "value": -0.006769871820086836,
+      "six_decimal_literal": "−0.006770",
+      "precision_role": "float64 per-image NLL computed from saved BF16-network FP32 logits"
+    },
+    "FP64_descriptive_NLL_CI95": {
+      "source_pointer": "/conditional_interval/NLL_FP64_descriptive_delta95",
+      "value": [
+        -0.01003310809611181,
+        -0.003477725586592576
+      ],
+      "six_decimal_literal": [
+        "−0.010033",
+        "−0.003478"
+      ],
+      "belongs_to": "FP64_descriptive_NLL_delta, not native CE"
+    },
+    "accuracy_delta": {
+      "source_pointer": "/joint/accuracy_delta/mean",
+      "value_fraction": -0.0004333333333333333,
+      "value_pp": -0.043333333333333335,
+      "four_decimal_pp_literal": "−0.0433"
+    },
+    "accuracy_CI95": {
+      "source_pointer": "/conditional_interval/accuracy_delta95",
+      "value_fraction": [
+        -0.0022333333333333337,
+        0.0012666666666666666
+      ],
+      "value_pp": [
+        -0.22333333333333338,
+        0.12666666666666665
+      ]
+    }
+  },
+  "no_new_resampling_or_inference": true
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "original_raw_evidence_index",
+  "entries": [
+    {
+      "file": "original_validation_analysis.json",
+      "original_project_relative_path": "results_alignment_confirmation/validation_analysis.json",
+      "sha256": "2945cd044405b71951f32a0f762d9e5dddc9e0a8239fab813bdf7598d9eabc9c",
+      "copied_byte_for_byte": true,
+      "scope": "fixed45k/5k width32/160/BEST Teacher42 four-view A/B seeds42/17/73; validation only, no independent A/B official test"
+    }
+  ],
+  "configuration": {
+    "file": "../config.json",
+    "original_project_relative_path": "configs_aligned_distillation/aligned_crop_mix_seed42.json",
+    "sha256": "40777e44d37fba1252f73cb56eaadfda8d5b5d7958b4108fb5dd6480afce98be",
+    "copied_byte_for_byte": true
+  },
+  "original_artifacts_are_not_merged_or_rewritten": true,
+  "existing_source10_checkpoints_will_not_be_relabelled_as_portable_sources": true
+}

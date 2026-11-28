@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "repository": "ctasr/ai-experiment3-image-classification",
   "tag": "v1.0.0",
   "training_source_sha256": {
@@ -181,6 +181,2582 @@
         "head_only": false,
         "backbone_ratio": 1.0
       }
+    }
+  },
+  "historical_source_bindings": {
+    "meaning": "Original source identifiers are retained as provenance labels; paths only locate exact byte copies within this checkout. These copies are not runtime imports or instructions to execute old entry points.",
+    "entries": [
+      {
+        "original_source_identifier": "alignment_confirmation/common.py",
+        "path": "provenance/historical_sources/alignment_confirmation/common.py",
+        "sha256": "cf10ed9c8e574e147db4f31282419b582964aa4744c859f217c101e38ad6c083",
+        "bytes": 19277
+      },
+      {
+        "original_source_identifier": "alignment_confirmation/evaluate.py",
+        "path": "provenance/historical_sources/alignment_confirmation/evaluate.py",
+        "sha256": "6a73d4baf94c1cd04b9aa4bff235b85883a020cd0674ef0bc092fc6e0c911051",
+        "bytes": 18995
+      },
+      {
+        "original_source_identifier": "alignment_confirmation/plot.py",
+        "path": "provenance/historical_sources/alignment_confirmation/plot.py",
+        "sha256": "433b8e4bade5769aee0b3672fa225f49e51c111688123364075b9492927a9f72",
+        "bytes": 13801
+      },
+      {
+        "original_source_identifier": "alignment_confirmation/run.py",
+        "path": "provenance/historical_sources/alignment_confirmation/run.py",
+        "sha256": "655f497bf2b5d05d1b256300f99165631e0cede1b004b8a2a3bd5e4bee4ede8f",
+        "bytes": 5040
+      },
+      {
+        "original_source_identifier": "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_confirmation/adapter.py",
+        "path": "provenance/historical_sources/weighted_mix_kd_confirmation/adapter.py",
+        "sha256": "dad7090c9aed78b60c11bb4a86ac09c786f3a60cf4a3636acad8a9a8cca3c947",
+        "bytes": 16782
+      },
+      {
+        "original_source_identifier": "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_confirmation/run.py",
+        "path": "provenance/historical_sources/weighted_mix_kd_confirmation/run.py",
+        "sha256": "bc78229b8b6eea2eb7149380d270e1d33f4bc1e19b8350699a140b3fce8e2499",
+        "bytes": 23622
+      },
+      {
+        "original_source_identifier": "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/adapter.py",
+        "path": "provenance/historical_sources/weighted_mix_kd_multiseed/adapter.py",
+        "sha256": "a0ea6f6735cce36d91650092fb6b5e6171da007069ce995344259eea12f802f4",
+        "bytes": 17066
+      },
+      {
+        "original_source_identifier": "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/run.py",
+        "path": "provenance/historical_sources/weighted_mix_kd_multiseed/run.py",
+        "sha256": "3b1ca37b79db7a5a3e071d7563ed8f592d96f4dc7394bc4c8092c034b8f0c0d6",
+        "bytes": 26749
+      },
+      {
+        "original_source_identifier": "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/postprocess.py",
+        "path": "provenance/historical_sources/weighted_mix_kd_multiseed/postprocess.py",
+        "sha256": "c2326fe8d16228f7fd3b2cb7864e4c73e8775a4ac1d9902e5936572b209b5ecd",
+        "bytes": 55649
+      },
+      {
+        "original_source_identifier": "../tmp/experiment3_originality_research_20261126/source_set_kd_pilot/kd_loss.py",
+        "path": "contributions/weighted_loss/legacy_loss.py",
+        "sha256": "272ebb7e19cc34023ea7d060972b1d57d2f2a65c39179cd528960e97582a206d",
+        "bytes": 3899
+      }
+    ]
+  },
+  "explanation_references": {
+    "publication_state": "published",
+    "publication_note": "No URL/tag is assigned to these four new reference assets until publication has actually completed. The existing five v1.0.0 checkpoints remain unchanged.",
+    "entries": [
+      {
+        "path": "artifacts/explanation_references/legacy42_pixel_free_arrays.npz",
+        "asset": "explanation-reference-legacy42-pixel-free.npz",
+        "bytes": 2819768,
+        "sha256": "636de302a818568bb49859230b44ea4a583a06cbd60d0ddb97422f1442b97803"
+      },
+      {
+        "path": "artifacts/explanation_references/legacy_17.npz",
+        "asset": "explanation-reference-legacy_17.npz",
+        "bytes": 2013607,
+        "sha256": "a493967165729b7af2c407feaf0565326042a17241c5f486a395c128b6e5c003"
+      },
+      {
+        "path": "artifacts/explanation_references/legacy_73.npz",
+        "asset": "explanation-reference-legacy_73.npz",
+        "bytes": 2016473,
+        "sha256": "2b09ad8931cac599183c9d3167d1049f5e097a08bafc2b829afaccccc1920901"
+      },
+      {
+        "path": "artifacts/explanation_references/seed42_clean5000.npz",
+        "asset": "explanation-reference-seed42_clean5000.npz",
+        "bytes": 2168635,
+        "sha256": "5db8d93061b2bac9ece427972e55c27547383a139c8493c168d60d8ca175c84f"
+      }
+    ],
+    "legacy42_reconstruction": {
+      "kind": "pixel_free_legacy42_reference_reconstruction_v1",
+      "original_complete_npz_sha256": "4e1b9a85204c0ec8eaa8309e95e8381ddcca1f0dcb7be216c39d93ace9390c6d",
+      "original_complete_npz_bytes": 3386613,
+      "pixel_free_payload_sha256": "636de302a818568bb49859230b44ea4a583a06cbd60d0ddb97422f1442b97803",
+      "pixel_free_payload_bytes": 2819768,
+      "images_npy_header_base64": "k05VTVBZAQB2AHsnZGVzY3InOiAnfHUxJywgJ2ZvcnRyYW5fb3JkZXInOiBGYWxzZSwgJ3NoYXBlJzogKDIwMCwgMzIsIDMyLCAzKSwgfSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo=",
+      "images_npy_header_bytes": 128,
+      "images_npy_sha256": "3b57ef13d349ecac1133dee3498c6b15b998d18a8bd7e5309dd0089418cd8b57",
+      "original_zip_members": [
+        {
+          "filename": "images.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 614528,
+          "compress_size": 566729,
+          "CRC": 1527989684,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "3b57ef13d349ecac1133dee3498c6b15b998d18a8bd7e5309dd0089418cd8b57"
+        },
+        {
+          "filename": "labels.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 1728,
+          "compress_size": 104,
+          "CRC": 821384734,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "c1f929587d14e4c72eb075aa6cd5a675769b4e39b424b935fec7707dfb1cbca4"
+        },
+        {
+          "filename": "indices.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 1728,
+          "compress_size": 523,
+          "CRC": 2134876813,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "605446767994365096873db9d13c83061e803f07cf2a6f1835b360c7f77738ed"
+        },
+        {
+          "filename": "p0.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 8128,
+          "compress_size": 7282,
+          "CRC": 1301073073,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "34225b4d9ec5a5d55f8405c0a9d5be79e6a59f5397dcd5859998df8d2a04da7e"
+        },
+        {
+          "filename": "p1.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 8128,
+          "compress_size": 7286,
+          "CRC": 2280299767,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "c581098b068d54f2c30232dbb03b621d5a8fd47000face37964983acfff67245"
+        },
+        {
+          "filename": "q.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 8128,
+          "compress_size": 7274,
+          "CRC": 608576612,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "e0fd9fedd3a2528b626e0b4e1752b7bdbd2ae32d5a6e6bb99fe9b200a5f81cf3"
+        },
+        {
+          "filename": "map0.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 819328,
+          "compress_size": 644249,
+          "CRC": 2327483028,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "6cbb58141d247ac10dc4d02857f44d1546c01d7c8c299e735794817cdef9d93d"
+        },
+        {
+          "filename": "map1.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 819328,
+          "compress_size": 644111,
+          "CRC": 1679186085,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "7692c4e9987b6abfd6873dd88d2325e984545a62bcaffff2a1c7e06299387eb2"
+        },
+        {
+          "filename": "signed.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 819328,
+          "compress_size": 636909,
+          "CRC": 598374921,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "a9e215d0b8f467f412b0c6f3ebe7af4493143f9954fe49f2e1b050faa87776de"
+        },
+        {
+          "filename": "heat.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 819328,
+          "compress_size": 623508,
+          "CRC": 2956899241,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "52caec96e8a5c4bbaac162471c307e538ae8e7b1f4f89e1b489dc9399f932873"
+        },
+        {
+          "filename": "masked0.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 88128,
+          "compress_size": 79943,
+          "CRC": 863289881,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "ee514d5b2aac42f943cd17b985d441342e0cbb3f24732ad363e438b046740f76"
+        },
+        {
+          "filename": "masked1.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 88128,
+          "compress_size": 79605,
+          "CRC": 864609016,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "2e0782b79a7e5d57a26e354914ad5db6e972ce61e14bd05fe9781f95d1cd82aa"
+        },
+        {
+          "filename": "maskedq.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 88128,
+          "compress_size": 79677,
+          "CRC": 4175003350,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "bf254d591d18445b756e259abbaaae050deb4f8f22a2a591e1e42fa18b397ccc"
+        },
+        {
+          "filename": "positions.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 35328,
+          "compress_size": 4621,
+          "CRC": 1433263360,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "893b1b447d456f4e870b953fa61e1c4448520c09f7df276a180356462334ec3d"
+        },
+        {
+          "filename": "example_rows.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 144,
+          "compress_size": 74,
+          "CRC": 671613906,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "af9763256aaa7bb617cd3d1589b1c65267e3cef3ff8b668d23d970ea724fe8f3"
+        },
+        {
+          "filename": "dq.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 928,
+          "compress_size": 880,
+          "CRC": 554823926,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "eff0da4590ee2590a08d3f88233d7aa532683ff1d7850bf2d672fbdc5bab4c79"
+        },
+        {
+          "filename": "d0.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 928,
+          "compress_size": 881,
+          "CRC": 3540284035,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "ec9644c1c02094f07720e9ffc1de85a5c529b7011a885c93edb1ef94e7f59d3b"
+        },
+        {
+          "filename": "d1.npy",
+          "compress_type": 8,
+          "create_system": 0,
+          "create_version": 45,
+          "extract_version": 45,
+          "reserved": 0,
+          "flag_bits": 0,
+          "volume": 0,
+          "internal_attr": 0,
+          "external_attr": 25165824,
+          "file_size": 928,
+          "compress_size": 883,
+          "CRC": 133049504,
+          "date_time": [
+            1980,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "comment_base64": "",
+          "extra_base64": "",
+          "compresslevel": null,
+          "npy_member_sha256": "039998d28c2cdffa912698a5921bd0ae851c53e626edfe0eb2cd154489b23b51"
+        }
+      ],
+      "archive_comment_base64": "",
+      "official_training_batches": [
+        {
+          "file": "data/raw/cifar-10-batches-py/data_batch_1",
+          "count": 10000,
+          "sha256": "54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd"
+        },
+        {
+          "file": "data/raw/cifar-10-batches-py/data_batch_2",
+          "count": 10000,
+          "sha256": "766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8"
+        },
+        {
+          "file": "data/raw/cifar-10-batches-py/data_batch_3",
+          "count": 10000,
+          "sha256": "0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9"
+        },
+        {
+          "file": "data/raw/cifar-10-batches-py/data_batch_4",
+          "count": 10000,
+          "sha256": "3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b"
+        },
+        {
+          "file": "data/raw/cifar-10-batches-py/data_batch_5",
+          "count": 10000,
+          "sha256": "d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154"
+        }
+      ],
+      "creation_environment": {
+        "python": "3.12.14",
+        "numpy": "2.5.4",
+        "zlib_compile": "1.3.2",
+        "zlib_runtime": "1.3.2"
+      },
+      "no_raw_pixel_values_in_payload_or_header_manifest": true,
+      "never_substitute_new_SHA_for_original_fixed_reference": true,
+      "complete_original_images_reconstructed_only_from_verified_local_official_training_files": true
+    },
+    "reconstructed_destination": "artifacts/explanation_references/legacy_42.npz",
+    "tag": "v1.1.0"
+  },
+  "checkpoint_groups": {
+    "alignment-best": {
+      "inputs_ready": true,
+      "publication_state": "published",
+      "tag": "v1.1.0",
+      "entries": [
+        {
+          "asset": "alignment-a-best-seed42.pt",
+          "path": "artifacts/checkpoints/alignment-a-best-seed42.pt",
+          "bytes": 4397567,
+          "sha256": "cc3cf062eac7aef9c04bee50e93c00606c4d0efb4e955949472120df6a5adc94",
+          "role": "alignment_A_BEST",
+          "group": "alignment-best",
+          "seed": 42,
+          "endpoint": "BEST",
+          "epoch": 152,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 32,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 160,
+            "warmup_epochs": 5,
+            "seed": 42,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "crop_mix"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "original_validation_analysis_sha256": "2945cd044405b71951f32a0f762d9e5dddc9e0a8239fab813bdf7598d9eabc9c",
+            "selection": {
+              "best_epoch": 152,
+              "best_validation_accuracy": 0.96,
+              "best_validation_ce": 0.21638857438564302,
+              "rule": "maximum accuracy, then minimum CE; first exact tie"
+            },
+            "run_id": "aligned_crop_mix_seed42"
+          },
+          "expected_provenance_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "alignment_confirmation/common.py": "cf10ed9c8e574e147db4f31282419b582964aa4744c859f217c101e38ad6c083",
+            "alignment_confirmation/evaluate.py": "6a73d4baf94c1cd04b9aa4bff235b85883a020cd0674ef0bc092fc6e0c911051",
+            "alignment_confirmation/plot.py": "433b8e4bade5769aee0b3672fa225f49e51c111688123364075b9492927a9f72",
+            "alignment_confirmation/run.py": "655f497bf2b5d05d1b256300f99165631e0cede1b004b8a2a3bd5e4bee4ede8f"
+          },
+          "provenance_source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "alignment_confirmation/common.py": "provenance/historical_sources/alignment_confirmation/common.py",
+            "alignment_confirmation/evaluate.py": "provenance/historical_sources/alignment_confirmation/evaluate.py",
+            "alignment_confirmation/plot.py": "provenance/historical_sources/alignment_confirmation/plot.py",
+            "alignment_confirmation/run.py": "provenance/historical_sources/alignment_confirmation/run.py"
+          }
+        },
+        {
+          "asset": "alignment-b-best-seed42.pt",
+          "path": "artifacts/checkpoints/alignment-b-best-seed42.pt",
+          "bytes": 4397631,
+          "sha256": "6cd5948030f4b65c86365b5e2045e01a9b4415553e1ad9dd2bcc73d5c80adbac",
+          "role": "alignment_B_BEST",
+          "group": "alignment-best",
+          "seed": 42,
+          "endpoint": "BEST",
+          "epoch": 150,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 32,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 160,
+            "warmup_epochs": 5,
+            "seed": 42,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "original_validation_analysis_sha256": "2945cd044405b71951f32a0f762d9e5dddc9e0a8239fab813bdf7598d9eabc9c",
+            "selection": {
+              "best_epoch": 150,
+              "best_validation_accuracy": 0.9644,
+              "best_validation_ce": 0.209695263504982,
+              "rule": "maximum accuracy, then minimum CE; first exact tie"
+            },
+            "run_id": "aligned_mixed_view_seed42"
+          },
+          "expected_provenance_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "alignment_confirmation/common.py": "cf10ed9c8e574e147db4f31282419b582964aa4744c859f217c101e38ad6c083",
+            "alignment_confirmation/evaluate.py": "6a73d4baf94c1cd04b9aa4bff235b85883a020cd0674ef0bc092fc6e0c911051",
+            "alignment_confirmation/plot.py": "433b8e4bade5769aee0b3672fa225f49e51c111688123364075b9492927a9f72",
+            "alignment_confirmation/run.py": "655f497bf2b5d05d1b256300f99165631e0cede1b004b8a2a3bd5e4bee4ede8f"
+          },
+          "provenance_source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "alignment_confirmation/common.py": "provenance/historical_sources/alignment_confirmation/common.py",
+            "alignment_confirmation/evaluate.py": "provenance/historical_sources/alignment_confirmation/evaluate.py",
+            "alignment_confirmation/plot.py": "provenance/historical_sources/alignment_confirmation/plot.py",
+            "alignment_confirmation/run.py": "provenance/historical_sources/alignment_confirmation/run.py"
+          }
+        },
+        {
+          "asset": "alignment-a-best-seed17.pt",
+          "path": "artifacts/checkpoints/alignment-a-best-seed17.pt",
+          "bytes": 4397567,
+          "sha256": "57554629aa16aec292b18fb518b0b9b0e323626ab63fbc6553a3681c2c002dc6",
+          "role": "alignment_A_BEST",
+          "group": "alignment-best",
+          "seed": 17,
+          "endpoint": "BEST",
+          "epoch": 156,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 32,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 160,
+            "warmup_epochs": 5,
+            "seed": 17,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "crop_mix"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "original_validation_analysis_sha256": "2945cd044405b71951f32a0f762d9e5dddc9e0a8239fab813bdf7598d9eabc9c",
+            "selection": {
+              "best_epoch": 156,
+              "best_validation_accuracy": 0.959,
+              "best_validation_ce": 0.25091733417510986,
+              "rule": "maximum accuracy, then minimum CE; first exact tie"
+            },
+            "run_id": "confirm_crop_mix_seed17"
+          },
+          "expected_provenance_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "alignment_confirmation/common.py": "cf10ed9c8e574e147db4f31282419b582964aa4744c859f217c101e38ad6c083",
+            "alignment_confirmation/evaluate.py": "6a73d4baf94c1cd04b9aa4bff235b85883a020cd0674ef0bc092fc6e0c911051",
+            "alignment_confirmation/plot.py": "433b8e4bade5769aee0b3672fa225f49e51c111688123364075b9492927a9f72",
+            "alignment_confirmation/run.py": "655f497bf2b5d05d1b256300f99165631e0cede1b004b8a2a3bd5e4bee4ede8f"
+          },
+          "provenance_source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "alignment_confirmation/common.py": "provenance/historical_sources/alignment_confirmation/common.py",
+            "alignment_confirmation/evaluate.py": "provenance/historical_sources/alignment_confirmation/evaluate.py",
+            "alignment_confirmation/plot.py": "provenance/historical_sources/alignment_confirmation/plot.py",
+            "alignment_confirmation/run.py": "provenance/historical_sources/alignment_confirmation/run.py"
+          }
+        },
+        {
+          "asset": "alignment-b-best-seed17.pt",
+          "path": "artifacts/checkpoints/alignment-b-best-seed17.pt",
+          "bytes": 4397631,
+          "sha256": "8bf02fa26d0e2abbf6bb60a5fd5cf09ff89686d5c060da6174ffc4c63943e670",
+          "role": "alignment_B_BEST",
+          "group": "alignment-best",
+          "seed": 17,
+          "endpoint": "BEST",
+          "epoch": 153,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 32,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 160,
+            "warmup_epochs": 5,
+            "seed": 17,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "original_validation_analysis_sha256": "2945cd044405b71951f32a0f762d9e5dddc9e0a8239fab813bdf7598d9eabc9c",
+            "selection": {
+              "best_epoch": 153,
+              "best_validation_accuracy": 0.9634,
+              "best_validation_ce": 0.19414899904727936,
+              "rule": "maximum accuracy, then minimum CE; first exact tie"
+            },
+            "run_id": "repeat_mixed_view_seed17"
+          },
+          "expected_provenance_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "alignment_confirmation/common.py": "cf10ed9c8e574e147db4f31282419b582964aa4744c859f217c101e38ad6c083",
+            "alignment_confirmation/evaluate.py": "6a73d4baf94c1cd04b9aa4bff235b85883a020cd0674ef0bc092fc6e0c911051",
+            "alignment_confirmation/plot.py": "433b8e4bade5769aee0b3672fa225f49e51c111688123364075b9492927a9f72",
+            "alignment_confirmation/run.py": "655f497bf2b5d05d1b256300f99165631e0cede1b004b8a2a3bd5e4bee4ede8f"
+          },
+          "provenance_source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "alignment_confirmation/common.py": "provenance/historical_sources/alignment_confirmation/common.py",
+            "alignment_confirmation/evaluate.py": "provenance/historical_sources/alignment_confirmation/evaluate.py",
+            "alignment_confirmation/plot.py": "provenance/historical_sources/alignment_confirmation/plot.py",
+            "alignment_confirmation/run.py": "provenance/historical_sources/alignment_confirmation/run.py"
+          }
+        },
+        {
+          "asset": "alignment-a-best-seed73.pt",
+          "path": "artifacts/checkpoints/alignment-a-best-seed73.pt",
+          "bytes": 4397567,
+          "sha256": "bb638ca5170a3ef017c5cdbad30371f98dd4a22f24875a1f698d400954018aad",
+          "role": "alignment_A_BEST",
+          "group": "alignment-best",
+          "seed": 73,
+          "endpoint": "BEST",
+          "epoch": 159,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 32,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 160,
+            "warmup_epochs": 5,
+            "seed": 73,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "crop_mix"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "original_validation_analysis_sha256": "2945cd044405b71951f32a0f762d9e5dddc9e0a8239fab813bdf7598d9eabc9c",
+            "selection": {
+              "best_epoch": 159,
+              "best_validation_accuracy": 0.9566,
+              "best_validation_ce": 0.23979501972198486,
+              "rule": "maximum accuracy, then minimum CE; first exact tie"
+            },
+            "run_id": "confirm_crop_mix_seed73"
+          },
+          "expected_provenance_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "alignment_confirmation/common.py": "cf10ed9c8e574e147db4f31282419b582964aa4744c859f217c101e38ad6c083",
+            "alignment_confirmation/evaluate.py": "6a73d4baf94c1cd04b9aa4bff235b85883a020cd0674ef0bc092fc6e0c911051",
+            "alignment_confirmation/plot.py": "433b8e4bade5769aee0b3672fa225f49e51c111688123364075b9492927a9f72",
+            "alignment_confirmation/run.py": "655f497bf2b5d05d1b256300f99165631e0cede1b004b8a2a3bd5e4bee4ede8f"
+          },
+          "provenance_source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "alignment_confirmation/common.py": "provenance/historical_sources/alignment_confirmation/common.py",
+            "alignment_confirmation/evaluate.py": "provenance/historical_sources/alignment_confirmation/evaluate.py",
+            "alignment_confirmation/plot.py": "provenance/historical_sources/alignment_confirmation/plot.py",
+            "alignment_confirmation/run.py": "provenance/historical_sources/alignment_confirmation/run.py"
+          }
+        },
+        {
+          "asset": "alignment-b-best-seed73.pt",
+          "path": "artifacts/checkpoints/alignment-b-best-seed73.pt",
+          "bytes": 4397631,
+          "sha256": "7d1bf41bd5d2ee88a5c8ba8910a0ce754e6a38f9064e61de0337f8e5d039a26e",
+          "role": "alignment_B_BEST",
+          "group": "alignment-best",
+          "seed": 73,
+          "endpoint": "BEST",
+          "epoch": 151,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 32,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 160,
+            "warmup_epochs": 5,
+            "seed": 73,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "original_validation_analysis_sha256": "2945cd044405b71951f32a0f762d9e5dddc9e0a8239fab813bdf7598d9eabc9c",
+            "selection": {
+              "best_epoch": 151,
+              "best_validation_accuracy": 0.9608,
+              "best_validation_ce": 0.2181584961414337,
+              "rule": "maximum accuracy, then minimum CE; first exact tie"
+            },
+            "run_id": "repeat_mixed_view_seed73"
+          },
+          "expected_provenance_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "alignment_confirmation/common.py": "cf10ed9c8e574e147db4f31282419b582964aa4744c859f217c101e38ad6c083",
+            "alignment_confirmation/evaluate.py": "6a73d4baf94c1cd04b9aa4bff235b85883a020cd0674ef0bc092fc6e0c911051",
+            "alignment_confirmation/plot.py": "433b8e4bade5769aee0b3672fa225f49e51c111688123364075b9492927a9f72",
+            "alignment_confirmation/run.py": "655f497bf2b5d05d1b256300f99165631e0cede1b004b8a2a3bd5e4bee4ede8f"
+          },
+          "provenance_source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "alignment_confirmation/common.py": "provenance/historical_sources/alignment_confirmation/common.py",
+            "alignment_confirmation/evaluate.py": "provenance/historical_sources/alignment_confirmation/evaluate.py",
+            "alignment_confirmation/plot.py": "provenance/historical_sources/alignment_confirmation/plot.py",
+            "alignment_confirmation/run.py": "provenance/historical_sources/alignment_confirmation/run.py"
+          }
+        }
+      ],
+      "downloaded_by_default": false
+    },
+    "kl-last": {
+      "inputs_ready": true,
+      "publication_state": "published",
+      "tag": "v1.1.0",
+      "entries": [
+        {
+          "asset": "main-kd-last-seed42.pt",
+          "path": "artifacts/checkpoints/main-kd-last-seed42.pt",
+          "bytes": 19671479,
+          "sha256": "38881c001188d650d2913549c7a8758514d3a27f71465c46de34c4faadac3f4e",
+          "role": "main_KD_LAST",
+          "group": "kl-last",
+          "seed": 42,
+          "endpoint": "LAST240",
+          "epoch": 240,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 48,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 240,
+            "warmup_epochs": 5,
+            "seed": 42,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+            "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "capacity_study/train.py": "capacity_study/train.py",
+            "horizon_study/train.py": "horizon_study/train.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "selector": "original LAST240"
+          }
+        },
+        {
+          "asset": "main-kd-last-seed17.pt",
+          "path": "artifacts/checkpoints/main-kd-last-seed17.pt",
+          "bytes": 19671479,
+          "sha256": "26c87b23973a840e275e2ad781fe83c48182ab710ea2553bfe310be7e8715dd1",
+          "role": "main_KD_LAST",
+          "group": "kl-last",
+          "seed": 17,
+          "endpoint": "LAST240",
+          "epoch": 240,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 48,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 240,
+            "warmup_epochs": 5,
+            "seed": 17,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+            "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "capacity_study/train.py": "capacity_study/train.py",
+            "horizon_study/train.py": "horizon_study/train.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "selector": "original LAST240"
+          }
+        },
+        {
+          "asset": "main-kd-last-seed73.pt",
+          "path": "artifacts/checkpoints/main-kd-last-seed73.pt",
+          "bytes": 19671415,
+          "sha256": "b6f7a93e23b73a3a7edd1b33c6f400fde9d37ef75039990f8ba883ee7a9f53df",
+          "role": "main_KD_LAST",
+          "group": "kl-last",
+          "seed": 73,
+          "endpoint": "LAST240",
+          "epoch": 240,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 48,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 240,
+            "warmup_epochs": 5,
+            "seed": 73,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+            "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "capacity_study/train.py": "capacity_study/train.py",
+            "horizon_study/train.py": "horizon_study/train.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "selector": "original LAST240"
+          }
+        }
+      ],
+      "downloaded_by_default": false
+    },
+    "weighted-last": {
+      "inputs_ready": true,
+      "publication_state": "published",
+      "tag": "v1.1.0",
+      "entries": [
+        {
+          "asset": "weighted-single-last-seed42.pt",
+          "path": "artifacts/checkpoints/weighted-single-last-seed42.pt",
+          "bytes": 19672055,
+          "sha256": "c410f095b3ebe24cc69e511e56e812b33118fc3fc0b61d1e86cd1c4eeda252d4",
+          "role": "weighted_single_LAST",
+          "group": "weighted-last",
+          "seed": 42,
+          "endpoint": "LAST240",
+          "epoch": 240,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 48,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 240,
+            "warmup_epochs": 5,
+            "seed": 42,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view",
+            "source_set_mode": "weighted_single"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+            "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea",
+            "../tmp/experiment3_originality_research_20261126/source_set_kd_pilot/kd_loss.py": "272ebb7e19cc34023ea7d060972b1d57d2f2a65c39179cd528960e97582a206d",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_confirmation/adapter.py": "dad7090c9aed78b60c11bb4a86ac09c786f3a60cf4a3636acad8a9a8cca3c947",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_confirmation/run.py": "bc78229b8b6eea2eb7149380d270e1d33f4bc1e19b8350699a140b3fce8e2499"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "capacity_study/train.py": "capacity_study/train.py",
+            "horizon_study/train.py": "horizon_study/train.py",
+            "../tmp/experiment3_originality_research_20261126/source_set_kd_pilot/kd_loss.py": "contributions/weighted_loss/legacy_loss.py",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_confirmation/adapter.py": "provenance/historical_sources/weighted_mix_kd_confirmation/adapter.py",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_confirmation/run.py": "provenance/historical_sources/weighted_mix_kd_confirmation/run.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "selector": "original Source15/16 LAST240; no new exact replay seed"
+          }
+        },
+        {
+          "asset": "weighted-single-last-seed17.pt",
+          "path": "artifacts/checkpoints/weighted-single-last-seed17.pt",
+          "bytes": 19672183,
+          "sha256": "ecb7213d9504041c09801727ec3bca1a8b966a21031c7fc9bcdb1292f0265dbe",
+          "role": "weighted_single_LAST",
+          "group": "weighted-last",
+          "seed": 17,
+          "endpoint": "LAST240",
+          "epoch": 240,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 48,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 240,
+            "warmup_epochs": 5,
+            "seed": 17,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view",
+            "source_set_mode": "weighted_single"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+            "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea",
+            "../tmp/experiment3_originality_research_20261126/source_set_kd_pilot/kd_loss.py": "272ebb7e19cc34023ea7d060972b1d57d2f2a65c39179cd528960e97582a206d",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/adapter.py": "a0ea6f6735cce36d91650092fb6b5e6171da007069ce995344259eea12f802f4",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/run.py": "3b1ca37b79db7a5a3e071d7563ed8f592d96f4dc7394bc4c8092c034b8f0c0d6",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/postprocess.py": "c2326fe8d16228f7fd3b2cb7864e4c73e8775a4ac1d9902e5936572b209b5ecd"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "capacity_study/train.py": "capacity_study/train.py",
+            "horizon_study/train.py": "horizon_study/train.py",
+            "../tmp/experiment3_originality_research_20261126/source_set_kd_pilot/kd_loss.py": "contributions/weighted_loss/legacy_loss.py",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/adapter.py": "provenance/historical_sources/weighted_mix_kd_multiseed/adapter.py",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/run.py": "provenance/historical_sources/weighted_mix_kd_multiseed/run.py",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/postprocess.py": "provenance/historical_sources/weighted_mix_kd_multiseed/postprocess.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "selector": "original Source15/16 LAST240; no new exact replay seed"
+          }
+        },
+        {
+          "asset": "weighted-single-last-seed73.pt",
+          "path": "artifacts/checkpoints/weighted-single-last-seed73.pt",
+          "bytes": 19672119,
+          "sha256": "ddc74a544c37560ca46e8a20e064bb222501011d7b8c55363d723f32d8ddcd42",
+          "role": "weighted_single_LAST",
+          "group": "weighted-last",
+          "seed": 73,
+          "endpoint": "LAST240",
+          "epoch": 240,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 48,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 240,
+            "warmup_epochs": 5,
+            "seed": 73,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view",
+            "source_set_mode": "weighted_single"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+            "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea",
+            "../tmp/experiment3_originality_research_20261126/source_set_kd_pilot/kd_loss.py": "272ebb7e19cc34023ea7d060972b1d57d2f2a65c39179cd528960e97582a206d",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/adapter.py": "a0ea6f6735cce36d91650092fb6b5e6171da007069ce995344259eea12f802f4",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/run.py": "3b1ca37b79db7a5a3e071d7563ed8f592d96f4dc7394bc4c8092c034b8f0c0d6",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/postprocess.py": "c2326fe8d16228f7fd3b2cb7864e4c73e8775a4ac1d9902e5936572b209b5ecd"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "capacity_study/train.py": "capacity_study/train.py",
+            "horizon_study/train.py": "horizon_study/train.py",
+            "../tmp/experiment3_originality_research_20261126/source_set_kd_pilot/kd_loss.py": "contributions/weighted_loss/legacy_loss.py",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/adapter.py": "provenance/historical_sources/weighted_mix_kd_multiseed/adapter.py",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/run.py": "provenance/historical_sources/weighted_mix_kd_multiseed/run.py",
+            "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/postprocess.py": "provenance/historical_sources/weighted_mix_kd_multiseed/postprocess.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "selector": "original Source15/16 LAST240; no new exact replay seed"
+          }
+        }
+      ],
+      "downloaded_by_default": false
+    },
+    "budget-best": {
+      "inputs_ready": true,
+      "publication_state": "published",
+      "tag": "v1.1.0",
+      "entries": [
+        {
+          "asset": "nokd240-best-seed42.pt",
+          "path": "artifacts/checkpoints/nokd240-best-seed42.pt",
+          "bytes": 9811327,
+          "sha256": "1213a225451d2249ab09f01a7666c206a9b9e5f12fdf1986c7de3cc78373beb6",
+          "role": "noKD240_BEST",
+          "group": "budget-best",
+          "seed": 42,
+          "endpoint": "BEST",
+          "epoch": 237,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 48,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 240,
+            "warmup_epochs": 5,
+            "seed": 42,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.0,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+            "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea",
+            "capacity_control/train.py": "294c92cd3514b0d8d19d20014d6b5179461bd850b6e13049f7764cd3f332e92b",
+            "horizon_control/train.py": "ed19607625f36fbd24c3635f9ed2e1956cd6acc83700089fbdc0a7c8f187219b"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "capacity_study/train.py": "capacity_study/train.py",
+            "horizon_study/train.py": "horizon_study/train.py",
+            "capacity_control/train.py": "capacity_control/train.py",
+            "horizon_control/train.py": "horizon_control/train.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "test_lock_sha256": "c014871917f4af8fb8708ec4c03d969bc61dd971332cc8b1f9b386f4b27ce71b",
+            "selector": "original frozen matched noKD BEST"
+          }
+        },
+        {
+          "asset": "nokd240-best-seed17.pt",
+          "path": "artifacts/checkpoints/nokd240-best-seed17.pt",
+          "bytes": 9811327,
+          "sha256": "f2022efd0b2fa4e7144c5ed131d2f351bde786893280d5cd0bd7c2804f87cbe3",
+          "role": "noKD240_BEST",
+          "group": "budget-best",
+          "seed": 17,
+          "endpoint": "BEST",
+          "epoch": 239,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 48,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 240,
+            "warmup_epochs": 5,
+            "seed": 17,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.0,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+            "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea",
+            "capacity_control/train.py": "294c92cd3514b0d8d19d20014d6b5179461bd850b6e13049f7764cd3f332e92b",
+            "horizon_control/train.py": "ed19607625f36fbd24c3635f9ed2e1956cd6acc83700089fbdc0a7c8f187219b"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "capacity_study/train.py": "capacity_study/train.py",
+            "horizon_study/train.py": "horizon_study/train.py",
+            "capacity_control/train.py": "capacity_control/train.py",
+            "horizon_control/train.py": "horizon_control/train.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "test_lock_sha256": "c014871917f4af8fb8708ec4c03d969bc61dd971332cc8b1f9b386f4b27ce71b",
+            "selector": "original frozen matched noKD BEST"
+          }
+        },
+        {
+          "asset": "nokd240-best-seed73.pt",
+          "path": "artifacts/checkpoints/nokd240-best-seed73.pt",
+          "bytes": 9811327,
+          "sha256": "0ef31f700945f2dc4380eec4bf908d26d99164255161d6f44a88dfb6f39e0d0d",
+          "role": "noKD240_BEST",
+          "group": "budget-best",
+          "seed": 73,
+          "endpoint": "BEST",
+          "epoch": 236,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 48,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 240,
+            "warmup_epochs": 5,
+            "seed": 73,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.0,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view"
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+            "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea",
+            "capacity_control/train.py": "294c92cd3514b0d8d19d20014d6b5179461bd850b6e13049f7764cd3f332e92b",
+            "horizon_control/train.py": "ed19607625f36fbd24c3635f9ed2e1956cd6acc83700089fbdc0a7c8f187219b"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "capacity_study/train.py": "capacity_study/train.py",
+            "horizon_study/train.py": "horizon_study/train.py",
+            "capacity_control/train.py": "capacity_control/train.py",
+            "horizon_control/train.py": "horizon_control/train.py"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "test_lock_sha256": "c014871917f4af8fb8708ec4c03d969bc61dd971332cc8b1f9b386f4b27ce71b",
+            "selector": "original frozen matched noKD BEST"
+          }
+        }
+      ],
+      "downloaded_by_default": false
+    },
+    "confidence-mass": {
+      "inputs_ready": true,
+      "publication_state": "published",
+      "tag": "v1.1.0",
+      "entries": [
+        {
+          "asset": "confidence-mass-last-seed42.pt",
+          "path": "artifacts/checkpoints/confidence-mass-last-seed42.pt",
+          "bytes": 19674551,
+          "sha256": "db2a334b52915e7d181ca09307874c3c7a2061d4e8657c8d58165fdb52f50623",
+          "role": "confidence_mass_LAST",
+          "group": "confidence-mass",
+          "seed": 42,
+          "endpoint": "LAST240",
+          "epoch": 240,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 48,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 240,
+            "warmup_epochs": 5,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view",
+            "seed": 42,
+            "source_set_mode": "confidence_mass",
+            "portable_protocol": "portable-weighted-v1",
+            "portable_inputs": {
+              "data": {
+                "manifest_sha256": "fcde007c02057463cc73e6024bcb2759a656e222e2f46219c3a5a75265013360",
+                "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+                "normalization_sha256": "9582053fe89152dc5e78472cf4e1e20832bfafb48f539c5903e051b639955455",
+                "training_batches_sha256": {
+                  "data_batch_1": "54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd",
+                  "data_batch_2": "766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8",
+                  "data_batch_3": "0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9",
+                  "data_batch_4": "3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b",
+                  "data_batch_5": "d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154"
+                },
+                "training_samples": 45000,
+                "validation_samples": 5000,
+                "official_test_read": false
+              },
+              "teacher": {
+                "source_sha256": {
+                  "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+                  "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+                  "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+                  "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+                  "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+                  "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514"
+                },
+                "weights": {
+                  "cutmix": "ae6ab05b3ae0f232e0cddfb85a9bb9b65126f404269065c3197f2fbbc0159a2a",
+                  "transfer": "82aa3d307ecb83dfb92182325eb346829478213df25aa18d4de928721a1f6be9"
+                },
+                "policy": "equal_ensemble_flip",
+                "calibrated": false,
+                "teacher_seed": 42
+              },
+              "imagenet_initialization_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+            }
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+            "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea",
+            "contributions/weighted_loss/__init__.py": "2253d2860d1a3b79e7d3c7d090dfb60bb867e78f8d44f7ee08c440500c02b80d",
+            "contributions/weighted_loss/legacy_loss.py": "272ebb7e19cc34023ea7d060972b1d57d2f2a65c39179cd528960e97582a206d",
+            "contributions/weighted_loss/loss.py": "c4cb27c42bd02b0d886e7cd1b7814dabd34baf0b116a4fbbe71c42cd801a0114",
+            "contributions/weighted_loss/adapter.py": "f3889bd36805596d1f2e71ad4c4505b33bf966fbdb97411ffed94acadded1ab4",
+            "contributions/weighted_loss/train.py": "868f85d6d2332fce65161cb37d6fde29f538606ce89fe6a1ff351fc46897536e",
+            "contributions/weighted_loss/config.json": "7ca1e038ddaa500fc2b7c05cc8675225463521e6701797eeb96881205711e864",
+            "contributions/weighted_loss/provenance.json": "c9440319d9a3b1375578a7181b87f030ed98dbd93b3738304efcf623fa813268",
+            "contributions/weighted_loss/configs/confidence_mass.json": "32d8c823a48eb4e5eb311271079a5f0f1b3a93cee6eb883d5c7b8c5a71895999"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "capacity_study/train.py": "capacity_study/train.py",
+            "horizon_study/train.py": "horizon_study/train.py",
+            "contributions/weighted_loss/__init__.py": "contributions/weighted_loss/__init__.py",
+            "contributions/weighted_loss/legacy_loss.py": "contributions/weighted_loss/legacy_loss.py",
+            "contributions/weighted_loss/loss.py": "contributions/weighted_loss/loss.py",
+            "contributions/weighted_loss/adapter.py": "contributions/weighted_loss/adapter.py",
+            "contributions/weighted_loss/train.py": "contributions/weighted_loss/train.py",
+            "contributions/weighted_loss/config.json": "contributions/weighted_loss/config.json",
+            "contributions/weighted_loss/provenance.json": "contributions/weighted_loss/provenance.json",
+            "contributions/weighted_loss/configs/confidence_mass.json": "contributions/weighted_loss/configs/confidence_mass.json"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "rule": "Fixed LAST240, all three seeds regardless of validation",
+            "actual_models_locked_sha256": "e2503c1499040a7ae57b4dd7895a352ea8ca5ce4015ecf16bf8d92e1d7a97fba"
+          }
+        },
+        {
+          "asset": "confidence-mass-last-seed17.pt",
+          "path": "artifacts/checkpoints/confidence-mass-last-seed17.pt",
+          "bytes": 19674551,
+          "sha256": "5389548a293811404ba01e8ff256d8e22a4e5fbffb22c7f56c862ae28b19624b",
+          "role": "confidence_mass_LAST",
+          "group": "confidence-mass",
+          "seed": 17,
+          "endpoint": "LAST240",
+          "epoch": 240,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 48,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 240,
+            "warmup_epochs": 5,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view",
+            "seed": 17,
+            "source_set_mode": "confidence_mass",
+            "portable_protocol": "portable-weighted-v1",
+            "portable_inputs": {
+              "data": {
+                "manifest_sha256": "fcde007c02057463cc73e6024bcb2759a656e222e2f46219c3a5a75265013360",
+                "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+                "normalization_sha256": "9582053fe89152dc5e78472cf4e1e20832bfafb48f539c5903e051b639955455",
+                "training_batches_sha256": {
+                  "data_batch_1": "54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd",
+                  "data_batch_2": "766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8",
+                  "data_batch_3": "0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9",
+                  "data_batch_4": "3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b",
+                  "data_batch_5": "d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154"
+                },
+                "training_samples": 45000,
+                "validation_samples": 5000,
+                "official_test_read": false
+              },
+              "teacher": {
+                "source_sha256": {
+                  "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+                  "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+                  "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+                  "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+                  "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+                  "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514"
+                },
+                "weights": {
+                  "cutmix": "ae6ab05b3ae0f232e0cddfb85a9bb9b65126f404269065c3197f2fbbc0159a2a",
+                  "transfer": "82aa3d307ecb83dfb92182325eb346829478213df25aa18d4de928721a1f6be9"
+                },
+                "policy": "equal_ensemble_flip",
+                "calibrated": false,
+                "teacher_seed": 42
+              },
+              "imagenet_initialization_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+            }
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+            "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea",
+            "contributions/weighted_loss/__init__.py": "2253d2860d1a3b79e7d3c7d090dfb60bb867e78f8d44f7ee08c440500c02b80d",
+            "contributions/weighted_loss/legacy_loss.py": "272ebb7e19cc34023ea7d060972b1d57d2f2a65c39179cd528960e97582a206d",
+            "contributions/weighted_loss/loss.py": "c4cb27c42bd02b0d886e7cd1b7814dabd34baf0b116a4fbbe71c42cd801a0114",
+            "contributions/weighted_loss/adapter.py": "f3889bd36805596d1f2e71ad4c4505b33bf966fbdb97411ffed94acadded1ab4",
+            "contributions/weighted_loss/train.py": "868f85d6d2332fce65161cb37d6fde29f538606ce89fe6a1ff351fc46897536e",
+            "contributions/weighted_loss/config.json": "7ca1e038ddaa500fc2b7c05cc8675225463521e6701797eeb96881205711e864",
+            "contributions/weighted_loss/provenance.json": "c9440319d9a3b1375578a7181b87f030ed98dbd93b3738304efcf623fa813268",
+            "contributions/weighted_loss/configs/confidence_mass.json": "32d8c823a48eb4e5eb311271079a5f0f1b3a93cee6eb883d5c7b8c5a71895999"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "capacity_study/train.py": "capacity_study/train.py",
+            "horizon_study/train.py": "horizon_study/train.py",
+            "contributions/weighted_loss/__init__.py": "contributions/weighted_loss/__init__.py",
+            "contributions/weighted_loss/legacy_loss.py": "contributions/weighted_loss/legacy_loss.py",
+            "contributions/weighted_loss/loss.py": "contributions/weighted_loss/loss.py",
+            "contributions/weighted_loss/adapter.py": "contributions/weighted_loss/adapter.py",
+            "contributions/weighted_loss/train.py": "contributions/weighted_loss/train.py",
+            "contributions/weighted_loss/config.json": "contributions/weighted_loss/config.json",
+            "contributions/weighted_loss/provenance.json": "contributions/weighted_loss/provenance.json",
+            "contributions/weighted_loss/configs/confidence_mass.json": "contributions/weighted_loss/configs/confidence_mass.json"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "rule": "Fixed LAST240, all three seeds regardless of validation",
+            "actual_models_locked_sha256": "e2503c1499040a7ae57b4dd7895a352ea8ca5ce4015ecf16bf8d92e1d7a97fba"
+          }
+        },
+        {
+          "asset": "confidence-mass-last-seed73.pt",
+          "path": "artifacts/checkpoints/confidence-mass-last-seed73.pt",
+          "bytes": 19674487,
+          "sha256": "466acc3b066c53c18b340b23a97b6d7b0e8c6db44c1becb816453fe204f1eb54",
+          "role": "confidence_mass_LAST",
+          "group": "confidence-mass",
+          "seed": 73,
+          "endpoint": "LAST240",
+          "epoch": 240,
+          "expected_config": {
+            "architecture": "resnet20",
+            "width": 48,
+            "attention": false,
+            "dropout": 0.2,
+            "augmentation": true,
+            "cutout": 0,
+            "label_smoothing": 0.0,
+            "optimizer": "sgd",
+            "learning_rate": 0.1,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "epochs": 240,
+            "warmup_epochs": 5,
+            "amp": true,
+            "patience": 0,
+            "model": "cifar",
+            "image_size": 32,
+            "mix": "cutmix",
+            "mix_alpha": 0.5,
+            "distill_alpha": 0.25,
+            "distill_temperature": 1.0,
+            "alignment": "mixed_view",
+            "seed": 73,
+            "source_set_mode": "confidence_mass",
+            "portable_protocol": "portable-weighted-v1",
+            "portable_inputs": {
+              "data": {
+                "manifest_sha256": "fcde007c02057463cc73e6024bcb2759a656e222e2f46219c3a5a75265013360",
+                "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+                "normalization_sha256": "9582053fe89152dc5e78472cf4e1e20832bfafb48f539c5903e051b639955455",
+                "training_batches_sha256": {
+                  "data_batch_1": "54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd",
+                  "data_batch_2": "766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8",
+                  "data_batch_3": "0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9",
+                  "data_batch_4": "3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b",
+                  "data_batch_5": "d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154"
+                },
+                "training_samples": 45000,
+                "validation_samples": 5000,
+                "official_test_read": false
+              },
+              "teacher": {
+                "source_sha256": {
+                  "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+                  "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+                  "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+                  "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+                  "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+                  "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514"
+                },
+                "weights": {
+                  "cutmix": "ae6ab05b3ae0f232e0cddfb85a9bb9b65126f404269065c3197f2fbbc0159a2a",
+                  "transfer": "82aa3d307ecb83dfb92182325eb346829478213df25aa18d4de928721a1f6be9"
+                },
+                "policy": "equal_ensemble_flip",
+                "calibrated": false,
+                "teacher_seed": 42
+              },
+              "imagenet_initialization_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+            }
+          },
+          "expected_training_sources": {
+            "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+            "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+            "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+            "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+            "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+            "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+            "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+            "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+            "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+            "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+            "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+            "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea",
+            "contributions/weighted_loss/__init__.py": "2253d2860d1a3b79e7d3c7d090dfb60bb867e78f8d44f7ee08c440500c02b80d",
+            "contributions/weighted_loss/legacy_loss.py": "272ebb7e19cc34023ea7d060972b1d57d2f2a65c39179cd528960e97582a206d",
+            "contributions/weighted_loss/loss.py": "c4cb27c42bd02b0d886e7cd1b7814dabd34baf0b116a4fbbe71c42cd801a0114",
+            "contributions/weighted_loss/adapter.py": "f3889bd36805596d1f2e71ad4c4505b33bf966fbdb97411ffed94acadded1ab4",
+            "contributions/weighted_loss/train.py": "868f85d6d2332fce65161cb37d6fde29f538606ce89fe6a1ff351fc46897536e",
+            "contributions/weighted_loss/config.json": "7ca1e038ddaa500fc2b7c05cc8675225463521e6701797eeb96881205711e864",
+            "contributions/weighted_loss/provenance.json": "c9440319d9a3b1375578a7181b87f030ed98dbd93b3738304efcf623fa813268",
+            "contributions/weighted_loss/configs/confidence_mass.json": "32d8c823a48eb4e5eb311271079a5f0f1b3a93cee6eb883d5c7b8c5a71895999"
+          },
+          "source_file_bindings": {
+            "train.py": "train.py",
+            "data.py": "data.py",
+            "models.py": "models.py",
+            "prepare_data.py": "prepare_data.py",
+            "extensions/train.py": "extensions/train.py",
+            "extensions/models.py": "extensions/models.py",
+            "distillation/train.py": "distillation/train.py",
+            "distillation/targets.py": "distillation/targets.py",
+            "aligned_distillation/teacher.py": "aligned_distillation/teacher.py",
+            "aligned_distillation/train.py": "aligned_distillation/train.py",
+            "capacity_study/train.py": "capacity_study/train.py",
+            "horizon_study/train.py": "horizon_study/train.py",
+            "contributions/weighted_loss/__init__.py": "contributions/weighted_loss/__init__.py",
+            "contributions/weighted_loss/legacy_loss.py": "contributions/weighted_loss/legacy_loss.py",
+            "contributions/weighted_loss/loss.py": "contributions/weighted_loss/loss.py",
+            "contributions/weighted_loss/adapter.py": "contributions/weighted_loss/adapter.py",
+            "contributions/weighted_loss/train.py": "contributions/weighted_loss/train.py",
+            "contributions/weighted_loss/config.json": "contributions/weighted_loss/config.json",
+            "contributions/weighted_loss/provenance.json": "contributions/weighted_loss/provenance.json",
+            "contributions/weighted_loss/configs/confidence_mass.json": "contributions/weighted_loss/configs/confidence_mass.json"
+          },
+          "normalization": {
+            "source": "fixed 45000 training images only",
+            "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+            "mean": [
+              0.49135083843954247,
+              0.482068151977805,
+              0.44654978128404144
+            ],
+            "std": [
+              0.24713241326460864,
+              0.24362119242746907,
+              0.26172141897844114
+            ]
+          },
+          "selector_evidence": {
+            "rule": "Fixed LAST240, all three seeds regardless of validation",
+            "actual_models_locked_sha256": "e2503c1499040a7ae57b4dd7895a352ea8ca5ce4015ecf16bf8d92e1d7a97fba"
+          }
+        }
+      ],
+      "downloaded_by_default": false
+    },
+    "references": {
+      "inputs_ready": true,
+      "publication_state": "published",
+      "tag": "v1.1.0",
+      "entries": [
+        {
+          "path": "artifacts/explanation_references/legacy42_pixel_free_arrays.npz",
+          "asset": "explanation-reference-legacy42-pixel-free.npz",
+          "bytes": 2819768,
+          "sha256": "636de302a818568bb49859230b44ea4a583a06cbd60d0ddb97422f1442b97803"
+        },
+        {
+          "path": "artifacts/explanation_references/legacy_17.npz",
+          "asset": "explanation-reference-legacy_17.npz",
+          "bytes": 2013607,
+          "sha256": "a493967165729b7af2c407feaf0565326042a17241c5f486a395c128b6e5c003"
+        },
+        {
+          "path": "artifacts/explanation_references/legacy_73.npz",
+          "asset": "explanation-reference-legacy_73.npz",
+          "bytes": 2016473,
+          "sha256": "2b09ad8931cac599183c9d3167d1049f5e097a08bafc2b829afaccccc1920901"
+        },
+        {
+          "path": "artifacts/explanation_references/seed42_clean5000.npz",
+          "asset": "explanation-reference-seed42_clean5000.npz",
+          "bytes": 2168635,
+          "sha256": "5db8d93061b2bac9ece427972e55c27547383a139c8493c168d60d8ca175c84f"
+        }
+      ],
+      "downloaded_by_default": false
     }
   }
 }

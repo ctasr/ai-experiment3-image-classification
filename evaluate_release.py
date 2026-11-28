@@ -69,6 +69,73 @@ def check_file(root, relative, expected):
     return path
 
 
+def validate_release_manifest(manifest):
+    """Schema 2 adds delivery metadata; original model/source fields stay strict."""
+    if not isinstance(manifest, dict) or type(manifest.get("schema_version")) is not int or manifest["schema_version"] not in (1, 2):
+        raise ValueError("Unsupported release_checkpoints.json schema_version")
+    required = {"repository", "tag", "training_source_sha256", "checkpoints",
+                "split_file", "split_sha256", "normalization_file", "normalization_sha256"}
+    if not required.issubset(manifest):
+        raise ValueError("Release manifest lacks original required fields")
+    def digest(value):
+        if not isinstance(value, str) or len(value) != 64 or any(c not in "0123456789abcdef" for c in value):
+            raise ValueError("Invalid SHA256 in release manifest")
+    def relative(value):
+        if not isinstance(value, str) or not value or Path(value).is_absolute() or ".." in Path(value).parts:
+            raise ValueError("Invalid relative path in release manifest")
+    sources = manifest["training_source_sha256"]
+    if not isinstance(sources, dict) or len(sources) != 12:
+        raise ValueError("Expected exactly 12 frozen training sources")
+    for name, value in sources.items():
+        relative(name); digest(value)
+    for name in ("split", "normalization"):
+        relative(manifest[name + "_file"]); digest(manifest[name + "_sha256"])
+    entries = manifest["checkpoints"]
+    if not isinstance(entries, dict) or set(entries) != {"42", "17", "73"}:
+        raise ValueError("Expected the three released student seeds")
+    for seed, entry in entries.items():
+        if not isinstance(entry, dict) or not {"path", "sha256", "config"}.issubset(entry):
+            raise ValueError("Released checkpoint lacks path/SHA256/config")
+        relative(entry["path"]); digest(entry["sha256"])
+        if not isinstance(entry["config"], dict) or entry["config"].get("seed") != int(seed):
+            raise ValueError("Released checkpoint config has a different seed")
+        if "bytes" in entry and (type(entry["bytes"]) is not int or entry["bytes"] <= 0):
+            raise ValueError("Invalid checkpoint byte count")
+    return sources
+
+
+def validation_training_arrays(root, dataset_manifest):
+    """Read only five SHA-locked official train pickles in torchvision order.
+
+    CIFAR10(train=True) integrity-checks test_batch as well. This equivalent
+    train-only decoding avoids that unrelated file read; no transforms change.
+    """
+    import pickle
+    import numpy as np
+
+    rows = dataset_manifest.get("official_train_batches")
+    expected = [f"data/raw/cifar-10-batches-py/data_batch_{i}" for i in range(1, 6)]
+    if not isinstance(rows, list) or len(rows) != 5 or [row.get("file") for row in rows] != expected:
+        raise ValueError("Expected the five original training files in fixed order")
+    images, labels = [], []
+    for row in rows:
+        if row.get("count") != 10000:
+            raise ValueError("Unexpected official training batch size")
+        source = check_file(root, row["file"], row["sha256"])
+        with source.open("rb") as stream:
+            batch = pickle.load(stream, encoding="latin1")
+        data = np.asarray(batch["data"])
+        target = np.asarray(batch["labels"])
+        if data.shape != (10000, 3072) or data.dtype != np.uint8:
+            raise ValueError("Unexpected official training image shape/dtype")
+        if target.shape != (10000,) or not np.issubdtype(target.dtype, np.integer) or np.any((target < 0) | (target >= 10)):
+            raise ValueError("Unexpected official training labels")
+        images.append(data); labels.extend(batch["labels"])
+    # Exact installed torchvision train-branch concatenation and HWC layout.
+    data = np.vstack(images).reshape(-1, 3, 32, 32).transpose((0, 2, 3, 1))
+    return data, np.asarray(labels, dtype=np.int64)
+
+
 def check_saved_identity(saved, entry, source_hashes, seed, expected_stats):
     """Bind a weights-only student to its exact released config and 12 sources."""
     required = {"model", "config", "stats", "source_sha256"}
@@ -134,11 +201,7 @@ def evaluate(args):
     root = REPOSITORY_ROOT
     manifest_path = root / "release_checkpoints.json"
     manifest = read_json(manifest_path)
-    if manifest.get("schema_version") != 1:
-        raise ValueError("Unsupported release_checkpoints.json schema_version")
-    source_hashes = manifest["training_source_sha256"]
-    if not isinstance(source_hashes, dict) or len(source_hashes) != 12:
-        raise ValueError("Expected exactly 12 frozen training sources")
+    source_hashes = validate_release_manifest(manifest)
     for relative, digest in source_hashes.items():
         check_file(root, relative, digest)
     entry = manifest["checkpoints"][str(args.seed)]
@@ -156,7 +219,6 @@ def evaluate(args):
     import numpy as np
     import torch
     from torch.utils.data import TensorDataset
-    from torchvision.datasets import CIFAR10
     from data import ROOT, read_partition, make_loader
     from extensions.models import build, Transform
     from train import seed_everything
@@ -196,16 +258,21 @@ def evaluate(args):
     else:
         raw_files = [dataset_manifest["test"]]
     data_hashes = {item["file"]: item["sha256"] for item in raw_files}
-    for relative, digest in data_hashes.items():
-        check_file(root, relative, digest)
-    source = CIFAR10(str(root / "data/raw"), train=args.split == "validation", download=False)
+    if args.split == "validation":
+        source_images, source_labels = validation_training_arrays(root, dataset_manifest)
+    else:
+        for relative, digest in data_hashes.items():
+            check_file(root, relative, digest)
+        from torchvision.datasets import CIFAR10
+        source = CIFAR10(str(root / "data/raw"), train=False, download=False)
+        source_images, source_labels = source.data, np.asarray(source.targets, dtype=np.int64)
     indices = validation_indices if args.split == "validation" else list(range(10000))
-    labels = np.asarray(source.targets, dtype=np.int64)[indices]
+    labels = source_labels[indices]
     expected_per_class = 500 if args.split == "validation" else 1000
     if not np.array_equal(np.bincount(labels, minlength=10), np.full(10, expected_per_class)):
         raise ValueError("Unexpected class counts in the requested official split")
     dataset = TensorDataset(
-        torch.from_numpy(source.data[indices].copy()).permute(0, 3, 1, 2).contiguous(),
+        torch.from_numpy(source_images[indices].copy()).permute(0, 3, 1, 2).contiguous(),
         torch.from_numpy(labels),
     )
     raw_parts, flip_parts, truth = [], [], []
@@ -249,6 +316,8 @@ def evaluate(args):
             "raw_data_sha256": data_hashes, "config": saved["config"],
             "release_manifest_sha256": sha256(manifest_path),
             "evaluation_script_sha256": sha256(Path(__file__)),
+            "evaluation_entry_version": "portable-release-evaluation-v2",
+            "validation_loader": "five_SHA_locked_official_training_pickles_no_test_file_read" if args.split == "validation" else None,
             "precision_scope": (
                 "Uses the original CUDA/BF16 prediction arithmetic; exact matching also "
                 "depends on hardware, software and batch size."

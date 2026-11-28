@@ -1,80 +1,118 @@
-"""Fetch the five published best checkpoints; never overwrite a different file."""
+"""Acquire only named frozen asset groups; different existing files are never overwritten."""
 from __future__ import annotations
-
 import argparse
 import hashlib
 import json
 from pathlib import Path
+import shutil
 import sys
 import urllib.request
 
-ROOT = Path(__file__).resolve().parent
-
-
+ROOT=Path(__file__).resolve().parent
+GROUPS=('alignment-best','kl-last','weighted-last','budget-best','confidence-mass','references')
 def digest(path):
-    with path.open('rb') as stream:
-        return hashlib.file_digest(stream, 'sha256').hexdigest()
-
-
+    with Path(path).open('rb')as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def destination(relative):
-    path = (ROOT / relative).resolve()
-    if not path.is_relative_to(ROOT.resolve()):
-        raise ValueError('Checkpoint destination escapes this checkout')
+    if not isinstance(relative,str)or not relative:raise ValueError('Asset path must be nonempty')
+    path=(ROOT/relative).resolve()
+    if not path.is_relative_to(ROOT.resolve()):raise ValueError('Asset path escapes this checkout')
     return path
-
-
+def verify(path,entry):
+    if type(entry['bytes'])is not int or entry['bytes']<=0:raise ValueError('Invalid asset size')
+    value=entry['sha256']
+    if not isinstance(value,str)or len(value)!=64 or any(x not in '0123456789abcdef'for x in value):raise ValueError('Invalid SHA256')
+    if not path.is_file()or path.stat().st_size!=entry['bytes']or digest(path)!=value:raise ValueError('Missing or differing frozen asset; no overwrite: '+str(path))
+def sources(manifest):
+    rows=[{'path':p,'sha256':s}for p,s in manifest['training_source_sha256'].items()]
+    rows+=manifest.get('historical_source_bindings',{}).get('entries',[])
+    for row in rows:
+        file=destination(row['path'])
+        if not file.is_file()or digest(file)!=row['sha256']:raise ValueError('Frozen source differs: '+row['path'])
+    print('PASS: '+str(len(rows))+' exact source bindings')
+def identity(path,entry):
+    """CPU-only loading of SHA-verified PTs; no historical driver is imported."""
+    if not path.name.endswith('.pt'):return
+    if 'expected_training_sources'not in entry:
+        raise ValueError('Explicit checkpoint identity metadata required for this optional check')
+    import torch
+    if torch.cuda.is_initialized():raise RuntimeError('Run checkpoint identity checks in a fresh CPU process')
+    saved=torch.load(path,map_location='cpu',weights_only=False)
+    if saved['source_sha256']!=entry['expected_training_sources']or saved['config']!=entry['expected_config']:
+        raise ValueError('Checkpoint source/config role differs: '+str(path))
+    if saved['epoch']!=entry['epoch']or saved['config']['seed']!=entry['seed']or saved['stats']!=entry['normalization']:
+        raise ValueError('Checkpoint endpoint/seed/normalization differs')
+    for name,expected in entry['expected_training_sources'].items():
+        bound=entry['source_file_bindings'][name]
+        if digest(destination(bound))!=expected:raise ValueError('Historical source binding differs: '+name)
+    for name,expected in entry.get('expected_provenance_sources',{}).items():
+        if digest(destination(entry['provenance_source_file_bindings'][name]))!=expected:raise ValueError('Analysis provenance binding differs: '+name)
+    if torch.cuda.is_initialized():raise RuntimeError('CPU identity check initialized CUDA')
+def acquire(entry,manifest,args,group):
+    path=destination(entry['path']);asset=entry['asset']
+    if not asset or '/'in asset or '\\'in asset or asset in('.','..'):raise ValueError('Invalid asset filename')
+    if path.exists():verify(path,entry);return True
+    if args.verify_only:return False
+    if args.local_assets is not None:
+        source=(args.local_assets/asset).resolve()
+        if not source.is_relative_to(args.local_assets.resolve()):raise ValueError('Local asset path escapes input directory')
+        verify(source,entry)
+    else:
+        if group.get('publication_state')!='published'or not group.get('tag'):
+            raise ValueError('This asset group is not published; no remote URL is invented. Explicit --local-assets is private acquisition, not a remote-download proof.')
+        source=None
+    path.parent.mkdir(parents=True,exist_ok=True);temporary=path.with_suffix(path.suffix+'.download')
+    if temporary.exists():raise FileExistsError('Retained earlier partial download: '+str(temporary))
+    if source is not None:
+        with source.open('rb')as left,temporary.open('xb')as right:shutil.copyfileobj(left,right)
+    else:
+        url=f"https://github.com/{manifest['repository']}/releases/download/{group['tag']}/{asset}"
+        request=urllib.request.Request(url,headers={'User-Agent':'ai-experiment3-checkpoints/1.0'})
+        with urllib.request.urlopen(request,timeout=90)as left,temporary.open('xb')as right:shutil.copyfileobj(left,right)
+    verify(temporary,entry)
+    if path.exists():raise FileExistsError('Destination appeared during acquisition')
+    temporary.rename(path);return True
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--teachers-only', action='store_true')
-    parser.add_argument('--verify-only', action='store_true',
-                        help='check existing files; make no network requests or writes')
-    args = parser.parse_args()
-    manifest = json.loads((ROOT / 'release_checkpoints.json').read_text(encoding='utf-8'))
-    entries = list(manifest['teachers'].values())
-    if not args.teachers_only:
-        entries += list(manifest['checkpoints'].values())
-    missing = []
-    for entry in entries:
-        path = destination(entry['path'])
-        if path.exists():
-            if path.stat().st_size != entry['bytes'] or digest(path) != entry['sha256']:
-                raise ValueError(f"Existing checkpoint differs; not overwritten: {entry['path']}")
-            print(f"Verified {entry['path']}")
-            continue
-        if args.verify_only:
-            missing.append(entry['path'])
-            continue
-        asset = entry['asset']
-        if '/' in asset or '\\' in asset:
-            raise ValueError('Invalid release asset name')
-        url = (f"https://github.com/{manifest['repository']}/releases/download/"
-               f"{manifest['tag']}/{asset}")
-        path.parent.mkdir(parents=True, exist_ok=True)
-        partial = path.with_suffix(path.suffix + '.download')
-        request = urllib.request.Request(url, headers={'User-Agent': 'ai-experiment3-checkpoints/1.0'})
-        print(f"Downloading {asset} ({entry['bytes']} bytes)", flush=True)
-        try:
-            with urllib.request.urlopen(request, timeout=90) as response, partial.open('wb') as stream:
-                while block := response.read(1024 * 1024):
-                    stream.write(block)
-            if partial.stat().st_size != entry['bytes'] or digest(partial) != entry['sha256']:
-                raise ValueError(f'Checkpoint download failed size/SHA256 validation: {asset}')
-            if path.exists():
-                raise FileExistsError(f'Destination appeared during download: {path}')
-            partial.rename(path)
-        except Exception:
-            partial.unlink(missing_ok=True)
-            raise
-        print(f"Verified {entry['path']}")
-    if missing:
-        print('Missing checkpoints: ' + ', '.join(missing), file=sys.stderr)
-        return 1
-    print(f'PASS: {len(entries)} checkpoint identities verified.')
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--teachers-only',action='store_true')
+    parser.add_argument('--references-only',action='store_true')
+    parser.add_argument('--group',choices=GROUPS,action='append',default=[],help='Only explicitly requested groups; default remains the five original release assets')
+    parser.add_argument('--verify-only',action='store_true')
+    parser.add_argument('--verify-sources',action='store_true')
+    parser.add_argument('--verify-identities',action='store_true',help='CPU-check downloaded named checkpoint groups against their own original source/config/endpoint')
+    parser.add_argument('--data-dir',type=Path)
+    parser.add_argument('--local-assets',type=Path,help='Explicit local acquisition only; never silently falls back to remote')
+    args=parser.parse_args();manifest=json.loads((ROOT/'release_checkpoints.json').read_text(encoding='utf-8'))
+    if args.verify_sources:sources(manifest);return 0
+    names=list(dict.fromkeys(args.group+(['references']if args.references_only else[])))
+    if args.teachers_only and names:parser.error('--teachers-only cannot be combined with named groups')
+    selected=[]
+    if not names:
+        entries=list(manifest['teachers'].values())+([]if args.teachers_only else list(manifest['checkpoints'].values()))
+        selected=[('original-five',{'publication_state':'published','tag':manifest['tag'],'entries':entries})]
+    for name in names:
+        group=manifest['checkpoint_groups'].get(name)
+        if group is None or group.get('inputs_ready')is not True or not group.get('entries'):
+            raise ValueError('Actual complete frozen inputs are not ready for group: '+name)
+        selected.append((name,group))
+    if args.verify_identities and not names:raise ValueError('--verify-identities uses an explicit named historical/control checkpoint group')
+    missing=[];verified=0
+    for name,group in selected:
+        for entry in group['entries']:
+            if not acquire(entry,manifest,args,group):missing.append(entry['path']);continue
+            if args.verify_identities:identity(destination(entry['path']),entry)
+            verified+=1;print('Verified '+entry['path'])
+        if name=='references'and not missing:
+            info=manifest['explanation_references'];meta=info['legacy42_reconstruction'];target=destination(info['reconstructed_destination'])
+            row={'bytes':meta['original_complete_npz_bytes'],'sha256':meta['original_complete_npz_sha256']}
+            if target.exists():verify(target,row)
+            elif args.verify_only:missing.append(info['reconstructed_destination'])
+            else:
+                if args.data_dir is None:raise ValueError('--data-dir is required for local exact reference reconstruction')
+                from reconstruct_reference import reconstruct
+                print(json.dumps(reconstruct(destination(group['entries'][0]['path']),ROOT/'release_checkpoints.json',args.data_dir,target),ensure_ascii=False))
+    if missing:print('Missing assets: '+', '.join(missing),file=sys.stderr);return 1
+    print(f'PASS: {verified} frozen asset identities; acquisition='+('verify_only'if args.verify_only else'local_explicit'if args.local_assets else'remote'))
     return 0
-
-
-if __name__ == '__main__':
-    try:
-        raise SystemExit(main())
-    except (OSError, ValueError, KeyError) as error:
-        raise SystemExit(f'error: {error}')
+if __name__=='__main__':
+    try:raise SystemExit(main())
+    except(OSError,ValueError,KeyError,RuntimeError)as error:raise SystemExit('error: '+str(error))

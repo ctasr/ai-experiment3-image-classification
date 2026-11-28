@@ -1,0 +1,30 @@
+{
+  "protocol": "full-validation-explanation-v1",
+  "seeds": [
+    42,
+    17,
+    73
+  ],
+  "samples": 5000,
+  "legacy_samples": 200,
+  "segments": [
+    200,
+    4800
+  ],
+  "clean_batch_size": 32,
+  "occlusion_image_batch_size": 16,
+  "occlusion_forward_batch_size": 64,
+  "window_size": 8,
+  "random_windows": 10,
+  "random_seed": 42,
+  "precision": "FP32 without autocast, noTF32",
+  "fixed_target": "original seed42 clean5000 cache argmax, locked before any new model inference",
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 42,
+  "bootstrap_unit": "shared image identity, stratified by true class; same sampled rows across all three fixed seeds",
+  "legacy_cache_gate": "exact same-layout arrays/targets/locations/random positions; no fallback or epsilon retuning",
+  "numeric_semantic_atol": 2e-05,
+  "numeric_semantic_rtol": 2e-05,
+  "CPU_gradient_atol": 2e-08,
+  "CPU_gradient_rtol": 2e-05
+}

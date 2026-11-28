@@ -1,0 +1,590 @@
+{
+  "kind": "derived_public_field_selection_of_original_generated_summary",
+  "not_original_file_or_new_analysis": true,
+  "original_summary_sha256": "d8d4430819cb1ffe67979ee5a5a936d96111ddf515b815bc1fff17fcbd8c759b",
+  "original_filename": "analysis.json",
+  "frozen_analysis_plan_sha256": "f7fb287f28557686f1067af62be049a5bcb50bde160176cfc1bf448b11a3815d",
+  "selected_JSON_pointers": [
+    "/protocol",
+    "/unique_validation_images",
+    "/model_seeds",
+    "/not15000_independent",
+    "/target",
+    "/columns",
+    "/overall",
+    "/cohorts",
+    "/classes",
+    "/seeds",
+    "/seed_mean_sample_SD_descriptive",
+    "/example_selection",
+    "/all_negative_and_flat_results_retained",
+    "/original200_not_claimed_representative_of5000",
+    "/uncertainty_scope",
+    "/no_temperature_threshold_or_model_selection",
+    "/new_official_or_external_test"
+  ],
+  "transformations": "Exact field selection only; original numbers/units/conditional intervals retained, no recalculation/rounding/path substitution",
+  "data": {
+    "protocol": "full-validation-explanation-v1",
+    "unique_validation_images": 5000,
+    "model_seeds": [
+      42,
+      17,
+      73
+    ],
+    "not15000_independent": true,
+    "target": "original seed42 clean5000 cached prediction, locked before inference for all models",
+    "columns": [
+      "seed42",
+      "seed17",
+      "seed73",
+      "per_image_three_seed_average"
+    ],
+    "overall": {
+      "n": 5000,
+      "mean": [
+        0.043725757725963196,
+        0.04429490739898611,
+        0.04010341682941653,
+        0.04270802731812192
+      ],
+      "conditional_image_ci95": [
+        [
+          0.04119631504055887,
+          0.04666713992633518
+        ],
+        [
+          0.04152131765405916,
+          0.04716858870486543
+        ],
+        [
+          0.037357399207310814,
+          0.04260367817499238
+        ],
+        [
+          0.040438446280156574,
+          0.04500687870579387
+        ]
+      ],
+      "bootstrap_replicates": 1000,
+      "private_PCG64_seed": 42,
+      "resampling": "paired image identities, within true class, shared across all seed columns"
+    },
+    "cohorts": {
+      "fixed_target_correct": {
+        "n": 4865,
+        "mean": [
+          0.03976040619114187,
+          0.040943779736346116,
+          0.03691043506638709,
+          0.03920487366462509
+        ],
+        "conditional_image_ci95": [
+          [
+            0.0372066480681314,
+            0.04236590778516786
+          ],
+          [
+            0.038196087444174846,
+            0.04353192777088192
+          ],
+          [
+            0.03439675138724582,
+            0.03935816320891524
+          ],
+          [
+            0.037246142172379745,
+            0.041228667593272345
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      },
+      "fixed_target_wrong": {
+        "n": 135,
+        "mean": [
+          0.18662527785119082,
+          0.1650596190933828,
+          0.1551690188822923,
+          0.16895130527562205
+        ],
+        "conditional_image_ci95": [
+          [
+            0.16072134067804586,
+            0.21260796223491155
+          ],
+          [
+            0.13998002155528716,
+            0.19028378952949965
+          ],
+          [
+            0.13345815376861503,
+            0.17815037142657847
+          ],
+          [
+            0.15029725144490785,
+            0.18678365664378407
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      },
+      "original200": {
+        "n": 200,
+        "mean": [
+          0.046451417490607126,
+          0.04458461566566257,
+          0.038945255259750414,
+          0.04332709613867338
+        ],
+        "conditional_image_ci95": [
+          [
+            0.032337486341974,
+            0.06084793648318736
+          ],
+          [
+            0.03248475406552462,
+            0.057004497070578516
+          ],
+          [
+            0.026480649592325795,
+            0.050953834378073215
+          ],
+          [
+            0.0331857760910037,
+            0.05358307922430443
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      },
+      "remaining4800": {
+        "n": 4800,
+        "mean": [
+          0.04361218856910303,
+          0.04428283622120792,
+          0.04015167356148595,
+          0.04268223278393235
+        ],
+        "conditional_image_ci95": [
+          [
+            0.04101948416308406,
+            0.04629908835199683
+          ],
+          [
+            0.04167063448712919,
+            0.04712476720750987
+          ],
+          [
+            0.037571160128194,
+            0.04270461910023339
+          ],
+          [
+            0.040563463925468723,
+            0.044773375699105715
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      }
+    },
+    "classes": [
+      {
+        "class_id": 0,
+        "n": 500,
+        "mean": [
+          0.03362966299802065,
+          0.03681416119344067,
+          0.030685277014737947,
+          0.033709700402066424
+        ],
+        "conditional_image_ci95": [
+          [
+            0.026800639907229924,
+            0.04119378352542408
+          ],
+          [
+            0.029894008795032276,
+            0.04413765908626374
+          ],
+          [
+            0.02481775157043012,
+            0.03671112293212209
+          ],
+          [
+            0.0285073486095343,
+            0.039064277813890165
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      },
+      {
+        "class_id": 1,
+        "n": 500,
+        "mean": [
+          0.021884309154658693,
+          0.022983294855395797,
+          0.023285891696810723,
+          0.02271783190228843
+        ],
+        "conditional_image_ci95": [
+          [
+            0.016090160650994948,
+            0.028482503028370045
+          ],
+          [
+            0.016390910580566558,
+            0.02998754904478992
+          ],
+          [
+            0.017916009340426534,
+            0.02870812476585852
+          ],
+          [
+            0.01785033641166131,
+            0.027559130580916354
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      },
+      {
+        "class_id": 2,
+        "n": 500,
+        "mean": [
+          0.056871026240522045,
+          0.05099797242879867,
+          0.056533404383808376,
+          0.05480080101770969
+        ],
+        "conditional_image_ci95": [
+          [
+            0.04746578521358897,
+            0.06595717801989523
+          ],
+          [
+            0.041820076613046694,
+            0.06071304714364232
+          ],
+          [
+            0.04681731864663307,
+            0.06684807674118784
+          ],
+          [
+            0.047261681983262985,
+            0.0622047854329342
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      },
+      {
+        "class_id": 3,
+        "n": 500,
+        "mean": [
+          0.0658604333626572,
+          0.07636454449128359,
+          0.06730358045076719,
+          0.06984285276823603
+        ],
+        "conditional_image_ci95": [
+          [
+            0.054674981158378065,
+            0.07641910639574635
+          ],
+          [
+            0.06472041848759401,
+            0.08765989431131166
+          ],
+          [
+            0.05629263205267344,
+            0.07772422859777725
+          ],
+          [
+            0.060405982305745384,
+            0.07807943404204226
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      },
+      {
+        "class_id": 4,
+        "n": 500,
+        "mean": [
+          0.05052348458021879,
+          0.056878938949434084,
+          0.04014567035948858,
+          0.049182697963047146
+        ],
+        "conditional_image_ci95": [
+          [
+            0.04197357801226317,
+            0.05891452950104722
+          ],
+          [
+            0.047482567032455694,
+            0.06708030462925671
+          ],
+          [
+            0.03221476720359642,
+            0.048531320038216655
+          ],
+          [
+            0.041830958622756154,
+            0.056599253652413584
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      },
+      {
+        "class_id": 5,
+        "n": 500,
+        "mean": [
+          0.08167238016775809,
+          0.08263937951810658,
+          0.051150395569275135,
+          0.07182071841837993
+        ],
+        "conditional_image_ci95": [
+          [
+            0.06896041245326633,
+            0.09584611037251889
+          ],
+          [
+            0.06941071828828427,
+            0.09584422953998438
+          ],
+          [
+            0.040510923507917324,
+            0.06247945312078809
+          ],
+          [
+            0.062171753091098236,
+            0.0822859850063998
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      },
+      {
+        "class_id": 6,
+        "n": 500,
+        "mean": [
+          0.04282243324071169,
+          0.024336070723365993,
+          0.05486715253815055,
+          0.04067521883407608
+        ],
+        "conditional_image_ci95": [
+          [
+            0.03556843503131531,
+            0.05082344639673829
+          ],
+          [
+            0.017766170321730897,
+            0.03070095199808711
+          ],
+          [
+            0.046630070748133585,
+            0.06500288051185198
+          ],
+          [
+            0.034675582058029265,
+            0.04731035271726238
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      },
+      {
+        "class_id": 7,
+        "n": 500,
+        "mean": [
+          0.04126231285533868,
+          0.03720922493151738,
+          0.030311082100612112,
+          0.03626087329582267
+        ],
+        "conditional_image_ci95": [
+          [
+            0.03368743772347225,
+            0.04936322085460997
+          ],
+          [
+            0.02984216884355774,
+            0.044867327683770414
+          ],
+          [
+            0.023040643287362765,
+            0.038451934695133236
+          ],
+          [
+            0.030148400526708405,
+            0.0428382953895659
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      },
+      {
+        "class_id": 8,
+        "n": 500,
+        "mean": [
+          0.021863616742077284,
+          0.025022088003344833,
+          0.022415487089252565,
+          0.02310039727822489
+        ],
+        "conditional_image_ci95": [
+          [
+            0.016591813682531938,
+            0.027772334082104496
+          ],
+          [
+            0.019715663903433597,
+            0.031215575077809622
+          ],
+          [
+            0.017067307929063098,
+            0.028697467379082808
+          ],
+          [
+            0.018709342643504597,
+            0.02773622567078565
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      },
+      {
+        "class_id": 9,
+        "n": 500,
+        "mean": [
+          0.02086791791766882,
+          0.02970339889517345,
+          0.024336227091262118,
+          0.024969181301368125
+        ],
+        "conditional_image_ci95": [
+          [
+            0.015614782319427468,
+            0.026168043861677866
+          ],
+          [
+            0.02497345160510413,
+            0.035425506000747196
+          ],
+          [
+            0.019006013596791306,
+            0.029990240713494126
+          ],
+          [
+            0.021079019616635684,
+            0.02922775044510355
+          ]
+        ],
+        "bootstrap_replicates": 1000,
+        "private_PCG64_seed": 42,
+        "resampling": "paired image identities, within true class, shared across all seed columns"
+      }
+    ],
+    "seeds": [
+      {
+        "seed": 42,
+        "n": 5000,
+        "mean_high_minus_random": 0.043725757725963196,
+        "high_drop_negative_count": 1068,
+        "high_minus_random_negative_count": 1545,
+        "flat_count": 0,
+        "flat_official_indices": [],
+        "own_prediction_accuracy": 0.973,
+        "agreement_with_fixed_seed42_target": 5000,
+        "mean_high_drop": 0.0706250641465187,
+        "mean_random_drop": 0.026899306373177955,
+        "heatmap_TV_vs42_valid_pairs": 5000,
+        "heatmap_TV_vs42_mean": 0.0
+      },
+      {
+        "seed": 17,
+        "n": 5000,
+        "mean_high_minus_random": 0.04429490739898611,
+        "high_drop_negative_count": 1372,
+        "high_minus_random_negative_count": 1538,
+        "flat_count": 2,
+        "flat_official_indices": [
+          43347,
+          46678
+        ],
+        "own_prediction_accuracy": 0.9738,
+        "agreement_with_fixed_seed42_target": 4906,
+        "mean_high_drop": 0.06237038438171148,
+        "mean_random_drop": 0.01807547705387633,
+        "heatmap_TV_vs42_valid_pairs": 4998,
+        "heatmap_TV_vs42_mean": 0.06925649922620507
+      },
+      {
+        "seed": 73,
+        "n": 5000,
+        "mean_high_minus_random": 0.04010341682941653,
+        "high_drop_negative_count": 1286,
+        "high_minus_random_negative_count": 1574,
+        "flat_count": 3,
+        "flat_official_indices": [
+          938,
+          43347,
+          45801
+        ],
+        "own_prediction_accuracy": 0.9744,
+        "agreement_with_fixed_seed42_target": 4891,
+        "mean_high_drop": 0.06083670944478363,
+        "mean_random_drop": 0.020733292588818404,
+        "heatmap_TV_vs42_valid_pairs": 4997,
+        "heatmap_TV_vs42_mean": 0.07262483468975757
+      }
+    ],
+    "seed_mean_sample_SD_descriptive": 0.0022735390223132777,
+    "example_selection": [
+      {
+        "reason": "fixed_target_correct",
+        "row": 20,
+        "official_train_index": 5
+      },
+      {
+        "reason": "fixed_target_wrong",
+        "row": 9,
+        "official_train_index": 527
+      },
+      {
+        "reason": "negative_high_drop",
+        "row": 20,
+        "official_train_index": 5
+      },
+      {
+        "reason": "flat_map",
+        "row": 17,
+        "official_train_index": 938
+      }
+    ],
+    "all_negative_and_flat_results_retained": true,
+    "original200_not_claimed_representative_of5000": true,
+    "uncertainty_scope": "Conditional fixed-model paired-image intervals, stratified by true class; no training/Teacher/selection uncertainty or multiple-comparison correction; no causal or object-boundary proof",
+    "no_temperature_threshold_or_model_selection": true,
+    "new_official_or_external_test": 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "protocol": "full-validation-explanation-v1",
+  "model_training_sources": {
+    "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+    "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+    "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+    "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+    "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+    "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+    "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+    "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+    "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+    "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+    "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+    "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea"
+  },
+  "model_weights_sha256": {
+    "42": "f96cb7c7d2c1f4e746fc519d489ca2295efaefb5c81730a84cba2488513e9327",
+    "17": "9053ad0244629f92a3864121a2c2bf2e032ba5dcfae3c11691fbb932fc23c019",
+    "73": "0e8bfef3c87a35772a3fcbc1caea670217fae508dccba2a4d9cc3be58540a717"
+  },
+  "model_config": "original width48/resnet20/BEST/KD240 source12; q=mean of uncalibrated raw and horizontal-flip probabilities, FP32, TF32 off",
+  "data_metadata_sha256": {
+    "dataset_manifest.json": "fcde007c02057463cc73e6024bcb2759a656e222e2f46219c3a5a75265013360",
+    "normalization.json": "9582053fe89152dc5e78472cf4e1e20832bfafb48f539c5903e051b639955455",
+    "splits/train_validation_seed42.json": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce"
+  },
+  "reference_files_sha256": {
+    "legacy_17.npz": "a493967165729b7af2c407feaf0565326042a17241c5f486a395c128b6e5c003",
+    "legacy_42.npz": "4e1b9a85204c0ec8eaa8309e95e8381ddcca1f0dcb7be216c39d93ace9390c6d",
+    "legacy_73.npz": "2b09ad8931cac599183c9d3167d1049f5e097a08bafc2b829afaccccc1920901",
+    "seed42_clean5000.npz": "5db8d93061b2bac9ece427972e55c27547383a139c8493c168d60d8ca175c84f"
+  },
+  "original_protocol_source_sha256": {
+    "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+    "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+    "two_view_extension/common.py": "6988a1d27406dbe738890af9f76f150289f8c6a3029ae45b83b2c8f6e4d762bc",
+    "two_view_extension/compute.py": "cd11e44b83f9b2681f8184d160a85fd2ca545054464cebe9dac18fce64ffdc09",
+    "two_view_extension/math_checks.py": "87fbcdb8d19bba98f9e2710f7c78733831f796cd154fbd9dbc59ad2cd35cb63d",
+    "seed_explanation_study/run.py": "a9e79dcfcde14115e2a533b166c5e29e181d5d604556b211f01704b8b80b0384",
+    "final_interpretability_v1/run.py": "6cf1c30c933a9a675937a1ee6e307bfe7f90aeb8ab45231eb85d94eab701a901"
+  },
+  "legacy_math_sha256": "87fbcdb8d19bba98f9e2710f7c78733831f796cd154fbd9dbc59ad2cd35cb63d",
+  "original_protocol": "clean batches32; occlusion groups16images, 11 variants/image then split64; first200 and remaining4800 are separate segments; model.cuda() retains original model layout; do not change mask-stack memory format",
+  "new_extension": "All original5000 validation images, all three fixed seed weights, frozen common seed42 target cached before inference; first200 old cache semantic and numeric bridge retained",
+  "no_GPU_autograd": "Analytic exact GAP+linear probability-gradient coefficients and original CPU feature autograd check; no new GPU backward method",
+  "reference_filenames_are_portable": "Provide --reference-dir containing four byte-identical original caches; no private/tmp import or filesystem dependency"
+}

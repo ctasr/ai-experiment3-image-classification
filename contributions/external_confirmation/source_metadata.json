@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-11-27T07:25:36.695042+00:00",
+  "source_repository": "https://github.com/modestyachts/cifar-10.2",
+  "commit": "521467a52ad494b78ff9c70051099c0d9ba74d40",
+  "test_file": {
+    "path": "cifar102_test.npz",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7a3829681be56af70ea80ec99cf3822e2f5edff3",
+    "size": 6393664,
+    "url": "https://api.github.com/repos/modestyachts/cifar-10.2/git/blobs/7a3829681be56af70ea80ec99cf3822e2f5edff3"
+  },
+  "metadata_only": true,
+  "dataset_file_downloaded": false,
+  "image_or_label_inference": false,
+  "external_train_file_used": false,
+  "binary_gate": "Complete immutable model/source/weight/prediction-policy manifest must be sealed before fetching this file.",
+  "future_raw_url": "https://raw.githubusercontent.com/modestyachts/cifar-10.2/521467a52ad494b78ff9c70051099c0d9ba74d40/cifar102_test.npz",
+  "future_integrity": "Check upstream Git blob SHA1, then record full downloaded-file SHA256 before parsing/inference."
+}

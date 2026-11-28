@@ -1,0 +1,1420 @@
+{
+  "kind": "derived_public_field_selection_of_original_generated_summary",
+  "not_original_file_or_new_analysis": true,
+  "original_summary_sha256": "2856b7e7148d0cb8b614ad26fddc9d7a311262b2ee2fdc6653163d74ae201cb1",
+  "original_filename": "summary.json",
+  "frozen_analysis_plan_sha256": "a21ddffaf5db7872fa9cf37c6d445468f51aab3542064e1c6defe5c2207067bf",
+  "selected_JSON_pointers": [
+    "/representative_seed",
+    "/snapshots",
+    "/three_fixed_seed_descriptive_summaries",
+    "/clean_curve_tail40",
+    "/cost",
+    "/no_automatic_fit_verdict",
+    "/no_claim_of_zero_generalization_gap",
+    "/other_seeds_intermediate_clean_train_metrics_not_created",
+    "/official_test_images"
+  ],
+  "transformations": "Exact field selection only; original numbers/units/conditional intervals retained, no recalculation/rounding/path substitution",
+  "data": {
+    "representative_seed": 42,
+    "snapshots": [
+      {
+        "seed": 42,
+        "endpoint": "BEST",
+        "epoch": 234,
+        "train": {
+          "samples": 45000,
+          "accuracy": 0.9999555555555556,
+          "hard_ce": 0.07398695273929172,
+          "per_class_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.9997777777777778,
+            0.9997777777777778,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "validation": {
+          "samples": 5000,
+          "accuracy": 0.972,
+          "hard_ce": 0.16041446838378906,
+          "per_class_accuracy": [
+            0.98,
+            0.98,
+            0.966,
+            0.932,
+            0.976,
+            0.946,
+            0.986,
+            0.98,
+            0.992,
+            0.982
+          ]
+        },
+        "validation_CM": [
+          [
+            490,
+            1,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            5,
+            1
+          ],
+          [
+            1,
+            490,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            7
+          ],
+          [
+            5,
+            0,
+            483,
+            3,
+            2,
+            3,
+            3,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            466,
+            1,
+            23,
+            5,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            4,
+            488,
+            1,
+            1,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            14,
+            5,
+            473,
+            1,
+            5,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            3,
+            0,
+            0,
+            493,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            2,
+            2,
+            0,
+            5,
+            0,
+            490,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            496,
+            1
+          ],
+          [
+            3,
+            4,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            491
+          ]
+        ],
+        "accuracy_gap_train_minus_validation_pp": 2.7955555555555622,
+        "hard_CE_gap_validation_minus_train": 0.08642751564449734,
+        "errors": [
+          {
+            "original_train_index": 17077,
+            "true": 4,
+            "prediction": 7,
+            "confidence_uncalibrated": 0.9452175498008728,
+            "cache_row": 1665
+          },
+          {
+            "original_train_index": 35037,
+            "true": 1,
+            "prediction": 9,
+            "confidence_uncalibrated": 0.9278133511543274,
+            "cache_row": 3459
+          },
+          {
+            "original_train_index": 40800,
+            "true": 5,
+            "prediction": 7,
+            "confidence_uncalibrated": 0.9246633648872375,
+            "cache_row": 4048
+          },
+          {
+            "original_train_index": 1533,
+            "true": 2,
+            "prediction": 0,
+            "confidence_uncalibrated": 0.9201421141624451,
+            "cache_row": 149
+          }
+        ],
+        "tail40_original_validation_CE": {
+          "window_epochs": [
+            201,
+            240
+          ],
+          "first10_mean": 0.18914088747262955,
+          "last10_mean": 0.1641971008729935,
+          "minimum": 0.153073828125,
+          "maximum": 0.19761220717430114
+        },
+        "cost": {
+          "recorded_epoch_wall_seconds_sum_includes_pauses": 4609.5,
+          "median_recorded_epoch_seconds": 19.25,
+          "median_times_epochs_active_time_estimate_seconds": 4620.0,
+          "long_epochs_over3x_median": [],
+          "long_epoch_excess_is_only_a_pause_startup_or_system_delay_indicator": true,
+          "exact_awake_or_sleep_duration_identifiable_from_epoch_log": false,
+          "not_inference_latency_or_equal_FLOPs": true
+        },
+        "CE_reduction": "historical rubric evaluator sums F32 hard CE batches then divides by N; distinct from new native epoch_pass batch-weighted mean reduction"
+      },
+      {
+        "seed": 42,
+        "endpoint": "LAST",
+        "epoch": 240,
+        "train": {
+          "samples": 45000,
+          "accuracy": 0.9999777777777777,
+          "hard_ce": 0.08085316323174371,
+          "per_class_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.9997777777777778,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "validation": {
+          "samples": 5000,
+          "accuracy": 0.9714,
+          "hard_ce": 0.16724951324462892,
+          "per_class_accuracy": [
+            0.978,
+            0.98,
+            0.968,
+            0.934,
+            0.976,
+            0.948,
+            0.986,
+            0.98,
+            0.982,
+            0.982
+          ]
+        },
+        "validation_CM": [
+          [
+            489,
+            1,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            5,
+            1
+          ],
+          [
+            1,
+            490,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            7
+          ],
+          [
+            5,
+            0,
+            484,
+            3,
+            2,
+            3,
+            2,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            467,
+            1,
+            23,
+            5,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            4,
+            488,
+            1,
+            1,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            14,
+            5,
+            474,
+            1,
+            5,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            3,
+            0,
+            0,
+            493,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            2,
+            0,
+            6,
+            0,
+            490,
+            0,
+            0
+          ],
+          [
+            7,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            491,
+            1
+          ],
+          [
+            3,
+            4,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            491
+          ]
+        ],
+        "accuracy_gap_train_minus_validation_pp": 2.85777777777777,
+        "hard_CE_gap_validation_minus_train": 0.0863963500128852,
+        "errors": [
+          {
+            "original_train_index": 17077,
+            "true": 4,
+            "prediction": 7,
+            "confidence_uncalibrated": 0.940109372138977,
+            "cache_row": 1665
+          },
+          {
+            "original_train_index": 35037,
+            "true": 1,
+            "prediction": 9,
+            "confidence_uncalibrated": 0.9250520467758179,
+            "cache_row": 3459
+          },
+          {
+            "original_train_index": 40800,
+            "true": 5,
+            "prediction": 7,
+            "confidence_uncalibrated": 0.9160445928573608,
+            "cache_row": 4048
+          },
+          {
+            "original_train_index": 1533,
+            "true": 2,
+            "prediction": 0,
+            "confidence_uncalibrated": 0.9151434302330017,
+            "cache_row": 149
+          }
+        ],
+        "tail40_original_validation_CE": {
+          "window_epochs": [
+            201,
+            240
+          ],
+          "first10_mean": 0.18914088747262955,
+          "last10_mean": 0.1641971008729935,
+          "minimum": 0.153073828125,
+          "maximum": 0.19761220717430114
+        },
+        "cost": {
+          "recorded_epoch_wall_seconds_sum_includes_pauses": 4609.5,
+          "median_recorded_epoch_seconds": 19.25,
+          "median_times_epochs_active_time_estimate_seconds": 4620.0,
+          "long_epochs_over3x_median": [],
+          "long_epoch_excess_is_only_a_pause_startup_or_system_delay_indicator": true,
+          "exact_awake_or_sleep_duration_identifiable_from_epoch_log": false,
+          "not_inference_latency_or_equal_FLOPs": true
+        },
+        "CE_reduction": "historical rubric evaluator sums F32 hard CE batches then divides by N; distinct from new native epoch_pass batch-weighted mean reduction"
+      },
+      {
+        "seed": 17,
+        "endpoint": "BEST",
+        "epoch": 231,
+        "train": {
+          "samples": 45000,
+          "accuracy": 0.9999777777777777,
+          "hard_ce": 0.09073305490281847,
+          "per_class_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.9997777777777778,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "validation": {
+          "samples": 5000,
+          "accuracy": 0.9708,
+          "hard_ce": 0.1779865676879883,
+          "per_class_accuracy": [
+            0.978,
+            0.978,
+            0.958,
+            0.948,
+            0.97,
+            0.928,
+            0.988,
+            0.982,
+            0.99,
+            0.988
+          ]
+        },
+        "validation_CM": [
+          [
+            489,
+            1,
+            2,
+            0,
+            1,
+            0,
+            1,
+            0,
+            3,
+            3
+          ],
+          [
+            0,
+            489,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            10
+          ],
+          [
+            6,
+            0,
+            479,
+            3,
+            2,
+            4,
+            5,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            474,
+            1,
+            19,
+            3,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            3,
+            6,
+            485,
+            1,
+            1,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            21,
+            5,
+            464,
+            2,
+            5,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            2,
+            2,
+            0,
+            0,
+            494,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            2,
+            0,
+            5,
+            0,
+            491,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            495,
+            2
+          ],
+          [
+            4,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            494
+          ]
+        ],
+        "accuracy_gap_train_minus_validation_pp": 2.9177777777777747,
+        "hard_CE_gap_validation_minus_train": 0.08725351278516982,
+        "errors": [
+          {
+            "original_train_index": 21855,
+            "true": 5,
+            "prediction": 3,
+            "confidence_uncalibrated": 0.9264925122261047,
+            "cache_row": 2137
+          },
+          {
+            "original_train_index": 16109,
+            "true": 7,
+            "prediction": 3,
+            "confidence_uncalibrated": 0.924226701259613,
+            "cache_row": 1566
+          },
+          {
+            "original_train_index": 45038,
+            "true": 3,
+            "prediction": 5,
+            "confidence_uncalibrated": 0.917643129825592,
+            "cache_row": 4503
+          },
+          {
+            "original_train_index": 18952,
+            "true": 2,
+            "prediction": 6,
+            "confidence_uncalibrated": 0.9166645407676697,
+            "cache_row": 1850
+          }
+        ],
+        "tail40_original_validation_CE": {
+          "window_epochs": [
+            201,
+            240
+          ],
+          "first10_mean": 0.18894931639432905,
+          "last10_mean": 0.17015764652967452,
+          "minimum": 0.16066914055347442,
+          "maximum": 0.20393500969409942
+        },
+        "cost": {
+          "recorded_epoch_wall_seconds_sum_includes_pauses": 4571.379999999423,
+          "median_recorded_epoch_seconds": 19.023500000010245,
+          "median_times_epochs_active_time_estimate_seconds": 4565.640000002459,
+          "long_epochs_over3x_median": [
+            {
+              "epoch": 74,
+              "recorded_seconds": 59.32799999997951,
+              "excess_over_median_seconds": 40.304499999969266
+            }
+          ],
+          "long_epoch_excess_is_only_a_pause_startup_or_system_delay_indicator": true,
+          "exact_awake_or_sleep_duration_identifiable_from_epoch_log": false,
+          "not_inference_latency_or_equal_FLOPs": true
+        },
+        "CE_reduction": "historical rubric evaluator sums F32 hard CE batches then divides by N; distinct from new native epoch_pass batch-weighted mean reduction"
+      },
+      {
+        "seed": 17,
+        "endpoint": "LAST",
+        "epoch": 240,
+        "train": {
+          "samples": 45000,
+          "accuracy": 0.9999777777777777,
+          "hard_ce": 0.0822203918033176,
+          "per_class_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.9997777777777778,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "validation": {
+          "samples": 5000,
+          "accuracy": 0.9684,
+          "hard_ce": 0.16935829277038575,
+          "per_class_accuracy": [
+            0.976,
+            0.974,
+            0.954,
+            0.94,
+            0.968,
+            0.926,
+            0.984,
+            0.984,
+            0.99,
+            0.988
+          ]
+        },
+        "validation_CM": [
+          [
+            488,
+            2,
+            3,
+            0,
+            0,
+            0,
+            1,
+            0,
+            4,
+            2
+          ],
+          [
+            1,
+            487,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            10
+          ],
+          [
+            6,
+            0,
+            477,
+            3,
+            3,
+            5,
+            4,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            470,
+            1,
+            21,
+            4,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            4,
+            6,
+            484,
+            1,
+            0,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            21,
+            5,
+            463,
+            2,
+            6,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            3,
+            3,
+            0,
+            0,
+            492,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            2,
+            1,
+            0,
+            4,
+            0,
+            492,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            495,
+            2
+          ],
+          [
+            4,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            494
+          ]
+        ],
+        "accuracy_gap_train_minus_validation_pp": 3.1577777777777705,
+        "hard_CE_gap_validation_minus_train": 0.08713790096706815,
+        "errors": [
+          {
+            "original_train_index": 45038,
+            "true": 3,
+            "prediction": 5,
+            "confidence_uncalibrated": 0.9304892420768738,
+            "cache_row": 4503
+          },
+          {
+            "original_train_index": 21855,
+            "true": 5,
+            "prediction": 3,
+            "confidence_uncalibrated": 0.927946150302887,
+            "cache_row": 2137
+          },
+          {
+            "original_train_index": 16109,
+            "true": 7,
+            "prediction": 3,
+            "confidence_uncalibrated": 0.9271544814109802,
+            "cache_row": 1566
+          },
+          {
+            "original_train_index": 18952,
+            "true": 2,
+            "prediction": 6,
+            "confidence_uncalibrated": 0.9236560463905334,
+            "cache_row": 1850
+          }
+        ],
+        "tail40_original_validation_CE": {
+          "window_epochs": [
+            201,
+            240
+          ],
+          "first10_mean": 0.18894931639432905,
+          "last10_mean": 0.17015764652967452,
+          "minimum": 0.16066914055347442,
+          "maximum": 0.20393500969409942
+        },
+        "cost": {
+          "recorded_epoch_wall_seconds_sum_includes_pauses": 4571.379999999423,
+          "median_recorded_epoch_seconds": 19.023500000010245,
+          "median_times_epochs_active_time_estimate_seconds": 4565.640000002459,
+          "long_epochs_over3x_median": [
+            {
+              "epoch": 74,
+              "recorded_seconds": 59.32799999997951,
+              "excess_over_median_seconds": 40.304499999969266
+            }
+          ],
+          "long_epoch_excess_is_only_a_pause_startup_or_system_delay_indicator": true,
+          "exact_awake_or_sleep_duration_identifiable_from_epoch_log": false,
+          "not_inference_latency_or_equal_FLOPs": true
+        },
+        "CE_reduction": "historical rubric evaluator sums F32 hard CE batches then divides by N; distinct from new native epoch_pass batch-weighted mean reduction"
+      },
+      {
+        "seed": 73,
+        "endpoint": "BEST",
+        "epoch": 230,
+        "train": {
+          "samples": 45000,
+          "accuracy": 0.9999777777777777,
+          "hard_ce": 0.08271305109659831,
+          "per_class_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.9997777777777778,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "validation": {
+          "samples": 5000,
+          "accuracy": 0.9728,
+          "hard_ce": 0.16795395431518556,
+          "per_class_accuracy": [
+            0.982,
+            0.99,
+            0.96,
+            0.944,
+            0.97,
+            0.94,
+            0.986,
+            0.98,
+            0.988,
+            0.988
+          ]
+        },
+        "validation_CM": [
+          [
+            491,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            495,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            4,
+            0,
+            480,
+            2,
+            4,
+            2,
+            4,
+            3,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            472,
+            1,
+            16,
+            5,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            4,
+            485,
+            2,
+            2,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            17,
+            7,
+            470,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            2,
+            2,
+            1,
+            0,
+            493,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            2,
+            3,
+            1,
+            3,
+            0,
+            490,
+            0,
+            0
+          ],
+          [
+            5,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            494,
+            0
+          ],
+          [
+            0,
+            4,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            494
+          ]
+        ],
+        "accuracy_gap_train_minus_validation_pp": 2.7177777777777745,
+        "hard_CE_gap_validation_minus_train": 0.08524090321858725,
+        "errors": [
+          {
+            "original_train_index": 34207,
+            "true": 5,
+            "prediction": 4,
+            "confidence_uncalibrated": 0.9299474954605103,
+            "cache_row": 3368
+          },
+          {
+            "original_train_index": 40800,
+            "true": 5,
+            "prediction": 7,
+            "confidence_uncalibrated": 0.9270437955856323,
+            "cache_row": 4048
+          },
+          {
+            "original_train_index": 1533,
+            "true": 2,
+            "prediction": 0,
+            "confidence_uncalibrated": 0.9244917631149292,
+            "cache_row": 149
+          },
+          {
+            "original_train_index": 2154,
+            "true": 3,
+            "prediction": 4,
+            "confidence_uncalibrated": 0.9144805669784546,
+            "cache_row": 208
+          }
+        ],
+        "tail40_original_validation_CE": {
+          "window_epochs": [
+            201,
+            240
+          ],
+          "first10_mean": 0.18752180913209915,
+          "last10_mean": 0.16767742918252942,
+          "minimum": 0.15825581068992614,
+          "maximum": 0.19755507822036744
+        },
+        "cost": {
+          "recorded_epoch_wall_seconds_sum_includes_pauses": 9221.29400000081,
+          "median_recorded_epoch_seconds": 19.17200000002049,
+          "median_times_epochs_active_time_estimate_seconds": 4601.280000004917,
+          "long_epochs_over3x_median": [
+            {
+              "epoch": 135,
+              "recorded_seconds": 4613.4529999999795,
+              "excess_over_median_seconds": 4594.280999999959
+            }
+          ],
+          "long_epoch_excess_is_only_a_pause_startup_or_system_delay_indicator": true,
+          "exact_awake_or_sleep_duration_identifiable_from_epoch_log": false,
+          "not_inference_latency_or_equal_FLOPs": true
+        },
+        "CE_reduction": "historical rubric evaluator sums F32 hard CE batches then divides by N; distinct from new native epoch_pass batch-weighted mean reduction"
+      },
+      {
+        "seed": 73,
+        "endpoint": "LAST",
+        "epoch": 240,
+        "train": {
+          "samples": 45000,
+          "accuracy": 0.9999777777777777,
+          "hard_ce": 0.09280665859646267,
+          "per_class_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.9997777777777778,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "validation": {
+          "samples": 5000,
+          "accuracy": 0.9722,
+          "hard_ce": 0.17797325744628906,
+          "per_class_accuracy": [
+            0.982,
+            0.99,
+            0.97,
+            0.938,
+            0.968,
+            0.942,
+            0.986,
+            0.978,
+            0.982,
+            0.986
+          ]
+        },
+        "validation_CM": [
+          [
+            491,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            495,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            4,
+            0,
+            485,
+            2,
+            3,
+            2,
+            3,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            2,
+            469,
+            1,
+            19,
+            5,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            3,
+            484,
+            3,
+            2,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            14,
+            7,
+            471,
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            2,
+            2,
+            1,
+            0,
+            493,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            3,
+            2,
+            1,
+            3,
+            0,
+            489,
+            0,
+            0
+          ],
+          [
+            8,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            491,
+            0
+          ],
+          [
+            1,
+            4,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            493
+          ]
+        ],
+        "accuracy_gap_train_minus_validation_pp": 2.777777777777779,
+        "hard_CE_gap_validation_minus_train": 0.08516659884982639,
+        "errors": [
+          {
+            "original_train_index": 1533,
+            "true": 2,
+            "prediction": 0,
+            "confidence_uncalibrated": 0.9207044243812561,
+            "cache_row": 149
+          },
+          {
+            "original_train_index": 34207,
+            "true": 5,
+            "prediction": 4,
+            "confidence_uncalibrated": 0.9194283485412598,
+            "cache_row": 3368
+          },
+          {
+            "original_train_index": 40800,
+            "true": 5,
+            "prediction": 7,
+            "confidence_uncalibrated": 0.9131598472595215,
+            "cache_row": 4048
+          },
+          {
+            "original_train_index": 22755,
+            "true": 2,
+            "prediction": 5,
+            "confidence_uncalibrated": 0.9060485363006592,
+            "cache_row": 2221
+          }
+        ],
+        "tail40_original_validation_CE": {
+          "window_epochs": [
+            201,
+            240
+          ],
+          "first10_mean": 0.18752180913209915,
+          "last10_mean": 0.16767742918252942,
+          "minimum": 0.15825581068992614,
+          "maximum": 0.19755507822036744
+        },
+        "cost": {
+          "recorded_epoch_wall_seconds_sum_includes_pauses": 9221.29400000081,
+          "median_recorded_epoch_seconds": 19.17200000002049,
+          "median_times_epochs_active_time_estimate_seconds": 4601.280000004917,
+          "long_epochs_over3x_median": [
+            {
+              "epoch": 135,
+              "recorded_seconds": 4613.4529999999795,
+              "excess_over_median_seconds": 4594.280999999959
+            }
+          ],
+          "long_epoch_excess_is_only_a_pause_startup_or_system_delay_indicator": true,
+          "exact_awake_or_sleep_duration_identifiable_from_epoch_log": false,
+          "not_inference_latency_or_equal_FLOPs": true
+        },
+        "CE_reduction": "historical rubric evaluator sums F32 hard CE batches then divides by N; distinct from new native epoch_pass batch-weighted mean reduction"
+      }
+    ],
+    "three_fixed_seed_descriptive_summaries": {
+      "BEST": {
+        "accuracy_seed_mean": 0.9718666666666667,
+        "accuracy_seed_sample_SD": 0.0010066445913694327
+      },
+      "LAST": {
+        "accuracy_seed_mean": 0.9706666666666667,
+        "accuracy_seed_sample_SD": 0.0020033305601755303
+      }
+    },
+    "clean_curve_tail40": {
+      "clean_train": {
+        "ce": {
+          "window_epochs": [
+            201,
+            240
+          ],
+          "first10_mean": 0.09201401706576347,
+          "last10_mean": 0.07761490967233978,
+          "minimum": 0.0654435831785202,
+          "maximum": 0.10001375733216604
+        },
+        "accuracy": {
+          "window_epochs": [
+            201,
+            240
+          ],
+          "first10_mean": 0.99968,
+          "last10_mean": 0.99996,
+          "minimum": 0.9995555555555555,
+          "maximum": 0.9999777777777777
+        }
+      },
+      "clean_validation": {
+        "ce": {
+          "window_epochs": [
+            201,
+            240
+          ],
+          "first10_mean": 0.18914088747262955,
+          "last10_mean": 0.1641971008729935,
+          "minimum": 0.153073828125,
+          "maximum": 0.19761220717430114
+        },
+        "accuracy": {
+          "window_epochs": [
+            201,
+            240
+          ],
+          "first10_mean": 0.9644999999999999,
+          "last10_mean": 0.9713200000000001,
+          "minimum": 0.9626,
+          "maximum": 0.972
+        }
+      }
+    },
+    "cost": {
+      "historical_raw_training": {
+        "recorded_epoch_wall_seconds_sum_includes_pauses": 4609.5,
+        "median_recorded_epoch_seconds": 19.25,
+        "median_times_epochs_active_time_estimate_seconds": 4620.0,
+        "long_epochs_over3x_median": [],
+        "long_epoch_excess_is_only_a_pause_startup_or_system_delay_indicator": true,
+        "exact_awake_or_sleep_duration_identifiable_from_epoch_log": false,
+        "not_inference_latency_or_equal_FLOPs": true
+      },
+      "replay_raw_epoch_cost": {
+        "recorded_epoch_wall_seconds_sum_includes_pauses": 4483.310000000027,
+        "median_recorded_epoch_seconds": 18.625,
+        "median_times_epochs_active_time_estimate_seconds": 4470.0,
+        "long_epochs_over3x_median": [],
+        "long_epoch_excess_is_only_a_pause_startup_or_system_delay_indicator": true,
+        "exact_awake_or_sleep_duration_identifiable_from_epoch_log": false,
+        "not_inference_latency_or_equal_FLOPs": true
+      },
+      "extra_clean_diagnostic_wall_seconds_sum_includes_pauses": 845.7180000002991,
+      "extra_clean_diagnostic_median_seconds": 3.484500000005937,
+      "replay_segment_total_wall_seconds_includes_pauses_startup_and_diagnostics": 5386.281000000003,
+      "segments": [
+        {
+          "started_unix": 1795778008.0660684,
+          "ended_unix": 1795783394.3342319,
+          "segment_total_wall_seconds": 5386.281000000003,
+          "completed_epochs_at_end": 240,
+          "stop_after": null
+        }
+      ],
+      "diagnostic_cost_not_original_training_or_deployment_cost": true,
+      "exact_sleep_duration": "not identifiable solely from epoch/segment logs; long epoch indicators retained, not silently subtracted"
+    },
+    "no_automatic_fit_verdict": true,
+    "no_claim_of_zero_generalization_gap": true,
+    "other_seeds_intermediate_clean_train_metrics_not_created": true,
+    "official_test_images": 0
+  }
+}

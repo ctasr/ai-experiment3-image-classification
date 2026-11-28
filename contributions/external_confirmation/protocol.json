@@ -1,0 +1,161 @@
+{
+  "protocol": "experiment3_first_fixed_CIFAR102_confirmation_v2_prob64_before_access",
+  "state": "prespecified_before_dataset_download_or_inference",
+  "source_metadata_file": "source_metadata.json",
+  "source_commit": "521467a52ad494b78ff9c70051099c0d9ba74d40",
+  "expected_upstream_test_blob_sha1": "7a3829681be56af70ea80ec99cf3822e2f5edff3",
+  "expected_file_bytes": 6393664,
+  "external_train_file_used": false,
+  "CIFAR10_1_v6_remains_retired": true,
+  "fetch_gate": "All listed model/source/checkpoint/prediction-policy bindings and evaluator code plus a real original-validation evaluator preflight must be sealed before fetching test bytes. A placeholder or missing model cannot pass the gate.",
+  "fixed_groups": [
+    {
+      "id": "alignment_A_BEST",
+      "seeds": [
+        42,
+        17,
+        73
+      ],
+      "selector": "original_frozen_BEST160",
+      "policy": "raw_FP32_logits_prob64",
+      "weights": "original six-run alignment evidence, each actual training source dictionary retained"
+    },
+    {
+      "id": "alignment_B_BEST",
+      "seeds": [
+        42,
+        17,
+        73
+      ],
+      "selector": "original_frozen_BEST160",
+      "policy": "raw_FP32_logits_prob64",
+      "weights": "original six-run alignment evidence"
+    },
+    {
+      "id": "main_KD_BEST",
+      "seeds": [
+        42,
+        17,
+        73
+      ],
+      "selector": "original_frozen_BEST240",
+      "policies": [
+        "raw_FP32_logits_prob64",
+        "raw_and_flip_FP32_logits_prob64_mean"
+      ]
+    },
+    {
+      "id": "main_KD_LAST",
+      "seeds": [
+        42,
+        17,
+        73
+      ],
+      "selector": "original_frozen_LAST240",
+      "policy": "raw_FP32_logits_prob64"
+    },
+    {
+      "id": "weighted_single_LAST",
+      "seeds": [
+        42,
+        17,
+        73
+      ],
+      "selector": "original_Source15_or_Source16_frozen_LAST240",
+      "policy": "raw_FP32_logits_prob64",
+      "portable_exact_replay_is_not_a_fourth_seed": true
+    },
+    {
+      "id": "confidence_mass_LAST",
+      "seeds": [
+        42,
+        17,
+        73
+      ],
+      "selector": "registered_new_portable20_LAST240",
+      "policy": "raw_FP32_logits_prob64"
+    },
+    {
+      "id": "noKD240_BEST",
+      "seeds": [
+        42,
+        17,
+        73
+      ],
+      "selector": "original_frozen_matched_noKD_BEST240",
+      "policy": "raw_FP32_logits_prob64"
+    }
+  ],
+  "unique_checkpoint_count": 21,
+  "seed_policy_rows": 24,
+  "excluded_models_by_design": "Matched-recipe architecture, augmentation repetitions and second-partition models are original-training validation confirmations. They are not selected or added to this external model set after observing results.",
+  "inference": {
+    "precision": "FP32, autocast off, fixed original model normalization and model.eval, no Teacher, no calibration",
+    "primary_batch_size": 128,
+    "last_batch_retained": true,
+    "logits_saved": true,
+    "two_view_policy": "main_KD_BEST only: q64=(softmax64(z_raw)+softmax64(z_flip))/2; NLL computed separately by stable logaddexp(logp_raw,logp_flip)-log(2), avoiding underflow; both saved logit arrays remain FP32",
+    "NLL": "Stable float64 log-softmax recomputation from saved float32 logits; probability-mean policy uses stable logaddexp of the two log-probabilities minus log(2)",
+    "historical_BF16_comparison_limit": "This uniform external FP32 protocol is explicitly separate from original native BF16 batch-reduced validation CE. Do not claim their final rounding digits are identical.",
+    "prediction": "raw: stable FP64 softmax from saved FP32 logits then NumPy argmax (first class on an exact tie); two-view: arithmetic mean of the separately computed FP64 probabilities, then argmax; no FP32 probability mean is used",
+    "historical_rounding_boundary": "Forward tensors are uniformly FP32, while probabilities and scoring use FP64. Historical FP32 softmax/mean q and native BF16 batch CE are different reductions; borderline argmax and final rounding digits need not be identical. No cross-batch bitwise identity is claimed."
+  },
+  "schema_gate_before_inference": {
+    "images_shape": [
+      2000,
+      32,
+      32,
+      3
+    ],
+    "images_dtype": "uint8",
+    "labels_shape": [
+      2000
+    ],
+    "labels_dtype": "int64",
+    "labels_range": [
+      0,
+      9
+    ],
+    "label_names": "Check semantic order against the original CIFAR10 class metadata; never infer or reorder classes from model predictions",
+    "publisher_README_channel_typo": "Actual RGB shape must be checked; the README nx32x32x10 line is not an accepted image schema",
+    "RGB_and_label_semantics": "HWC RGB uint8 and standard CIFAR10 label order are fixed by publisher dataset identity; canonical original class metadata is checked. Shape/dtype alone cannot independently establish semantic annotation correctness; never infer or relabel from predictions."
+  },
+  "overlap_rule": {
+    "canonical_hash": "SHA256 of each uint8 HWC image in contiguous C byte order",
+    "reference": "All original60000 images, with original train45k/val5k/officialtest10k categories reported separately",
+    "primary": "All2000 supplied external test images, no outcome-based exclusion",
+    "secondary": "Exclude every exact-pixel overlap with any original60000 image, regardless of labels or model outputs",
+    "external_internal_duplicates_and_label_conflicts": "Count and disclose, retain in the primary metric; do not define a new exclusion rule after viewing outcomes"
+  },
+  "fixed_metrics": [
+    "accuracy",
+    "NLL",
+    "per_class_accuracy",
+    "confusion_matrix",
+    "multiclass_Brier_sum_over10",
+    "ECE15_fixed_equal_width_bins"
+  ],
+  "fixed_paired_contrasts": [
+    "alignment_B_BEST minus alignment_A_BEST: accuracy and NLL",
+    "weighted_single_LAST minus main_KD_LAST: NLL and accuracy",
+    "confidence_mass_LAST minus main_KD_LAST: NLL and accuracy",
+    "weighted_single_LAST minus confidence_mass_LAST: NLL and accuracy",
+    "main_KD_BEST two_view minus raw: accuracy and NLL",
+    "main_KD_BEST raw minus noKD240_BEST: accuracy and NLL"
+  ],
+  "uncertainty": {
+    "bootstrap_repetitions": 10000,
+    "private_PCG64_seed": 20261127,
+    "sampling": "Class-stratified image resampling; share every sampled image index across methods, training seeds and prediction policies",
+    "aggregation": "Mean of three paired per-seed metrics, not6000 independent observations",
+    "interval": "Percentile95 conditional descriptive interval; includes image resampling only, excludes retraining/Teacher/model-selection uncertainty; no familywise significance claim",
+    "published_image_rows_are_the_units": "Internal duplicates retained by the primary design are disclosed; conditional row bootstrap does not newly certify independent pixel identities.",
+    "primary_secondary_rng": "Restart private PCG64(20261127) for each prespecified population; share draws across every model/seed/policy/contrast within that population."
+  },
+  "all_fixed_results_retained": true,
+  "no_model_temperature_threshold_policy_or_new_direction_selection_from_external_results": true,
+  "retirement": "After this one fixed analysis, retire CIFAR10.2 from all further development or model selection. A partial-run repair may only resume the identical frozen evaluator/model manifest, preserve failed artifacts, and cannot modify model or policy choices.",
+  "dataset_downloaded": false,
+  "model_binding_manifest_complete": false,
+  "evaluation_executed": false
+}

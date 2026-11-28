@@ -1,0 +1,74 @@
+{
+  "protocol": "portable-weighted-v1",
+  "original_loss_sha256": "272ebb7e19cc34023ea7d060972b1d57d2f2a65c39179cd528960e97582a206d",
+  "original_loss_copy": "legacy_loss.py",
+  "original_loss_math_unchanged": true,
+  "frozen_main12": {
+    "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+    "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+    "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+    "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+    "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+    "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+    "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+    "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+    "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+    "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+    "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+    "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea"
+  },
+  "legacy_source_dictionaries": {
+    "Source15-v1_seed42": {
+      "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+      "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+      "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+      "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+      "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+      "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+      "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+      "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+      "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+      "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+      "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+      "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea",
+      "../tmp/experiment3_originality_research_20261126/source_set_kd_pilot/kd_loss.py": "272ebb7e19cc34023ea7d060972b1d57d2f2a65c39179cd528960e97582a206d",
+      "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_confirmation/adapter.py": "dad7090c9aed78b60c11bb4a86ac09c786f3a60cf4a3636acad8a9a8cca3c947",
+      "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_confirmation/run.py": "bc78229b8b6eea2eb7149380d270e1d33f4bc1e19b8350699a140b3fce8e2499"
+    },
+    "Source16-v2_seed17_73": {
+      "train.py": "b6a27472e0ad3d1480adb9b6cd406dac3b9a82f0aef573ce35a49c56c3edaa41",
+      "data.py": "0454c07123dbaebdfd00bce49424876b6b0e35c96508bd55cfcdabb3707e91f1",
+      "models.py": "1bd12501959241afcfb3cb7a521245640762cc1ff9f4850a4bb752611e8847c9",
+      "prepare_data.py": "6709d5c2d1c65c5f2443abd6fd860a37f58e053ccc51285af190bf994bcea0d3",
+      "extensions/train.py": "d941c90caed79e02477955ff50238c55f131c8ccae752d615abf893758cb221f",
+      "extensions/models.py": "301150e4c6a77085b7bcb594d219b7dd12c54d91dfdfe7cfa9bfce9770545514",
+      "distillation/train.py": "ef693c8f3fc825edc7cf4263e753375865e6679cfa6634281a48f9e110b84a4e",
+      "distillation/targets.py": "0257eb83f910956f46a66a095babcdb9c041a1c5d286edf11cca2e81a79e62c9",
+      "aligned_distillation/teacher.py": "c5673974b5d2e515b71b09f3ed96a462e1d14b1842bc9dba171fc43b85dd796f",
+      "aligned_distillation/train.py": "6ddc87b920a2f6f41002ad32f289e437bcbd570fe67533328d09994cda81ae56",
+      "capacity_study/train.py": "2f40654217813beda929bbc92575ebec272e78adf072c4d66a60fa7735c0bf75",
+      "horizon_study/train.py": "9ac78b60fa2f47fc3be04141991f2e68ab251abc44e6424775abc760cea415ea",
+      "../tmp/experiment3_originality_research_20261126/source_set_kd_pilot/kd_loss.py": "272ebb7e19cc34023ea7d060972b1d57d2f2a65c39179cd528960e97582a206d",
+      "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/adapter.py": "a0ea6f6735cce36d91650092fb6b5e6171da007069ce995344259eea12f802f4",
+      "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/run.py": "3b1ca37b79db7a5a3e071d7563ed8f592d96f4dc7394bc4c8092c034b8f0c0d6",
+      "../tmp/experiment3_originality_research_20261126/weighted_mix_kd_multiseed/postprocess.py": "c2326fe8d16228f7fd3b2cb7864e4c73e8775a4ac1d9902e5936572b209b5ecd"
+    }
+  },
+  "legacy_paths_are_provenance_labels_not_runtime_dependencies": true,
+  "legacy_source_manifest_sha256": {
+    "Source15-v1": "fe5d2b5f145aaf08a6f25456843b11c62b24c663346ff4ee2ae3c3342a3ffd4d",
+    "Source16-v2": "f3c8f52fcd6f919e5040e3e9ddc6584604a5d2ffba2f9d3c8fc136fe9537a73f"
+  },
+  "frozen_teacher_weights": {
+    "cutmix": "ae6ab05b3ae0f232e0cddfb85a9bb9b65126f404269065c3197f2fbbc0159a2a",
+    "transfer": "82aa3d307ecb83dfb92182325eb346829478213df25aa18d4de928721a1f6be9"
+  },
+  "frozen_data_metadata": {
+    "manifest_sha256": "fcde007c02057463cc73e6024bcb2759a656e222e2f46219c3a5a75265013360",
+    "split_sha256": "65b2461b3b2f1150516885f32fe224edfed12925b203b1fa8ed305329f4644ce",
+    "normalization_sha256": "9582053fe89152dc5e78472cf4e1e20832bfafb48f539c5903e051b639955455"
+  },
+  "source_version_difference": "Portable explicit input/output paths, mode-specific configuration source, new path/Teacher routing and metadata. Frozen main12 and copied conditional-loss math remain unchanged; old source15/16 checkpoints may be evaluated but may not be resumed by this new source version.",
+  "confidence_mass": "New experiment: .75 CE + .25 mean((1+lambda*q_yi+(1-lambda)*q_yj)*per_image_full_KL). Explicit written coefficient-mass control, not equal gradient strength.",
+  "pretrained_teacher_knowledge": "Original seed42 width32 CutMix and ImageNet-finetuned ResNet18; four probabilities averaged without calibration."
+}
